@@ -5,6 +5,9 @@ from datetime import timedelta
 
 class fourEl():
 
+    def __init__(self,sex):
+        self.sex = sex
+
     def create_phone(self):
         # 第二个数字
         second = [3, 4, 5, 7, 8][random.randint(0, 4)]
@@ -22,7 +25,7 @@ class fourEl():
     def getdistrictcode(self):
         codelist = []
         # 读取地区码
-        file = open('/Users/zhaodi/PycharmProjects/python3/学习/自动化测试脚本/身份证号地址对照表.txt',
+        file = open('E:\python372\自动化测试脚本\文档\身份证号地址对照表.txt',
                     encoding='ISO-8859-1')
         lines = file.readlines()
         # 逐行读取
@@ -38,7 +41,25 @@ class fourEl():
         id = id + str(random.randint(1950, 1998))  # 年份项
         da = date.today() + timedelta(days=random.randint(1, 366))  # 月份和日期项
         id = id + da.strftime('%m%d')
-        id = id + str(random.randint(100, 300))  # 顺序号简单处理
+        easyCode = str(random.randint(100, 300))
+
+        sex = self.sex
+        if sex == '男':
+            if int(easyCode) % 2 == 1:
+                easyCode = easyCode
+            else:
+                easyCode = int(easyCode) + 1
+
+        if sex == '女':
+            if int(easyCode) % 2 == 0:
+                easyCode = easyCode
+
+            else:
+                easyCode = int(easyCode) + 1
+
+        id = id + str(easyCode)
+
+        # id = id + str(random.randint(100, 300))  # 顺序号简单处理
 
         i = 0
         count = 0
@@ -115,27 +136,34 @@ class fourEl():
             x = random.randint(0, len(xing))
             m1 = random.randint(0, len(ming))
             m2 = random.randint(0, len(ming))
-            n = ('' + xing[x] + ming[m1] + ming[m2])
+            n = (self.sex + xing[x] + ming[m1] + ming[m2])
         return n
 
     def create_bankAccount(self):
         # 工行卡号开头
-        prefix = "622202"
-        # prefix = "622609"  # 招行卡
-        for i in range(13):
+        # prefix = "622202"
+        prefix = "621483"  # 招行卡
+        for i in range(10):
             prefix = prefix + str(random.randint(0, 9))
-        print(prefix)
-        # return prefix
-
+        # print(prefix)
+        return prefix
 
 if __name__ == '__main__':
-    a = fourEl()
-    b = a.create_name()
-    c = a.create_phone()
-    d = a.create_idcard()
-    e = a.create_bankAccount()
+    shul = 0
+    while shul < 10:
+        shul = shul + 1
+        a = fourEl('女')
+        b = a.create_name()
+        c = a.create_phone()
+        d = a.create_idcard()
+        e = a.create_bankAccount()
 
-    print("姓名：%s" % b)
-    print("手机号：%s" % c)
-    print("身份证号：%s" % d)
-    print("银行卡号：%s" % e)
+        dateTest = '{},{},{},{}\n'.format(b,c,d,e)
+        print(dateTest)
+        # 参数化文件地址
+        # file = open('E:\python372\自动化测试脚本\文档\Test.csv','a',encoding='utf-8')
+        file = open('D:\\apache-jmeter-4.0\\bin\csv\TestData.csv', 'a', encoding='utf-8')
+        file.write(dateTest)
+
+    file.close()
+    print('写入完成')

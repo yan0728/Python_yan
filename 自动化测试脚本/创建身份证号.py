@@ -64,7 +64,7 @@ def checkCode(number):
 
 # 生成二代身份证 参数1：要生成的数量 参数2：男：1 女：2
 def idNumber(shuliang = 1,sex = '女'):
-    filePath = '/Users/zhaodi/PycharmProjects/python3/学习/自动化测试脚本/txt文档/身份证号地址对照表.txt'
+    filePath = 'D:\python37\学习\身份证号地址对照表.txt'
     idAdd = createIDaddress(filePath)
 
     L = []  #生成空列表，存放生成的号码
