@@ -2,38 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fd33f35-b029-4d71-92a8-77831032ec21" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/connectMysql.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python 100/1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python 100/10.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python 100/11--题目就是斐波那契.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python 100/12.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python 100/13.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python 100/14.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python 100/15.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python 100/16.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python 100/17.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python 100/18.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python 100/19.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python 100/2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python 100/20.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python 100/21.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python 100/3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python 100/4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python 100/5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python 100/6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python 100/7.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python 100/8.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python 100/9.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readExcel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/捷越直接放款债权明细.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/自动化测试脚本/文档/Test.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/自动化测试脚本/文档/date" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/面向对象/xxClass.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/自动化测试脚本/bank_Code.py" beforeDir="false" afterPath="$PROJECT_DIR$/自动化测试脚本/bank_Code.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/自动化测试脚本/txt文档/身份证号地址对照表.txt" beforeDir="false" afterPath="$PROJECT_DIR$/自动化测试脚本/文档/身份证号地址对照表.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/自动化测试脚本/创建身份证号.py" beforeDir="false" afterPath="$PROJECT_DIR$/自动化测试脚本/创建身份证号.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/自动化测试脚本/随机生成四要素.py" beforeDir="false" afterPath="$PROJECT_DIR$/自动化测试脚本/随机生成四要素.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/函数/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/函数/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,12 +11,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/元组/元组及其操作.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-161">
+            <state relative-caret-position="25">
               <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/函数/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -73,6 +51,7 @@
       <list>
         <option value="$PROJECT_DIR$/123.py" />
         <option value="$PROJECT_DIR$/元组/元组及其操作.py" />
+        <option value="$PROJECT_DIR$/函数/test.py" />
       </list>
     </option>
   </component>
@@ -95,23 +74,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="py_Scripts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="py_Scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="xuelei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xuelei" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="py_Scripts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="py_Scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="元组" type="462c0819:PsiDirectoryNode" />
+              <item name="xuelei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xuelei" type="462c0819:PsiDirectoryNode" />
+              <item name="函数" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -132,7 +111,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.面向对象思维安装电脑">
+  <component name="RunManager" selected="Python.123">
     <configuration name="九九乘法表" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="py_Scripts" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -198,7 +177,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.面向对象思维安装电脑" />
         <item itemvalue="Python.九九乘法表" />
         <item itemvalue="Python.123" />
       </list>
@@ -254,9 +232,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24330357" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2457356" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -268,8 +247,10 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50074404" side_tool="true" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50074404" side_tool="true" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="R Packages" />
+      <window_info anchor="right" id="R Graphics" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -335,9 +316,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/第一次更新.patch">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/第一次更新.patch" />
     <entry file="file://$PROJECT_DIR$/PycharmProjects/Appium_webdriver/sent_hongbao.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -349,8 +328,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/元组/元组及其操作.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-161">
+        <state relative-caret-position="25">
           <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/函数/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
