@@ -25,7 +25,7 @@ class fourEl():
     def getdistrictcode(self):
         codelist = []
         # 读取地区码
-        file = open('E:\python372\自动化测试脚本\文档\身份证号地址对照表.txt',
+        file = open('E:\py_Scripts\自动化测试脚本\文档\身份证号地址对照表.txt',
                     encoding='ISO-8859-1')
         lines = file.readlines()
         # 逐行读取
