@@ -4,6 +4,6 @@ class Student(object):
         self.age = age
 
 s1 = Student('yan',18)
-
+#123
 print(s1.name)
 print(s1.age)
