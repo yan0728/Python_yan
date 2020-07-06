@@ -5,7 +5,7 @@ a_dict = {"username":"yanxuelei","age":"29"}
 
 
 #len(d):返回字典的键值对的长度
-# print(len(a_dic)) #2
+print(len(a_dict)) #2
 
 
 # 访问字典里的值
