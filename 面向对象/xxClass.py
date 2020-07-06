@@ -9,9 +9,9 @@ class Person(object):
         self.name = name
         self.age = age
 
-     def eat(self,sg):
-         self.sg = sg
-         print("这个人在",self.sg)
+     def eat(self,fruit):
+         self.fruit = fruit
+         print("这个人在吃",self.fruit)
 
 # 3 使用类创建一个对象：类名()
 p1 = Person('yanxuelei','18') #创建对象的同时会自动调用构造方法
