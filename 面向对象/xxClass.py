@@ -1,10 +1,4 @@
-#!/usr/bin/env python 
-"""
-@author:闫学雷
-@project:test
-@file: 类.py
-@time:2020/6/29 0029
-"""
+#!/usr/bin/env python
 # 1 定义一个类需要使用class关键字，然后基础object类
 # 2 在类定中定义方法，第一个参数是self，self代表的是当前的对象
 class Person(object):
