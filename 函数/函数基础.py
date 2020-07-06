@@ -10,7 +10,6 @@
 # def add(a,b):
 #     c = a + b
 #     print(c)
-#
 # add(1,2) # 1 和 2 叫实参
 
 
