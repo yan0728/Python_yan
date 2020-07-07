@@ -11,7 +11,7 @@ class Person(object):
     def __init__(self):
         self.name = 'yanxuelei'
         print("这是构造函数")
-        self.file = open('xxx.excel')
+        self.file = open('xxx.txt','a', encoding='utf-8')
 
     def greet(self):
         print("我的名字是{}".format(self.name))
@@ -24,3 +24,4 @@ class Person(object):
         self.file.close() #析构函数一般用在文件操作完毕后关闭文件的时候调用
 p = Person()
 p.greet()
+p.write()
