@@ -22,4 +22,4 @@ def sort_key(x): # x 等于每个字典
     return x['age']
 b.sort(key=sort_key,reverse=True)
 
-print(b)
+# print(b)
