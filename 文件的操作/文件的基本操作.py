@@ -12,7 +12,21 @@
 # print(str)
 # file.close()
 
-#写入文件 使用w  python3编码不是utf-8 因此需要使用encoding
-file = open('test.txt','w',encoding='utf-8')
-file.write('闫学雷')
-file.close()
+#写入文件 使用w  python3编码不是utf-8 因此需要使用encoding,如图文件存在将会覆盖掉
+# file = open('test.txt','w',encoding='utf-8')
+# file.write('闫学雷zs')
+# file.close()
+
+# a追加方式打开文件，不能用于读
+# a:append
+# file = open('test.txt','a',encoding='utf-8')
+# file.write('yangxuelei')
+# file.close()
+
+# r+ 读写方式打开文件
+
+
+# w+读写方式打开文件
+
+
+# a+追加和读的方式打开文件
