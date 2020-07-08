@@ -25,7 +25,8 @@ class fourEl():
     def getdistrictcode(self):
         codelist = []
         # 读取地区码
-        file = open('文档/身份证号地址对照表.txt',encoding='ISO-8859-1')
+        # file = open('文档\身份证号地址对照表.txt',encoding='ISO-8859-1')
+        file = open('文档/身份证号地址对照表.txt', encoding='utf-8')
         lines = file.readlines()
         # 逐行读取
         for line in lines:
@@ -160,7 +161,7 @@ if __name__ == '__main__':
         dateTest = '{},{},{},{}\n'.format(b,c,d,e)
         print(dateTest)
         # 参数化文件地址
-        # file = open('E:\python372\自动化测试脚本\文档\Test.csv','a',encoding='utf-8')
+        # file = open('文档\Test.csv','a',encoding='utf-8')
         file = open('文档/TestData.csv', 'a', encoding='utf-8')
         file.write(dateTest)
 

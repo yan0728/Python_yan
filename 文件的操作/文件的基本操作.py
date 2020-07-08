@@ -32,6 +32,5 @@
 # a+追加和读的方式打开文件
 file = open('test.txt','a+',encoding='utf-8')
 # file.write('123')
-str = file.read()
-print(str)
+print(file.read())
 file.close()
