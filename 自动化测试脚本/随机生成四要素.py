@@ -162,8 +162,7 @@ if __name__ == '__main__':
         print(dateTest)
         # 参数化文件地址
         # file = open('文档/Test.csv','a',encoding='utf-8')
-        file = open('文档/Test.csv', 'a', encoding='utf-8')
-        file.write(dateTest)
-
-    file.close()
+        with open('文档/Test.csv', 'a', encoding='utf-8') as file:
+            file.write(dateTest)
+    # file.close()
     print('写入完成')
