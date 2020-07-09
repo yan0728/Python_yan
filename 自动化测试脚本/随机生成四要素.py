@@ -152,7 +152,7 @@ if __name__ == '__main__':
     shul = 0
     while shul < 10:
         shul = shul + 1
-        a = fourEl('女')
+        a = fourEl('男')
         b = a.create_name()
         c = a.create_phone()
         d = a.create_idcard()
