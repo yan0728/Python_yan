@@ -1,11 +1,11 @@
 
 # 列表嵌套
 test_list = [1,2,3,['a','b','c']]
-# for x in test_list:
-# #     if type(x) == list:
-# #         for y in x:
-# #             print(y)
-# #     else: print(x)
+for x in test_list:
+    if type(x) == list:
+        for y in x:
+            print(y)
+    else: print(x)
 
 # 列表相加
 # a = [1,2,3]
