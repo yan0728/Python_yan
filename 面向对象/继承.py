@@ -16,15 +16,18 @@ class Persion(object):
         self.age = age
 
     def eat(self):
-        print(self.name,"吃饭")
+        print(self.name,"在吃饭")
 
     def run(self):
         print("一个",self.age,"岁的小孩在奔跑")
 
 # Student 继承了
 class Student(Persion):
-    pass
+
+    def study(self):
+        print(self.name,'在读书')
 
 s = Student('yanxuelei',18)
 s.eat()
+s.study()
 s.run()
