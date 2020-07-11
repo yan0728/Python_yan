@@ -1,8 +1,7 @@
 # 需要在python3上执行
 import random
 # “Test” 是 account_login函数 的文件名字
-from Test import account_login
-# import Test
+# from Test import account_login
 
 def game (capital = 1000):
     point1 = random.randrange(1,7)
