@@ -7,6 +7,7 @@
 
 print('===欢迎来到宠物寄养系统===')
 print('请输入你要选择的内容1：添加，2：查找，3：删除，4：修改，5：退出程序')
+ADD = []
 
 def xz():
     a = input("请输入您的选:")
@@ -45,10 +46,21 @@ def add_cw():
     name = input("请输入宠物名字")
     ts = input("请输入宠物特色")
     jg = input("请输入宠物价格")
-    add = {'id':id,'类型':type,'名字':name,'特色':ts,'价格':jg}
+    # add = {'id':id,'类型':type,'名字':name,'特色':ts,'价格':jg}
+    # 字典添加方法
+    add = {}
+    add['id'] = id
+    add['type'] = type
+    add['name'] = name
+    add['ts'] = ts
+    add['jg'] = jg
+    ADD.append(add)
 
     with open('cwmanger.txt','a') as fp:
-        fp.write(str(add))
+        fp.write(str(ADD))
+    print("恭喜您，宠物寄养成功")
+
+    xz()
 
 
 def select_cw():
@@ -73,4 +85,3 @@ def exit_wc():
 
 if __name__ == '__main__':
     xz()
-
