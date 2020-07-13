@@ -19,7 +19,7 @@ def account_login():
             reset_password = password == Reset_pw
             if correct_password:
                 print("登录成功")
-                quit()
+                return True
             elif reset_password:
                 new_password = input('请输入要重置的密码: ')
                 if new_password.isalnum():
