@@ -35,4 +35,3 @@ def account_login():
                 print(num,'time left')
         print("输入次数过多")
         quit()
-account_login()

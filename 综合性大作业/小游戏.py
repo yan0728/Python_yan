@@ -55,5 +55,5 @@ def game (capital = 1000):
         print("***选择大小时仅允许输入 “大” 或 “小”，请重新下注!***\n")
         game(capital = capital)
 
-# account_login()
+account_login()
 game()
