@@ -1,7 +1,7 @@
 # 需要在python3上执行
 import random
-# “Test” 是 account_login函数 的文件名字
-from Test import account_login
+from login import account_login
+# import Test
 
 def game (capital = 1000):
     point1 = random.randrange(1,7)
@@ -55,9 +55,5 @@ def game (capital = 1000):
         print("***选择大小时仅允许输入 “大” 或 “小”，请重新下注!***\n")
         game(capital = capital)
 
-if account_login():
-    game()
-else:
-    print("登录失败，请重新操作")
-    account_login()
-    game()
+# account_login()
+game()
