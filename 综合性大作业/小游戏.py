@@ -45,8 +45,8 @@ def game (capital = 1000):
                 print("*** 您的资金已经用光,GAME OVER!!! ***")
                 quit()
             else:
-                i = 1
-                while i > 0:
+                # i = 1
+                while True:
                     game(capital = capital)
         else:
             print("***下注资金只能是正整数，请您重新下注***\n")
