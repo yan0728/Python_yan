@@ -1,7 +1,6 @@
 # 需要在python3上执行
 import random
 from login import account_login
-# import Test
 
 def game (capital = 1000):
     point1 = random.randrange(1,7)
