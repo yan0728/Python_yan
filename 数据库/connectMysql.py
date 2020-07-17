@@ -28,8 +28,8 @@ def selectMoble():
     # 创建游标
     cur = db.cursor()
     selectMoble = 'SELECT * FROM test.test_mobile'
-    cur.execute(selectMoble)
-    results = cur.fetchall()
+    cur.execute(selectMoble) #执行脚本
+    results = cur.fetchall() #查询时获取结果集中的所有行，一行构成一个元组，然后再将这些元组返回（即嵌套元组）
     for row in results:
         id = row[0]
         MobileOS = row[1]
