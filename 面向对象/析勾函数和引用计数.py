@@ -6,7 +6,7 @@
 @time:2020/7/7 0007
 """
 
-# 析构函数 __del__方法 ，只要这个内存被是释放的时候就会调用这个函数
+# 析构函数 __del__方法 ，只要这个内存被释放的时候就会调用这个函数
 class Person(object):
     def __init__(self):
         self.name = 'yanxuelei'
