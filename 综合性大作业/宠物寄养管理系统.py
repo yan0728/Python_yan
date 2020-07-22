@@ -70,6 +70,7 @@ def select_cw():
             feature = row[3]
             price = row[4]
             print(id,'|',type,'|',name,'|',feature,'|',price)
+    db.close()
     xz()
 
 def delete_cw():
