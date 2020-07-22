@@ -19,7 +19,7 @@ def connect_mysql():
     except Exception as e:
         print(e)
     else:
-        print('数据库连接成功')
+        # print('数据库连接成功')
         return db
 
 
@@ -45,6 +45,17 @@ def selectMoble():
 
         print(id,'|',MobileOS,'|',changshang,'|',type,'|',xuliehao,'|',fenbianlv,'|',size,'|',Osversion,'|',colour,'|',user,'|',borrow_date)
 # selectMoble()
+
+def select_cw():
+    print('===宠物列表内宠物如下===')
+    db = connect_mysql()
+    cur = db.cursor()
+    selectsql = ('SELECT * FROM `ainimal`')
+    cur.execute(selectsql)
+    results = cur.fetchall()
+    print(type(results))
+    # db.close()
+# select_cw()
 
 def selctPhone():
     db = connect_mysql()

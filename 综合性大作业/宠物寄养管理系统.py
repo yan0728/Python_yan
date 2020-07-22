@@ -3,20 +3,18 @@
 # 3.需要实现：添加，查找，删除，修改，退出程序的功能
 # 4.需要使用文件来储存信息，下次打开系统，数据依然存在
 
-
+from 数据库.connectMysql import connect_mysql
 
 print('===欢迎来到宠物寄养系统===')
-print('请输入你要选择的内容1：添加，2：查找，3：删除，4：修改，5：退出程序')
-ADD = []
 
 def xz():
-    a = input("请输入您的选:")
+    print('============请输入你要选择的内容1：添加，2：查找，3：删除，4：修改，5：退出程序=============')
+    a = input("请输入您的选择:")
     if a.isdigit():
         run(int(a))
     else:
         print("输入有误，请输入数字")
         xz()
-
 
 def run(select):
     if select == 1 :
@@ -38,50 +36,58 @@ def run(select):
         print("输入有误，只能输入1，2，3，4，5")
         xz()
 
-
 def add_cw():
     print('===开始添加新的宠物===')
-    id = input("请输入宠物ID")
     type = input("请输入宠物类型")
     name = input("请输入宠物名字")
     ts = input("请输入宠物特色")
     jg = input("请输入宠物价格")
-    # add = {'id':id,'类型':type,'名字':name,'特色':ts,'价格':jg}
-    # 字典添加方法
-    add = {}
-    add['id'] = id
-    add['type'] = type
-    add['name'] = name
-    add['ts'] = ts
-    add['jg'] = jg
-    ADD.append(add)
-
-    with open('cwmanger.txt','a') as fp:
-        fp.write(str(ADD))
+    # 数据库操作
+    db = connect_mysql()
+    cur = db.cursor()
+    addsql = ("INSERT INTO `ainimal` (type,name,feature,price)VALUES ('{}','{}','{}','{}')".format(type,name,ts,jg))
+    # print(addsql)
+    cur.execute(addsql)
+    db.commit()
+    db.close()
     print("恭喜您，宠物寄养成功")
-
     xz()
-
 
 def select_cw():
     print('===宠物列表内宠物如下===')
-    with open('cwmanger.txt', 'r') as fp:
-        str = fp.read()
-
-    #     判断是否是空列表
-    if str == {} or str == [] or  str == () :
-        print("没有宠物,请添加")
+    db = connect_mysql()
+    cur = db.cursor()
+    selectsql = ('SELECT * FROM `ainimal`')
+    cur.execute(selectsql)
+    results = cur.fetchall()
+    if results ==():
+        print("目前没有寄样任何动物")
     else:
-        print(str)
+        for row in results:
+            id = row[0]
+            type = row[1]
+            name = row[2]
+            feature = row[3]
+            price = row[4]
+            print(id,'|',type,'|',name,'|',feature,'|',price)
+    xz()
 
 def delete_cw():
-    print('delete cw')
+    id =  input("请输入你要删除数据的id")
+    db = connect_mysql()
+    cur = db.cursor()
+    delsql = ('DELETE FROM	`ainimal` WHERE id = {};'.format(id))
+    cur.execute(delsql)
+    db.commit()
+    db.close()
+    print("数据已删除成功")
+    xz()
 
 def edit_cw():
     print('edit cw')
 
 def exit_wc():
-    print('exit cw')
+    print('退出成功')
 
 if __name__ == '__main__':
     xz()
