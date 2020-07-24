@@ -1,11 +1,11 @@
 # 字典基础
 # 创建字典 1,使用{}的方式,比较推荐这种方式
-a_dict = {"username":"yanxuelei","age":"29"}
-# print(a_dic) #{'username': 'yanxuelei', 'age': '29'}
+a_dict = {"姓名":"yanxuelei","年龄":"29"}
+print(a_dict) #{'username': 'yanxuelei', 'age': '29'}
 
 
 #len(d):返回字典的键值对的长度
-# print(len(a_dic)) #2
+# print(len(a_dict)) #2
 
 
 # 访问字典里的值
@@ -32,4 +32,4 @@ del a_dict['heigh']
 # 字典中的value可以为任意类型，key只能使不可变的类型：字符串，浮点型，整形或者元组
 a = ('ai','bi')
 tem = {a:'12'}
-print(tem)  #{('ai', 'bi'): '12'}
+# print(tem)  #{('ai', 'bi'): '12'}

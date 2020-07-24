@@ -10,8 +10,10 @@ print('my age is %d'%(age))
 # 占位符 浮点类型%f
 apple = 19.5
 print('apple 价钱是 %f'%(apple))
+
 # folat 类型四舍五入 就是在 % 和 f之间输入"."
 print('apple 价钱是 %.f'%(apple))
+
 # 如果小数后面仅需要1位数字，就在 % 和 f之间输入".1" 两位即".2"
 print('%.1f'%(apple))
 
