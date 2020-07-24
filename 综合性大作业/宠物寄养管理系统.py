@@ -3,7 +3,7 @@
 # 3.需要实现：添加，查找，删除，修改，退出程序的功能
 # 4.需要使用文件来储存信息，下次打开系统，数据依然存在
 
-#优化
+
 from 数据库.connectMysql import connect_mysql
 from 数据库.connectMysql import connect_mysql_home
 connect = 'home'

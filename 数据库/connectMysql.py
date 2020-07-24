@@ -22,7 +22,6 @@ def connect_mysql():
         # print('数据库连接成功')
         return db
 
-# 家电脑
 def connect_mysql_home():
     try:
         db = pymysql.connect(
