@@ -3,7 +3,11 @@
 # 3.需要实现：添加，查找，删除，修改，退出程序的功能
 # 4.需要使用文件来储存信息，下次打开系统，数据依然存在
 
+
 from 数据库.connectMysql import connect_mysql
+from 数据库.connectMysql import connect_mysql_home
+connect = 'home'
+# connect = 'company'
 
 print('===欢迎来到宠物寄养系统===')
 
@@ -18,16 +22,16 @@ def xz():
 
 def run(select):
     if select == 1 :
-        add_cw()
+        add_cw(connect)
 
     elif select == 2:
-        select_cw()
+        select_cw(connect)
 
     elif select == 3:
-        delete_cw()
+        delete_cw(connect)
 
     elif select == 4:
-        credits()
+        edit_cw(connect)
 
     elif select == 5:
         exit_wc()
@@ -36,14 +40,17 @@ def run(select):
         print("输入有误，只能输入1，2，3，4，5")
         xz()
 
-def add_cw():
+def add_cw(connect):
     print('===开始添加新的宠物===')
     type = input("请输入宠物类型")
     name = input("请输入宠物名字")
     ts = input("请输入宠物特色")
     jg = input("请输入宠物价格")
     # 数据库操作
-    db = connect_mysql()
+    if connect == 'company':
+        db = connect_mysql()
+    else:
+        db = connect_mysql_home()
     cur = db.cursor()
     addsql = ("INSERT INTO `ainimal` (type,name,feature,price)VALUES ('{}','{}','{}','{}')".format(type,name,ts,jg))
     # print(addsql)
@@ -53,9 +60,12 @@ def add_cw():
     print("恭喜您，宠物寄养成功")
     xz()
 
-def select_cw():
+def select_cw(connect):
     print('===宠物列表内宠物如下===')
-    db = connect_mysql()
+    if connect == 'company':
+        db = connect_mysql()
+    else:
+        db = connect_mysql_home()
     cur = db.cursor()
     selectsql = ('SELECT * FROM `ainimal`')
     cur.execute(selectsql)
@@ -73,9 +83,12 @@ def select_cw():
     db.close()
     xz()
 
-def delete_cw():
+def delete_cw(connect):
     id =  input("请输入你要删除数据的id")
-    db = connect_mysql()
+    if connect == 'company':
+        db = connect_mysql()
+    else:
+        db = connect_mysql_home()
     cur = db.cursor()
     delsql = ('DELETE FROM	`ainimal` WHERE id = {};'.format(id))
     cur.execute(delsql)
@@ -84,7 +97,7 @@ def delete_cw():
     print("数据已删除成功")
     xz()
 
-def edit_cw():
+def edit_cw(connect):
     print('edit cw')
 
 def exit_wc():

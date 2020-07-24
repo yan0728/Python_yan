@@ -23,6 +23,22 @@ def connect_mysql():
         return db
 
 
+def connect_mysql_home():
+    try:
+        db = pymysql.connect(
+            host = 'localhost',
+            port = 3306,
+            user= 'root',
+            password = '123123',
+            db = 'yanxuelei',
+            charset = 'utf8'
+        )
+    except Exception as e:
+        print(e)
+    else:
+        # print('数据库连接成功')
+        return db
+
 def selectMoble():
     db = connect_mysql()
     # 创建游标
