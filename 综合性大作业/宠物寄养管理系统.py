@@ -6,8 +6,8 @@
 
 from 数据库.connectMysql import connect_mysql
 from 数据库.connectMysql import connect_mysql_home
-connect = 'home'
-# connect = 'company'
+# connect = 'home'
+connect = 'company'
 
 print('===欢迎来到宠物寄养系统===')
 
