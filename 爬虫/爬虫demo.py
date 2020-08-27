@@ -35,4 +35,9 @@ for chapter in soup.find_all('a'):
                 print('导入 ' + chapter.string + ' 完成')
 
 
-# 这个是手册的中文地址https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html
+# 这个是手册的中文地址
+# https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html
+# python3 爬虫教学
+# https://blog.csdn.net/c406495762/category_6144934.html
+# 知乎爬虫入门整理
+# https://zhuanlan.zhihu.com/p/24358829
