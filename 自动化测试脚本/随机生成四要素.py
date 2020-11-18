@@ -25,8 +25,8 @@ class fourEl():
     def getdistrictcode(self):
         codelist = []
         # 读取地区码
-        file = open('E:\py_Scripts\自动化测试脚本\文档\身份证号地址对照表.txt',
-                    encoding='ISO-8859-1')
+        # file = open('E:\py_Scripts\自动化测试脚本\文档\身份证号地址对照表.txt',encoding='ISO-8859-1')
+        file = open('D:\python37\PythonYan\自动化测试脚本\文档\身份证号地址对照表.txt',encoding='ISO-8859-1')
         lines = file.readlines()
         # 逐行读取
         for line in lines:
@@ -136,7 +136,7 @@ class fourEl():
             x = random.randint(0, len(xing))
             m1 = random.randint(0, len(ming))
             m2 = random.randint(0, len(ming))
-            n = (self.sex + xing[x] + ming[m1] + ming[m2])
+            n = (xing[x] + ming[m1] + ming[m2])
         return n
 
     def create_bankAccount(self):
