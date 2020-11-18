@@ -9,16 +9,17 @@
 import xlrd
 import random
 # from PythonYan.数据库.connectMysql import connect_mysql #绝对路径导入文件并使用其中的方法
-from 数据库.connectMysql import connect_mysql
+from 数据库.connectMysql import connect_mysql_home
 
 def read_excel():
-    wb = xlrd.open_workbook("D:\python37\PythonYan\文件的操作\捷越直接放款债权明细.xlsx") #打开Excel文件
+    # wb = xlrd.open_workbook("D:\python37\PythonYan\文件的操作\捷越直接放款债权明细.xlsx") #打开Excel文件
+    wb = xlrd.open_workbook("E:\\py_Scripts\\文件的操作\\捷越直接放款债权明细.xlsx") #打开Excel文件
     sheet = wb.sheet_by_name("Sheet1")   #通过excel表格名称(rank)获取工作表
     print('<<<<<<<<<<<<<<<<<文件开始读取>>>>>>>>>>>>>>>>>>')
     return sheet
 
 def write_mysql():
-    db = connect_mysql()
+    db = connect_mysql_home()
     # 创建游标
     cur = db.cursor()
     run = 0
