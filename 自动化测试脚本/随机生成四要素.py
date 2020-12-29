@@ -25,8 +25,8 @@ class fourEl():
     def getdistrictcode(self):
         codelist = []
         # 读取地区码
-        file = open('E:\py_Scripts\自动化测试脚本\文档\身份证号地址对照表.txt',encoding='ISO-8859-1')
-        # file = open('D:\python37\PythonYan\自动化测试脚本\文档\身份证号地址对照表.txt',encoding='ISO-8859-1')
+        # file = open('E:\py_Scripts\自动化测试脚本\文档\身份证号地址对照表.txt',encoding='ISO-8859-1')
+        file = open('D:\python37\PythonYan\自动化测试脚本\文档\身份证号地址对照表.txt',encoding='ISO-8859-1')
         lines = file.readlines()
         # 逐行读取
         for line in lines:
@@ -37,7 +37,7 @@ class fourEl():
 
     def create_idcard(self):
         codelist = self.getdistrictcode()
-        id = codelist[random.randint(0, len(codelist))]  # 地区项
+        id = codelist[random.randint(0, len(codelist)-1)]  # 地区项
         id = id + str(random.randint(1950, 1998))  # 年份项
         da = date.today() + timedelta(days=random.randint(1, 366))  # 月份和日期项
         id = id + da.strftime('%m%d')
