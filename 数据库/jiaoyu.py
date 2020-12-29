@@ -29,11 +29,11 @@ def updateJY():
     db = connect_mysql()
     # 创建游标
     cur = db.cursor()
-    studentnum = 2
-    for i in range(113,302):
+    studentnum = 1100199
+    for i in range(303,500):
         update = ("UPDATE `base_student_study_info` SET student_num = {} WHERE student_id = {}".format(str(studentnum),i))
         cur.execute(update)
         db.commit()
-        # studentnum = studentnum + 1
+        studentnum = studentnum + 1
     print("提交成功")
 updateJY()
