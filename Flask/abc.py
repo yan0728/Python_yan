@@ -6,6 +6,10 @@
 @time:2020/7/29 0029
 """
 
-import flask
+a = 1
+b = 2
 
-print(flask.__version__)
+a,b = b,a
+
+print(a,b)
+
