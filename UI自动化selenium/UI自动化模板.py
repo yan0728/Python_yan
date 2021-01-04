@@ -2,6 +2,8 @@ from selenium import webdriver
 import time
 
 #  学习地址https://www.jianshu.com/p/1531e12f8852
+# https://www.bootwiki.com/selenium/index.html
+
 
 # 启动浏览器
 driverfile_path = r'D:\python37\PythonYan\chromedriver.exe'
