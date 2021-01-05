@@ -13,10 +13,14 @@ browser.maximize_window() #最大化
 browser.get(base_url) # 访问网页
 
 # 元素定位
-browser.find_element_by_id("kw").send_keys("selenium")
-browser.find_element_by_id("su").click()
+def test_one():
+    browser.find_element_by_id("kw").send_keys("selenium")
+    browser.find_element_by_id("su").click()
 
+def test_two():
+    browser.find_element_by_class_name("c-gap-bottom-small").click()
 
-time.sleep(2)
-browser.quit()
-print("提交成功")
+# if __name__ == '__main__':
+#     test_one()
+#     test_two()
+#     browser.quit()
