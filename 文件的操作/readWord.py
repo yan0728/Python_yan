@@ -23,7 +23,7 @@ file = docx.Document("111.docx")
 
 #输出段落编号及段落内容
 for i in range(len(file.paragraphs)):
-    inset = ('INSERT INTO test.`testcase` (dl) VALUE ("{}")'.format(file.paragraphs[i].text))
+    inset = ('INSERT INTO test.`testcase` ( dl ) VALUE ("{}")'.format(file.paragraphs[i].text))
     cur.execute(inset)
     db.commit()
     # print("第"+str(i)+"段的内容是："+file.paragraphs[i].text)
