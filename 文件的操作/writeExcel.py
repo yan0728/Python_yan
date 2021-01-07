@@ -1,4 +1,3 @@
-import openpyxl
 from openpyxl import load_workbook
 from 自动化测试脚本.随机生成四要素 import fourEl
 import random
