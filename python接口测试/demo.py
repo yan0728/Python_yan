@@ -8,16 +8,34 @@
 
 import requests
 import json
-import urllib.request
-import urllib.parse
+# get请求
 
-# base_url = 'http://loan-api-link.asset.jc4.jieyue.com'
-# api = '/loan-api-link/api/appbiz/LoanEasyRest/1118/v1'
-# url = base_url + api
+# url = 'http://www.baidu.com'
+# r = requests.get(url=url)
+# print(r.status_code)
 
-r = requests.get('http://www.baidu.com')
-# 查看响应内容，response.text 返回的是Unicode格式的数据
-# print(json.dumps(r.text))
+# post 请求
+base_url = ' http://loan-api-link.asset.jc4.jieyue.com'
+api = '/loan-api-link/api/appbiz/LoanEasyRest/1118/v1'
+url = base_url + api
+header = {'Content-Type': 'application/json;charset=UTF-8',
+          'User-Agent': 'Apache-HttpClient/4.5.5 (Java/1.8.0_121)',
+          }
+data = {
+    "sysSource": "4",
+    "frontTransNo": "20210107221401599",
+    "frontTransTime": "2019-07-18 15:15:20",
+    "interfaceNo": "1118",
+    "busiCode": "CSB18",
+    "telephone": "13916263326",
+    "appAmount": "30000",
+    "appPeriod": "24",
+    "custmerManger": "11037385",
+    "position": "301000817",
+    "telemarketing": "0"
+}
+def test_1118(url,data):
+    r= requests.post(url=url,data=json.dumps(data),headers=header)
+    print(r.json())
 
-# 查看响应码
-print(r.status_code)
+test_1118(url,data)
