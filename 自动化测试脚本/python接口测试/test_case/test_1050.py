@@ -11,13 +11,11 @@ import json
 from 自动化测试脚本.python接口测试.test_data import testdata
 from 自动化测试脚本.python接口测试.config import config
 url = config.base_url + testdata.api1050
-
 data = testdata.data1050
 header = config.header
 
 def test_1050(url,data):
     r = requests.post(url = url,data = json.dumps(data),headers = header)
-    print(url)
     return r.text , r.status_code
 
 def test_assert_1050():
@@ -26,7 +24,7 @@ def test_assert_1050():
         assert status_code == 200
         print("1050接口正确")
     except:
-        print("1050接口测试报文:",text)
+        print("1050接口错误:",text )
 
 if __name__ == '__main__':
     test_1050(url,data)
