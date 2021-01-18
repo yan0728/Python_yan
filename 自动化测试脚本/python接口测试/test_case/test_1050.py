@@ -7,7 +7,7 @@
 """
 import requests
 import json
-# import pytest
+import pytest
 from 自动化测试脚本.python接口测试.test_data import testdata
 from 自动化测试脚本.python接口测试.config import config
 url = config.base_url + testdata.api1050
