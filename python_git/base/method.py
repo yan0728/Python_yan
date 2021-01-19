@@ -3,9 +3,9 @@
 
 # import dubbo_telnet
 import  requests
-from utils.excel_data import *
-from utils.operationExcel import OperationExcel
-from utils.operationJson import OperationJson
+from python_git.utils.excel_data import *
+from python_git.utils.operationExcel import OperationExcel
+from python_git.utils.operationJson import OperationJson
 
 
 operationExcel=OperationExcel()

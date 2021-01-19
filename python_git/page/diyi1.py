@@ -2,9 +2,9 @@
 #heboqiang
 
 import  json
-from utils.public import *
-from utils.operationJson import  OperationJson
-from utils.operationExcel import  OperationExcel
+from python_git.utils.public import *
+from python_git.utils.operationJson import  OperationJson
+from python_git.utils.operationExcel import  OperationExcel
 
 operationJson=OperationJson()
 operationExcel=OperationExcel()

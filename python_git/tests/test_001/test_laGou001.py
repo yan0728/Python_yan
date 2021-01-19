@@ -5,12 +5,12 @@
 
 import  unittest
 import  json
-from base.method import Method,IsContent
-from page.laGou import *
-from page.diyi1 import *
-from utils.public import *
-from utils.operationExcel import OperationExcel
-from utils.operationJson import OperationJson
+from python_git.base.method import Method,IsContent
+from python_git.page.laGou import *
+from python_git.page.diyi1 import *
+from python_git.utils.public import *
+from python_git.utils.operationExcel import OperationExcel
+from python_git.utils.operationJson import OperationJson
 
 class LaGou(unittest.TestCase):
 	def setUp(self):
@@ -29,7 +29,7 @@ class LaGou(unittest.TestCase):
 		self.assertTrue(self.p.isContent(row=row,str2=r.text))
 
 	def test_laGou_001(self):
-		"sign为空"
+		# "sign为空"
 		r = self.obj.post(row=1,data=set_so_keyword(userPhone="18821768014"))
 		print ("test_laGou_004 is:", r.text)
 		self.isContent (r=r, row=1)

@@ -3,8 +3,8 @@
 
 import  xlrd
 from xlutils.copy import  copy
-from utils.public import *
-from utils.excel_data import *
+from python_git.utils.public import *
+from python_git.utils.excel_data import *
 
 
 class OperationExcel:

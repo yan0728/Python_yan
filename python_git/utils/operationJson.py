@@ -3,8 +3,8 @@
 
 
 import  json
-from utils.public import *
-from utils.operationExcel import OperationExcel
+from python_git.utils.public import *
+from python_git.utils.operationExcel import OperationExcel
 
 class OperationJson:
 	def __init__(self):

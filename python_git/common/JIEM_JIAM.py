@@ -1,5 +1,5 @@
 
-from common.DES_CBC import *
+from python_git.common.DES_CBC import *
 import base64
 import binascii
 

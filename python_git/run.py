@@ -8,11 +8,11 @@ import  smtplib
 from email.mime.text import MIMEText
 import time
 import HTMLTestRunner
-from common.logger import Log
+from python_git.common.logger import Log
 
-from utils.operationExcel import OperationExcel
+from python_git.utils.operationExcel import OperationExcel
 
-from configs.readCofig import *
+from python_git.configs.readCofig import *
 
 # https://blog.csdn.net/qq_42610167/article/details/100890479?utm_medium=distribute.pc_relevant_download.none-task-blog-searchFromBaidu-7.nonecase&depth_1-utm_source=distribute.pc_relevant_download.none-task-blog-searchFromBaidu-7.nonecas
 
