@@ -12,7 +12,7 @@ from 自动化测试脚本.python接口测试.test_data import testdata
 from 自动化测试脚本.python接口测试.config import ReadConfig
 url = ReadConfig.base_url + testdata.api1050
 data = testdata.data1050
-header = ReadConfig.header
+header = testdata.header
 
 def test_1050(url,data):
     r = requests.post(url = url,data = json.dumps(data),headers = header)

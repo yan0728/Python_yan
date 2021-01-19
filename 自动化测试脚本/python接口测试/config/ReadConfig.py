@@ -25,5 +25,5 @@ config.read(BASE_DIR+"\\config.ini")
 
 # 读取 [TESTBASE] 分组下的 base_url 的值
 base_url = config.get("TESTBASE","base_url")
-print(base_url)
-header = config.get("TESTBASE","header")
+# header = config.get("TESTBASE","header")
+# print(header)
