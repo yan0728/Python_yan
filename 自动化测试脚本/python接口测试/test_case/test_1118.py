@@ -8,28 +8,29 @@
 
 import requests
 import json
-# import pytest
+import pytest
 from 自动化测试脚本.python接口测试.test_data import testdata
-from 自动化测试脚本.python接口测试.config import config
+from 自动化测试脚本.python接口测试.config import ReadConfig
 
 # Pytest+Request+Allure+Jenkins
-url = config.base_url + testdata.api1118
+
+url = ReadConfig.base_url + testdata.api1118
 data = testdata.data1118
-header = config.header
-def test_1118(url,data):
+header = ReadConfig.header
+# @pytest.fixture(scope="session")
+def tes_1118(url,data):
 
     r = requests.post(url=url,data=json.dumps(data) ,headers=header)
-    # print(r.text)
     return r.status_code,r.text
 
-def test_assert_1118():
+def tes_assert_1118():
     try:
         # 获取1118接口的返回值
-        status_code , text = test_1118(url,data)
+        status_code , text = tes_1118(url,data)
         assert status_code == 200
         print ("1118接口正确")
     except :
         print("1118接口错误", text )
 if __name__ == '__main__':
-    test_1118(url, data)
-    test_assert_1118()
+    tes_1118(url, data)
+    tes_assert_1118()
