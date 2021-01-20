@@ -29,5 +29,5 @@ main()括号内可传入执行参数和插件参数，通过[]进行分割，[]�
 import pytest
 import time
 now = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
-pytest.main(["-s","--html=..\\report\\{}_report.html".format(now)])
+pytest.main(["-s","--html=..\\report\\{}_report.html".format(now),"--alluredir=..\\allure"])
 
