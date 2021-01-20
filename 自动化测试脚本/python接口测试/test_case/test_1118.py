@@ -15,15 +15,19 @@ from 自动化测试脚本.python接口测试.config import ReadConfig
 # Pytest+Request+Allure+Jenkins
 
 url = ReadConfig.base_url + testdata.api1118
-print("rul:",url)
 data = testdata.data1118
-print("data",data)
 header = testdata.header
-def test_1118(url,data):
+
+def test_1118():
 
     r = requests.post(url=url,data=json.dumps(data) ,headers=header)
-    return r.status_code,r.text
+    try:
+        assert r.status_code == 200
+        print ("1118接口正确")
+    except :
+        print("1118接口错误", r.text )
 
+'''
 def test_assert_1118():
     try:
         # 获取1118接口的返回值
@@ -32,6 +36,8 @@ def test_assert_1118():
         print ("1118接口正确")
     except :
         print("1118接口错误", text )
+'''
+
 if __name__ == '__main__':
-    test_1118(url, data)
-    test_assert_1118()
+    # test_1118(url, data)
+    test_1118()

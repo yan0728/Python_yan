@@ -14,18 +14,15 @@ url = ReadConfig.base_url + testdata.api1050
 data = testdata.data1050
 header = testdata.header
 
-def test_1050(url,data):
+def test_1050():
     r = requests.post(url = url,data = json.dumps(data),headers = header)
-    return r.text , r.status_code
-
-def test_assert_1050():
-    text,status_code = test_1050(url,data)
     try:
-        assert status_code == 200
+        assert r.status_code == 200
         print("1050接口正确")
     except:
-        print("1050接口错误:",text )
+        print("1050接口错误:",r.text )
+
 
 if __name__ == '__main__':
-    test_1050(url,data)
-    test_assert_1050()
+    # test_1050(url,data)
+    test_1050()
