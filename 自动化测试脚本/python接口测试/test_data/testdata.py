@@ -5,6 +5,9 @@
 @file: testdata.py
 @time:2021/1/15 0015
 """
+header = {'Content-Type': 'application/json;charset=UTF-8','User-Agent': 'Apache-HttpClient/4.5.5 (Java/1.8.0_121)'}
+
+
 api1118 = '/loan-api-link/api/appbiz/LoanEasyRest/1118/v1'
 data1118 = {
     "sysSource": "4",
