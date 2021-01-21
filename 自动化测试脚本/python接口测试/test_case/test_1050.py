@@ -22,7 +22,3 @@ def test_1050():
     except:
         print("1050接口错误:",r.text )
 
-
-if __name__ == '__main__':
-    # test_1050(url,data)
-    test_1050()

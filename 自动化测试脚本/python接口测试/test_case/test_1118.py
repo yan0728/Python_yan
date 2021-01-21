@@ -18,11 +18,11 @@ url = ReadConfig.base_url + testdata.api1118
 data = testdata.data1118
 header = testdata.header
 
-def test_1118():
 
+def test_1118():
     r = requests.post(url=url,data=json.dumps(data) ,headers=header)
     try:
-        assert r.status_code == 200
+        assert r.status_code == 2001
         print ("1118接口正确")
     except :
         print("1118接口错误", r.text )
@@ -37,7 +37,3 @@ def test_assert_1118():
     except :
         print("1118接口错误", text )
 '''
-
-if __name__ == '__main__':
-    # test_1118(url, data)
-    test_1118()
