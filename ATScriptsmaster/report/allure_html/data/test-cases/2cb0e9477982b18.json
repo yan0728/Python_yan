@@ -1,0 +1,126 @@
+{
+  "uid" : "2cb0e9477982b18",
+  "name" : "cnodejs项目",
+  "fullName" : "scripts.test_case.Test_case#test_case",
+  "historyId" : "8969fb93535c3ccbd57d0d36069d62f2",
+  "time" : {
+    "start" : 1611213904549,
+    "stop" : 1611213905274,
+    "duration" : 725
+  },
+  "description" : "<font color=\"red\">请求URL：</font>https://cnodejs.org/api/v1/topics<br /><font color=\"red\">期望值：</font>get /topics 主题首页",
+  "descriptionHtml" : "<p><font color=\"red\">请求URL：</font>https://cnodejs.org/api/v1/topics<br /><font color=\"red\">期望值：</font>get /topics 主题首页</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1611213904377,
+      "stop" : 1611213904547,
+      "duration" : 170
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_Test_case",
+    "time" : {
+      "start" : 1611213904548,
+      "stop" : 1611213904548,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "<font color=\"red\">请求URL：</font>https://cnodejs.org/api/v1/topics<br /><font color=\"red\">期望值：</font>get /topics 主题首页",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d472f8abd503c2f",
+      "name" : "log",
+      "source" : "d472f8abd503c2f.txt",
+      "type" : "text/plain",
+      "size" : 89
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_Test_case::0",
+    "time" : {
+      "start" : 1611213909080,
+      "stop" : 1611213913633,
+      "duration" : 4553
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "cnodejs项目"
+  }, {
+    "name" : "story",
+    "value" : "get"
+  }, {
+    "name" : "parentSuite",
+    "value" : "scripts"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_case"
+  }, {
+    "name" : "host",
+    "value" : "XXJS-xueleiyan"
+  }, {
+    "name" : "thread",
+    "value" : "44928-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "{'case_project': 'cnodejs项目', 'case_description': 'get /topics 主题首页', 'case_url': 'https://cnodejs.org/api/v1/topics', 'case_method': 'get', 'case_params': '', 'case_expect': '{\"success\":true}', 'other': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2cb0e9477982b18.json",
+  "parameterValues" : [ "{'case_project': 'cnodejs项目', 'case_description': 'get /topics 主题首页', 'case_url': 'https://cnodejs.org/api/v1/topics', 'case_method': 'get', 'case_params': '', 'case_expect': '{\"success\":true}', 'other': ''}" ]
+}
