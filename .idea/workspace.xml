@@ -1,403 +1,278 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e38a32e-0e4b-4479-9edc-84ef01aca780" name="Default Changelist" comment="提交更新">
-      <change afterPath="$PROJECT_DIR$/.idea/PythonYan.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="151b82ad-b21c-4c04-a995-67942b84fe94" name="Default Changelist" comment="测试">
+      <change afterPath="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/data/测试数据.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/setting/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/testcase/tesecase.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/uti/ReadExcel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/uti/ReqApi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/uti/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/02156613-79ba-48d7-a108-0580c2a38f3b-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/0396ef84-9966-4d2e-a865-1c202b2cfc96-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/043ce62b-5c0b-4f27-ba7b-5a3c14406c00-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/04aeb7a9-bdf1-482a-934d-bad482d0216b-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/05383fb5-fb67-49ac-bb16-d2a72f7c8766-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/0998df59-68ce-4e61-a7f8-66d7d7a6f71c-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/0c66a939-7e11-4bce-9b7e-15e17000e6f6-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/0cd05d9a-4cdf-41b7-98a9-61492880fc56-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/0fed55e9-56cd-494a-94f4-e432e4c08e62-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/10f7d791-09b2-4f93-972e-cb6e2acc0ac0-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/1180a637-44ee-4a5e-bed8-097a146b0469-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/11ba2820-3c1b-43b5-a279-96f09ae15c55-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/120a8004-77e1-4f55-9933-8ad59b7c3c58-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/12ba8ba5-fc6c-4fd1-8c2a-91028fdc950a-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/12eaca1e-c0ba-4c5d-90a5-d04d0563ace2-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/1306a49d-ad38-4c5e-9af7-ef568817568b-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/19010334-b689-4779-a170-affd17c54e17-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/1b36e0b4-e586-432d-9487-0c8fb2efaabb-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/1c03ed51-e0e4-421e-9bf4-f88f0d9b12f4-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/1ca6240d-219d-4f86-b9a5-d31ce0aef506-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/1d4062f7-dff4-4bba-9185-24c85dd8d6a6-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/1fa21254-72cc-44d0-9730-753f15febf27-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/200d41d3-57ca-4210-8f89-821522999fa5-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/20c3110b-1bb0-4d23-87af-93e9f35e6da7-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/21dbabae-2c9c-48d2-9c01-cb4e072d2afa-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/2649893d-a968-4fa1-99e4-14e2242a8644-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/2782d095-b724-4020-a600-b87d9ab8450e-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/27dc5028-d0fa-460a-ba92-b9c253ff6650-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/28a70ca3-b233-4d3c-bcbe-cf9f60709cac-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/2933b51e-f209-4637-81f7-0d3460f8cffc-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/29ca3910-c94b-4cf5-8760-31a789b63e85-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/2b99f9bc-2b4c-476c-bad8-58585f883d19-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/2c060aeb-3c98-4a9c-b9d0-6bf6c42b65ef-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/2c153d82-b8ef-458a-beb2-bfc7fcb78232-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/2cf098c8-1136-4af5-ade6-c4a37aa298eb-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/32b24281-204a-4da2-82a1-4176c55b056d-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/3370c18f-3497-4194-86b4-cecc43210fca-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/33ceafc5-f262-418a-805a-24549a9274c6-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/344f6038-1185-4964-91a1-acf8fbe2cea7-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/3666d854-d25f-49ab-a89c-20d081584a2f-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/3670f92e-a5a9-4b82-9c42-24cce03efb58-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/36a8f214-edba-44ba-85c6-71ce5f53742a-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/37431023-0dbf-4547-85ac-5a726c962819-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/3a08ec0f-4d3b-4313-97df-30d64972d884-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/3aac16d4-4188-4f1b-b522-567b6e98fac8-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/400d4951-1da7-4087-bd98-21145d5817fd-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/421ba7f9-0c9a-4691-a62c-15c79e0f0f3b-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/42c86ae5-9f6e-40a1-9323-6ec843db8067-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/439150de-c443-4ddb-9a7c-808b39fa3b19-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/46d80191-ab33-445d-afb4-f80879a8f5b1-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/47a0332f-a3f9-4f7d-ac55-e6f7d8b5356b-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/47a63750-58c8-4d53-b083-555fb207054a-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/48826db9-2ca0-458a-a52c-36108ce8797b-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/49816bcb-7327-4534-ab1c-c61042bc234b-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/49f3ff4e-ebdc-4679-8a6c-22965e61427e-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/4b147afd-2302-4941-acf9-1e18cca9e04c-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/4b646961-0283-4a8f-b383-daa510dd9509-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/4ba6ae1b-c7c6-4c26-9675-13ca080622f8-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/4bfe71c5-ca5e-49f5-85c6-eadb87edcce2-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/4e1f4838-d6a5-4fb0-82fe-55bfc361e326-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/4e8f8d70-d198-4800-876a-3c0c40f90f82-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/4f29aa6f-80fb-433f-bb7e-dc90b97f8a82-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/503057a5-69b2-4661-9561-862f16a879db-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/50cbf482-a07e-4e91-ac10-57cf29675b59-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/5200f59e-e0bd-4ac0-abae-50101eb85113-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/523f337a-99f1-43b4-b545-9ea115d4ba2a-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/5313c5e7-81e6-4a7c-a03d-02ebedff4375-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/53513c7e-63c9-4918-ac87-c76edb466d38-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/544a828c-f6ec-4276-8fa9-1008de403671-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/55b7e01d-0858-4930-8e33-ea5b2015a136-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/565d62a1-44f6-425d-91b3-e8eaebc47539-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/587bd825-43ee-41cf-80f4-2217d37f2817-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/58df7244-044b-40e0-aee0-59599cee2933-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/592a1930-a5a7-44cc-90ba-3e27952b6a53-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/59fc6682-e13c-4777-8d47-da5107e86bd8-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/5b781c08-85c5-458f-849a-3abea789b4a7-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/5df99f54-8aa4-4324-b7bd-7191e63a4536-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/62fa5cb4-113f-495c-b8ed-ded4ee1df9cb-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/63001053-cb59-498b-af9d-e98dba614bba-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/677b6190-9ead-40b5-9282-bf8e308d85d3-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/6b99fd95-7753-4bc3-88b9-f649111fdcd7-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/6ba5deea-a805-4aa0-816a-4189130d4e62-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/6c312ff7-7862-4c8b-a558-e4f209fc0e35-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/6d639254-41f2-4396-9312-9707b3fb3b49-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/6d8cf104-87fa-4e04-8335-c700477c1343-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/6e2d5654-1615-4dd7-88ca-fa504f4c73ca-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/6e4a714f-0565-4d29-b48c-0176314db7e9-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/6e90431e-e6a4-4d6c-8b96-4053dd3c9232-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/6e9b2087-1309-4488-b0ee-db8352b91eef-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/73e06051-716b-413d-8852-b05b5c219173-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/74888774-1d62-4610-b054-71d20acdc71c-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/78706e4d-93ba-4da4-95cb-803efbbf1b19-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/78af2f47-57af-43ab-a24e-076eb5a7e777-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/7aef1169-56b6-43a6-acb6-a55376680d77-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/7c886013-feff-4fd3-96b6-0f6452714cb4-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/7c989b80-f6e7-4ac9-91d3-0f1dc02ba581-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/7d1912c9-6741-4d77-87cf-3b0f95501139-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/81cf6229-85c6-4900-b044-3416cef4e4b7-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/82c535a1-9b7d-4fb0-ae66-f66bb3287a70-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/836843de-b177-4c10-b41e-b952ae494902-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/8473d9ba-8900-4f53-bdab-206ef9f09221-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/861b9ae9-6fdf-46e1-85f9-787d48cdb83f-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/8637636e-287c-4bbb-a253-cc464f4503ff-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/86b30e77-c9f2-4dcf-8238-43757d68e054-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/8a822f76-895d-4c3a-a895-e7ebd23c6685-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/8b7f1ada-15f1-4f08-9260-1ded76472f0f-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/8bcc9db5-268c-4830-9852-525a1f0bd85d-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/8ca5372f-21dc-4c97-9fff-8c08dac2145d-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/8cc709ed-e295-4523-9144-0f04c1b86e6f-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/8e4396fd-9ef4-4aaf-bb3f-208f309b3bae-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/8ffbefb4-ef73-4dbc-9894-569dfb94d271-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/925e09b6-f059-490a-b687-222b64278cbe-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/927a71e9-58ef-476b-b84f-09e045bff584-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/9560b278-bbc7-40c5-aed3-e8cb3b04f316-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/95cd0ddc-df7a-45ae-b1a2-6e08ffae328c-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/9793c8ad-8180-4885-9ec0-2ff1a2b20ff2-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/98d6b833-1732-49a1-9cc4-9a39b408a25a-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/9afe0126-0938-4cff-bc29-ae366963d696-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/9b3d3cac-26be-41c7-a9ff-f7c293a0df16-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/9b777ab5-307b-49a6-8a56-8d491e651c49-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/9eafa815-69ba-4cf0-be1e-5bdd6acaaf85-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/9ee5b784-0ac3-4f65-ae84-e5a16d4b2094-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/9fb1d184-6da4-40e0-accd-a7fa75e7ca95-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/9fbff7bf-1e92-4ed8-9f81-ed16a573aa3d-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/a112a49e-04dd-413f-8613-02a4c9a7e06d-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/a13a96aa-e52e-4fc1-9fb7-84b9a84a94ac-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/a375b057-fe91-4677-9989-fd72442ee925-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/a4348e63-0a66-40c9-ac53-35cd3c6186ef-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/a55dfaf2-3f59-4c74-b15b-42587198821e-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/a5a588cc-090a-40a4-9ffa-ba43885815d9-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/a5c8b836-097a-4451-89f3-7147a1ab180f-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/a8913a7b-c516-49b6-aacd-b3ec6b320969-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/aaab6334-4652-4198-b0b7-ffec03f539d0-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/ab5309d8-7008-4c04-a0f7-4019144b635c-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/acdcaeac-a21a-4cab-887e-84a0d9843625-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/ad16113a-8d01-4434-a7a5-60b328fb1286-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/add0661e-116a-48ed-a177-a96e376be485-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/adf10fcf-9703-407a-9d36-d27ae03bb21c-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/afab22d6-d9bb-4c2b-881e-7eb3d4272337-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/afddd45f-674b-4e0f-ac0a-0deb91b541f1-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/b0bec782-4f6a-4790-8094-a0e25ac936b3-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/b2bf7228-b93e-41f9-9a51-7e96f33f2be0-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/b348fe20-ff9e-45c1-92c0-c01b1f91d36b-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/b4aebef1-deb6-4e6a-9b2d-36a1aa072b1a-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/b657eb77-3f6f-4e18-955f-7c8744053d91-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/b6730cf2-4a17-4925-98d2-a216ac216aed-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/b8065a00-f96c-4817-a475-4aa1eb953177-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/b9218499-eb26-4153-bc28-97ee8a63603e-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/bf59ab8f-1171-4616-b654-4235789feb23-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/bf62e0ce-78ab-41e0-b407-38fe9319816a-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/c29b49ac-45a9-4d92-890d-a11f518fab12-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/c35bd295-74b8-4eaf-907e-716d335018a5-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/c40885bb-cb5f-48ba-991e-8a6ceb7e3e55-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/c46e33ed-c0c4-4c11-904f-467c1955730f-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/c6c2a8f2-0d5c-4355-9188-0b7d0a000e4a-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/c700c32c-9a44-4754-8a84-5e8b42f10c8b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/c71ed4fb-5ecf-4e43-8025-17551ee6b392-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/cb4679e2-d267-42fd-9fb8-5d46b0e1b94b-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/cb4b6ec9-913f-4be3-83b8-37f0438e1e8b-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/d274d9ae-6823-4625-9266-0b14115501fd-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/d2b005ef-51af-4d3e-be22-858f6d7ccc01-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/d329411a-958e-45f7-bdd2-95183ea4c0f7-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/d4cf4ed5-0a4f-4301-98d3-02503d9c8d2d-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/d4f8f21a-f7ed-47f2-9dff-98b22cb7336a-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/d8629d1b-35cc-46e2-8565-560a5401d999-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/da4c84df-2774-4e51-897d-9504fa6fb427-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/daac6f51-9be4-4a86-8e41-daff3757e7b8-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/dac229be-aec0-40bf-b9f2-c479eaf57ce6-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/db5d83de-4d73-4e0e-a80d-b3de26a77e09-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/dba30fb1-e497-449f-84cb-0d185bd84d55-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/dc3039fa-e381-4925-a6e0-3b4a4dc21ef3-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/dca32e3e-1886-4317-9670-cbd922997d78-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/df8c4997-8140-459b-8ccf-fce3b77bc281-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/e049a775-048c-4825-be96-074fd60ac888-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/e0cf0001-326f-4d42-b390-eff5b01daa9a-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/e0fb49a1-3df6-47f8-927f-65f322debc46-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/e12b73a8-67ae-42af-bf76-4040d33a9fa3-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/e159432c-c411-4f0b-beec-2fe7df223214-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/e2093c98-c48b-4558-988b-af1214444e2a-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/e2853314-aba4-4032-a4d9-9f19d704a745-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/e35e1a5f-cc9e-48a2-8193-120d3417654a-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/e86a131e-22ef-4d56-b317-1abd18603caa-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/e9230a69-49dc-4782-8d9a-eef818d7b779-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/ea22ba82-299a-4ede-a5e3-75f4a562c1b1-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/ea2a9841-50f0-4f02-959c-8b9d6a9f100a-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/ebacf148-6c3c-4a5b-91c6-f61654ded18f-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/ee3d2169-656d-4bce-90de-e41958e587bd-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/eff92be4-41b9-4476-90e2-820f8932b033-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/f110bc88-ee7a-4c75-850c-564f634afb9b-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/f1743a22-145e-46d0-ae4e-0b48e61abaa4-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/f2f199d8-f0d8-481c-ac29-0c9d5e3613b7-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/f333a27c-2036-4f73-a7a1-1c5086d68f5e-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/f3b5b1e3-ef7e-46a4-a3ca-672471a050d9-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/f45ec042-95d1-450f-b5cb-bd3279458943-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/f51f5f32-4f30-47d0-8bfc-229f1815dea2-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/f74f8e23-ca01-45d9-b27f-c5a82a992cd5-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/f81eeb63-622d-4d3a-8f94-76fe1066f13e-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/f8e89514-bfe9-4eae-8810-8b1394729801-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/f9dc942f-caf7-4037-b229-3bc64d6ebedd-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/fa11fee9-bf24-42eb-b087-91beadfdb498-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/faeac195-7ae3-4513-bc36-37b73688b37c-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/faf05cf7-ef94-4c45-bedd-6ef2b3249bba-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/fc9c58a8-76ac-45d6-a2a2-61bcb5d3d51f-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/report/result/fcac7f29-9754-4767-bb4c-8de67b30be5e-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATScriptsmaster/uti/ExcelHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATScriptsmaster/uti/ExcelHandler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/自动化测试脚本/python接口测试/allure/d13848b6-6b59-4341-b5d3-dc577e806da1-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/自动化测试脚本/python接口测试/allure/e88f88a2-7821-48a6-978a-2ca3ca9b5ec8-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/自动化测试脚本/python接口测试/allure/fa20e6f4-49cc-4599-8bcf-6889403a6da3-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/自动化测试脚本/python接口测试/report/2021-01-20_16-18-53_report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/自动化测试脚本/python接口测试/report/2021-01-20_16-29-40_report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/自动化测试脚本/python接口测试/report/2021-01-20_16-34-46_report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/自动化测试脚本/python接口测试/report/2021-01-20_16-35-39_report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/自动化测试脚本/python接口测试/report/2021-01-20_16-37-12_report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/自动化测试脚本/python接口测试/report/2021-01-20_17-36-40testReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/自动化测试脚本/python接口测试/report/2021-01-20_17-39-26testReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/自动化测试脚本/python接口测试/report/2021-01-20_17-42-11_report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/自动化测试脚本/python接口测试/report/2021-01-20_17-45-37_report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/自动化测试脚本/python接口测试/report/2021-01-20_18-20-16_report.html" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>第一章</find>
-      <find>print</find>
-      <find>ass</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
-    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="PUSH_TAGS">
       <GitPushTagMode />
     </option>
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/other/九九乘法表.py" />
-        <option value="$PROJECT_DIR$/文件的操作/readExcel.py" />
-        <option value="$PROJECT_DIR$/面向对象/析勾函数和引用计数.py" />
-        <option value="$PROJECT_DIR$/异常处理/异常处理.py" />
-        <option value="$PROJECT_DIR$/文件的操作/name变量的使用.py" />
-        <option value="$PROJECT_DIR$/基础知识补充/列表生成式.py" />
-        <option value="$PROJECT_DIR$/python 100/1.py" />
-        <option value="$PROJECT_DIR$/python 100/13.py" />
-        <option value="$PROJECT_DIR$/数据库/connectMysql.py" />
-        <option value="$PROJECT_DIR$/python 100/19.py" />
-        <option value="$PROJECT_DIR$/综合性大作业/宠物寄养管理系统.py" />
-        <option value="$PROJECT_DIR$/Python装饰器/闭包.py" />
-        <option value="$PROJECT_DIR$/Python装饰器/装饰器的基本使用.py" />
-        <option value="$PROJECT_DIR$/Python装饰器/被装饰的函数需要带参数.py" />
-        <option value="$PROJECT_DIR$/Python装饰器/给装饰器专递参数.py" />
-        <option value="$PROJECT_DIR$/面向对象/动态添加属性和方法.py" />
-        <option value="$PROJECT_DIR$/Flask/flask.py" />
-        <option value="$PROJECT_DIR$/python接口测试/test.py" />
-        <option value="$PROJECT_DIR$/Flask/demo.py" />
-        <option value="$PROJECT_DIR$/微信机器人.py" />
-        <option value="$PROJECT_DIR$/爬虫/python3 爬虫入门.html" />
-        <option value="$PROJECT_DIR$/爬虫/练习.py" />
-        <option value="$PROJECT_DIR$/APPUI自动化/demo.py" />
-        <option value="$PROJECT_DIR$/other/遍历字典.py" />
-        <option value="$PROJECT_DIR$/自动化测试脚本/随机生成四要素.py" />
-        <option value="$PROJECT_DIR$/数据库/jiaoyu.py" />
-        <option value="$PROJECT_DIR$/auto_web.py" />
-        <option value="$PROJECT_DIR$/UI自动化selenium/auto_web.py" />
-        <option value="$PROJECT_DIR$/UI自动化selenium/测试报告.py" />
-        <option value="$PROJECT_DIR$/../Lib/site-packages/HTMLTestRunner.py" />
-        <option value="$PROJECT_DIR$/Flask/abc.py" />
-        <option value="$PROJECT_DIR$/自动化测试脚本/测试数据.py" />
-        <option value="$PROJECT_DIR$/自动化测试脚本/faker方法造数据.py" />
-        <option value="$PROJECT_DIR$/UI自动化selenium/UI自动化模板.py" />
-        <option value="$PROJECT_DIR$/UI自动化selenium/Testreport.py" />
-        <option value="$PROJECT_DIR$/UI自动化selenium/UISelenium.py" />
-        <option value="$PROJECT_DIR$/UI自动化selenium/testCase.py" />
-        <option value="$PROJECT_DIR$/文件的操作/readWord.py" />
-        <option value="$PROJECT_DIR$/文件的操作/writeExcel.py" />
-        <option value="$PROJECT_DIR$/python接口测试/demo.py" />
-        <option value="$PROJECT_DIR$/自动化测试脚本/python接口测试/demo.py" />
-        <option value="$PROJECT_DIR$/自动化测试脚本/python接口测试/config/config.py" />
-        <option value="$PROJECT_DIR$/自动化测试脚本/python接口测试/test_demo.py" />
-        <option value="$PROJECT_DIR$/自动化测试脚本/python接口测试/test_case/test_1119.py" />
-        <option value="$PROJECT_DIR$/自动化测试脚本/python接口测试/test_case/test_1118.py" />
-        <option value="$PROJECT_DIR$/自动化测试脚本/python接口测试/test_data/testdata.py" />
-        <option value="$PROJECT_DIR$/自动化测试脚本/python接口测试/test_case/test_1050.py" />
-        <option value="$PROJECT_DIR$/自动化测试脚本/python接口测试/翻译.py" />
-        <option value="$PROJECT_DIR$/自动化测试脚本/python接口测试/fanyi.py" />
-        <option value="$PROJECT_DIR$/自动化测试脚本/python接口测试/123.py" />
-        <option value="$PROJECT_DIR$/爬虫/爬虫demo.py" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="294" />
-    <option name="y" value="53" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectId" id="1kmkpaISlbpjbYvYTuxFwqdxmQT" />
+  <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="Update" />
-    <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="PythonYan" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="D:\python37\PythonYan" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/自动化测试脚本/python接口测试/test_case/test_1050.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="PyConsoleOptionsProvider">
-    <option name="myPythonConsoleState">
-      <console-settings module-name="PythonYan" is-module-sdk="true">
-        <option name="myUseModuleSdk" value="true" />
-        <option name="myModuleName" value="PythonYan" />
-      </console-settings>
-    </option>
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\python37\PythonYan\自动化测试脚本\python接口测试\test_case" />
-      <recent name="D:\python37\PythonYan\自动化测试脚本" />
-      <recent name="D:\python37\PythonYan\python接口测试" />
-      <recent name="D:\python37\PythonYan\UI自动化selenium" />
-      <recent name="D:\python37\PythonYan\面向对象" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\python37\PythonYan\自动化测试脚本\python接口测试\test_data" />
-      <recent name="D:\python37\PythonYan\UI自动化selenium" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.test_1050">
-    <configuration name="文件的基本操作" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonYan" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/文件的操作" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/文件的操作/文件的基本操作.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="异常处理" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonYan" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/异常处理" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/异常处理/异常处理.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="字典的遍历" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonYan" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/字典" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/字典/字典的遍历.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="装饰器的基本使用" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonYan" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python装饰器" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python装饰器/装饰器的基本使用.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="随机生成四要素" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonYan" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/自动化测试脚本" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/自动化测试脚本/随机生成四要素.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="小游戏" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonYan" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/综合性大作业" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/综合性大作业/小游戏.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="列表的基本使用" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonYan" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/列表" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/列表/列表的基本使用.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="翻译" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonYan" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/自动化测试脚本/python接口测试" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\python37\PythonYan\自动化测试脚本\python接口测试\fanyi.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="类方法和静态方法" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonYan" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/面向对象" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/面向对象/类方法和静态方法.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="动态添加属性和方法" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonYan" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/面向对象" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/面向对象/动态添加属性和方法.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="继承" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonYan" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/面向对象" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/面向对象/继承.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="列表生成式" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonYan" />
+      <module name="py_Scripts" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -417,71 +292,8 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="遍历字典" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonYan" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/other" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/other/遍历字典.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="随机生成四要素" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonYan" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/自动化测试脚本" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/自动化测试脚本/随机生成四要素.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="闭包" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonYan" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python装饰器" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python装饰器/闭包.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="字典及其基本操作" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonYan" />
+      <module name="py_Scripts" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -501,19 +313,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_1050" type="PythonConfigurationType" factoryName="Python">
-      <module name="PythonYan" />
+    <configuration name="宠物寄养管理系统" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="py_Scripts" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="D:\python37\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/自动化测试脚本/python接口测试/test_case" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/综合性大作业" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/自动化测试脚本/python接口测试/test_case/test_1050.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/综合性大作业/宠物寄养管理系统.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -523,732 +335,127 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2e38a32e-0e4b-4479-9edc-84ef01aca780" name="Default Changelist" comment="" />
-      <created>1594006961440</created>
+      <changelist id="151b82ad-b21c-4c04-a995-67942b84fe94" name="Default Changelist" comment="" />
+      <created>1595600801711</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1594006961440</updated>
+      <updated>1595600801711</updated>
     </task>
-    <task id="LOCAL-00003" summary="公司电脑更新">
-      <created>1594016203459</created>
+    <task id="LOCAL-00001" summary="添加家里数据库操作">
+      <created>1595606023706</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1595606023706</updated>
+    </task>
+    <task id="LOCAL-00002" summary="添加家里数据库操作">
+      <created>1595606314213</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1595606314213</updated>
+    </task>
+    <task id="LOCAL-00003" summary="添加家里数据库操作">
+      <created>1595606443824</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1594016203459</updated>
+      <updated>1595606443824</updated>
     </task>
-    <task id="LOCAL-00004" summary="删除无用文件">
-      <created>1594016595640</created>
+    <task id="LOCAL-00004" summary="添加修改excel文件">
+      <created>1605631472085</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1594016595640</updated>
+      <updated>1605631472085</updated>
     </task>
-    <task id="LOCAL-00005" summary="代码优化">
-      <created>1594018299486</created>
+    <task id="LOCAL-00005" summary="优化代码">
+      <created>1605710893920</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1594018299486</updated>
+      <updated>1605710893920</updated>
     </task>
-    <task id="LOCAL-00006" summary="代码优化">
-      <created>1594018613256</created>
+    <task id="LOCAL-00006" summary="添加批量更改教学学生的脚本">
+      <created>1605714385772</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1594018613256</updated>
+      <updated>1605714385772</updated>
     </task>
-    <task id="LOCAL-00007" summary="代码优化">
-      <created>1594019387248</created>
+    <task id="LOCAL-00007" summary="添加faker">
+      <created>1609766686014</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1594019387248</updated>
+      <updated>1609766686014</updated>
     </task>
-    <task id="LOCAL-00008" summary="代码优化">
-      <created>1594019620920</created>
+    <task id="LOCAL-00008" summary="2021-1-7 家">
+      <created>1610030119706</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1594019620920</updated>
+      <updated>1610030119706</updated>
     </task>
-    <task id="LOCAL-00009" summary="添加文件">
-      <created>1594023565261</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1594023565261</updated>
-    </task>
-    <task id="LOCAL-00010" summary="添加文件">
-      <created>1594030205898</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1594030205898</updated>
-    </task>
-    <task id="LOCAL-00011" summary="添加析构函数文件">
-      <created>1594091965196</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1594091965196</updated>
-    </task>
-    <task id="LOCAL-00012" summary="添加txt文件">
-      <created>1594092959467</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1594092959467</updated>
-    </task>
-    <task id="LOCAL-00013" summary="文件操作相关内容">
-      <created>1594110546929</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1594110546943</updated>
-    </task>
-    <task id="LOCAL-00014" summary="文件操作相关内容">
-      <created>1594116018500</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1594116018509</updated>
-    </task>
-    <task id="LOCAL-00015" summary="文件操作相关内容">
-      <created>1594262093929</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1594262093929</updated>
-    </task>
-    <task id="LOCAL-00016" summary="文件操作相关内容">
-      <created>1594263444777</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1594263444777</updated>
-    </task>
-    <task id="LOCAL-00017" summary="文件操作相关内容">
-      <created>1594265688172</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1594265688172</updated>
-    </task>
-    <task id="LOCAL-00018" summary="增加继承">
-      <created>1594373096057</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1594373096057</updated>
-    </task>
-    <task id="LOCAL-00019" summary="实例方法 类方法 静态方法">
-      <created>1594619602589</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1594619602589</updated>
-    </task>
-    <task id="LOCAL-00020" summary="单例">
-      <created>1594633881946</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1594633881946</updated>
-    </task>
-    <task id="LOCAL-00021" summary="1.数据库通过导入功能实现&#10;2.优化写入数据库场景代码">
-      <created>1594978267258</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1594978267258</updated>
-    </task>
-    <task id="LOCAL-00022" summary="加了一些注释">
-      <created>1594979208366</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1594979208366</updated>
-    </task>
-    <task id="LOCAL-00023" summary="异常处理">
-      <created>1595240768986</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1595240768987</updated>
-    </task>
-    <task id="LOCAL-00024" summary="添加__name__魔法变量">
-      <created>1595383854987</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1595383854987</updated>
-    </task>
-    <task id="LOCAL-00025" summary="添加知识补充">
-      <created>1595409416070</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1595409416070</updated>
-    </task>
-    <task id="LOCAL-00026" summary="update">
-      <created>1595411239524</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1595411239524</updated>
-    </task>
-    <task id="LOCAL-00027" summary="update 闭包及其使用">
-      <created>1595843828013</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1595843828013</updated>
-    </task>
-    <task id="LOCAL-00028" summary="装饰器">
-      <created>1595923673228</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1595923673228</updated>
-    </task>
-    <task id="LOCAL-00029" summary="装饰器加参数">
-      <created>1595929772210</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1595929772211</updated>
-    </task>
-    <task id="LOCAL-00030" summary="添加动态方法">
-      <created>1595989232513</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1595989232513</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Flask">
-      <created>1596008141451</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1596008141451</updated>
-    </task>
-    <task id="LOCAL-00032" summary="添加接口自动化">
-      <created>1596008850056</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1596008850056</updated>
-    </task>
-    <task id="LOCAL-00033" summary="添加接口自动化">
-      <created>1596012120085</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1596012120085</updated>
-    </task>
-    <task id="LOCAL-00034" summary="添加爬虫">
-      <created>1597657410128</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1597657410128</updated>
-    </task>
-    <task id="LOCAL-00035" summary="添加爬虫">
-      <created>1598493620290</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1598493620290</updated>
-    </task>
-    <task id="LOCAL-00036" summary="写入excel添加姓名">
-      <created>1605694513274</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1605694513274</updated>
-    </task>
-    <task id="LOCAL-00037" summary="教育脚本">
-      <created>1609223021571</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1609223021572</updated>
-    </task>
-    <task id="LOCAL-00038" summary="添加去取word的文件和脚本">
-      <created>1609226607466</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1609226607466</updated>
-    </task>
-    <task id="LOCAL-00039" summary="更新文件">
-      <created>1609232086981</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1609232086981</updated>
-    </task>
-    <task id="LOCAL-00040" summary="添加chromedriver 更新 UI自动化模板">
-      <created>1609740896783</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1609740896783</updated>
-    </task>
-    <task id="LOCAL-00041" summary="添加测试报告">
-      <created>1609754711992</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1609754711992</updated>
-    </task>
-    <task id="LOCAL-00042" summary="111">
-      <created>1609813205810</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1609813205810</updated>
-    </task>
-    <task id="LOCAL-00043" summary="2020-1-5 公司更新">
-      <created>1609814618727</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1609814618727</updated>
-    </task>
-    <task id="LOCAL-00044" summary="公司更新&#10;2021-01-05">
-      <created>1609816680931</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1609816680931</updated>
-    </task>
-    <task id="LOCAL-00045" summary="添加python文件">
-      <created>1609826231770</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1609826231770</updated>
-    </task>
-    <task id="LOCAL-00046" summary="提交更新">
-      <created>1609840975108</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1609840975108</updated>
-    </task>
-    <task id="LOCAL-00047" summary="公司2021-1-7">
-      <created>1610011825106</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1610011825106</updated>
-    </task>
-    <task id="LOCAL-00048" summary="更新文档目录">
-      <created>1610691092127</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1610691092127</updated>
-    </task>
-    <task id="LOCAL-00049" summary="提交更新">
-      <created>1610692455371</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1610692455371</updated>
-    </task>
-    <task id="LOCAL-00050" summary="公司更新 2021-1-15">
-      <created>1610705083789</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1610705083791</updated>
-    </task>
-    <task id="LOCAL-00051" summary="添加1050接口自动化脚本">
-      <created>1610705660407</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1610705660407</updated>
-    </task>
-    <option name="localTasksCounter" value="52" />
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="Nosetests_in_test_1050_py - 2021.01.15 at 17h 57m 04s.xml">
-      <configuration name="Nosetests in test_1050.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_for_test_1050_test_assert_1050 - 2021.01.15 at 17h 58m 59s.xml">
-      <configuration name="Nosetests for test_1050.test_assert_1050" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_test_1050_py - 2021.01.15 at 17h 59m 31s.xml">
-      <configuration name="Nosetests in test_1050.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_test_1050_py - 2021.01.15 at 18h 00m 12s.xml">
-      <configuration name="Nosetests in test_1050.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="test_1050_py - 2021.01.15 at 18h 01m 55s.xml">
-      <configuration name="test_1050.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="test_1050_py - 2021.01.15 at 18h 02m 38s.xml">
-      <configuration name="test_1050.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="test_1050_py - 2021.01.15 at 18h 02m 57s.xml">
-      <configuration name="test_1050.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_for_test_1050_test_assert_1050 - 2021.01.15 at 18h 08m 30s.xml">
-      <configuration name="Nosetests for test_1050.test_assert_1050" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_test_1050_py - 2021.01.15 at 18h 09m 06s.xml">
-      <configuration name="Nosetests in test_1050.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_test_1050_py - 2021.01.15 at 18h 09m 14s.xml">
-      <configuration name="Nosetests in test_1050.py" configurationId="tests" />
-    </history-entry>
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18550107" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32827735" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.19805194" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39771548" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.32900432" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32936078" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="R Graphics" order="3" />
-      <window_info anchor="right" id="R Packages" order="4" />
-    </layout>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加__name__魔法变量" />
-    <MESSAGE value="添加知识补充" />
-    <MESSAGE value="update" />
-    <MESSAGE value="update 闭包及其使用" />
-    <MESSAGE value="装饰器" />
-    <MESSAGE value="装饰器加参数" />
-    <MESSAGE value="添加动态方法" />
-    <MESSAGE value="Flask" />
-    <MESSAGE value="添加接口自动化" />
-    <MESSAGE value="添加爬虫" />
-    <MESSAGE value="写入excel添加姓名" />
-    <MESSAGE value="教育脚本" />
-    <MESSAGE value="添加去取word的文件和脚本" />
-    <MESSAGE value="更新文件" />
-    <MESSAGE value="添加chromedriver 更新 UI自动化模板" />
-    <MESSAGE value="添加测试报告" />
-    <MESSAGE value="111" />
-    <MESSAGE value="2020-1-5 公司更新" />
-    <MESSAGE value="公司更新&#10;2021-01-05" />
-    <MESSAGE value="添加python文件" />
-    <MESSAGE value="公司2021-1-7" />
-    <MESSAGE value="更新文档目录" />
-    <MESSAGE value="提交更新" />
-    <MESSAGE value="公司更新 2021-1-15" />
-    <MESSAGE value="添加1050接口自动化脚本" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加1050接口自动化脚本" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="添加家里数据库操作" />
+    <MESSAGE value="连接家里数据库" />
+    <MESSAGE value="添加修改excel文件" />
+    <MESSAGE value="优化代码" />
+    <MESSAGE value="添加批量更改教学学生的脚本" />
+    <MESSAGE value="添加faker" />
+    <MESSAGE value="2021-1-7 家" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021-1-7 家" />
+    <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/UI自动化selenium/2021-01-05_10-32-40qwe.html" />
-    <entry file="file://$PROJECT_DIR$/Flask/abc.py" />
-    <entry file="file://$PROJECT_DIR$/../Lib/site-packages/HTMLTestRunnerCN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="118" column="28" selection-start-line="118" selection-start-column="28" selection-end-line="118" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UI自动化selenium/2021-01-05_11-28-32qwe.html" />
-    <entry file="file://$PROJECT_DIR$/UI自动化selenium/2021-01-05_11-28-39qwe.html" />
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/unittest/__init__.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UI自动化selenium/2021-01-05_11-41-07testReport.html" />
-    <entry file="file://$PROJECT_DIR$/UI自动化selenium/2021-01-05_11-42-23testReport.html" />
-    <entry file="file://$PROJECT_DIR$/模块和包/tools/my_file.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/模块和包/my_request.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/模块和包/my_basic.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Lib/unittest/suite.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UI自动化selenium/2021-01-05_13-52-22testReport.html" />
-    <entry file="file://$PROJECT_DIR$/UI自动化selenium/2021-01-05_13-54-52testReport.html" />
-    <entry file="file://$PROJECT_DIR$/../Lib/site-packages/HTMLTestRunner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7200">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/模块和包/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UI自动化selenium/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/UI自动化selenium/2021-01-05_14-10-08testReport.html" />
-    <entry file="file://$PROJECT_DIR$/面向对象/继承.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/面向对象/多态.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python装饰器/闭包.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python装饰器/给装饰器专递参数.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python装饰器/被装饰的函数需要带参数.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python装饰器/装饰器的基本使用.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/文件的操作/writeExcel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#1#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/文件的操作/readWord.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="29" column="11" lean-forward="true" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
-          <folding>
-            <element signature="e#105#116#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/20 印度项目/印度规则引擎接口/印度规则引擎接口/1个人信息-PERSONAL_INFO.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1375">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="e#22#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/自动化测试脚本/APPUI自动化/demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#99#127#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/自动化测试脚本/faker方法造数据.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/自动化测试脚本/UI自动化selenium/testCase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/自动化测试脚本/UI自动化selenium/UISelenium.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="26" column="14" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/自动化测试脚本/UI自动化selenium/Testreport.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#97#112#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python37/site-packages/requests/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18641">
-          <caret line="873" column="8" selection-start-line="873" selection-start-column="8" selection-end-line="873" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/函数/函数返回值.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/函数/函数基础.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python37/site-packages/requests/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="50" column="7" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="7" />
-          <folding>
-            <element signature="e#877#891#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/文件的操作/with语句优化文件操作.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/文件的操作/readExcel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-          <folding>
-            <element signature="e#97#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/自动化测试脚本/python接口测试/test_data/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/../Lib/site-packages/nose/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="197" selection-start-line="197" selection-end-line="197" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PycharmProjects/Rock.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="50" column="14" lean-forward="true" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/other/遍历字典.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/数据库/jiaoyu.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/数据库/connectMysql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="19" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/自动化测试脚本/python接口测试/fanyi.py" />
-    <entry file="file://$PROJECT_DIR$/自动化测试脚本/python接口测试/123.py" />
-    <entry file="file://$PROJECT_DIR$/自动化测试脚本/python接口测试/test_case/test_1050.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-          <folding>
-            <element signature="e#103#118#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/自动化测试脚本/python接口测试/config/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/自动化测试脚本/python接口测试/test_data/testdata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/爬虫/爬虫demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#37#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/自动化测试脚本/python接口测试/test_case/test_1118.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-          <folding>
-            <element signature="e#98#113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="Copyright.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
