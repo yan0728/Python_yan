@@ -14,7 +14,7 @@ class ReadExcel():
     # @property
     def getExcelData(self):
         wb = xlrd.open_workbook(config.TEST_CASE_PATH) #获取文件
-        sheet = wb.sheet_by_index(0) # sheet = wb.sheet_by_name("Sheet1") 获取sheet
+        sheet = wb.sheet_by_name('1026') # sheet = wb.sheet_by_name("Sheet1") 获取sheet
         nrows , cols= sheet.nrows , sheet.ncols
         # print('行：', nrows)
         # print('列：',cols )
