@@ -22,7 +22,7 @@ header = testdata.header
 def test_1118():
     r = requests.post(url=url,data=json.dumps(data) ,headers=header)
     try:
-        assert r.status_code == 2001
+        assert r.status_code == 200
         print ("1118接口正确")
     except :
         print("1118接口错误", r.text )

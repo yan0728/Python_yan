@@ -2,6 +2,13 @@
 """
 @author:闫学雷
 @project:PythonYan
+@file: test_1051.py
+@time:2021/1/25 0025
+"""
+#!/usr/bin/env python
+"""
+@author:闫学雷
+@project:PythonYan
 @file: ReqApi.py
 @time:2021/1/22 0022
 """
@@ -13,14 +20,10 @@ from 自动化测试脚本.接口自动化excel版.setting import config
 import time
 import json
 
-class SentRequest():
+class Test_Request():
 
-    def __init__(self):
-        pass
-
-
-    def sentRequest(self):
-        exceldata = ReadExcel.ReadExcel.getExcelData(1)
+    def test_1051(self):
+        exceldata = ReadExcel.ReadExcel.getExcelData1051(1)
         for i in range(0, len(exceldata)):
             params = exceldata[i]
             if params['method'] == 'post':
@@ -28,13 +31,13 @@ class SentRequest():
                 r = requests.post(url=params['base_url']+params['api'],data= params['requestBody'].encode('utf-8'),headers = eval(params['header']))
                 # print('接口:',params['base_url']+params['api'])
                 try:
-                    assert r.status_code == 2001
+                    assert r.status_code == 200
                     # return r.status_code
-                    SentRequest.writeResult(i+2,r.text,'PASS',config.report_time)
+                    Test_Request.writeResult(i+2,r.text,'PASS',config.report_time)
                     print("接口:",params["api_name"],"请求写入完成")
                 except:
                     # return r.text
-                    SentRequest.writeResult(i+2, r.text, 'FAILED',config.report_time)
+                    Test_Request.writeResult(i+2, r.text, 'FAILED',config.report_time)
                     print("接口:", params["api_name"], "请求写入完成,接口请求失败")
             else:
 
@@ -54,4 +57,4 @@ class SentRequest():
         sheet.cell(row, 10).value = time
         wb.save(config.TEST_CASE_PATH)
 
-SentRequest.sentRequest(1)
+# Test_Request.test_case(1)
