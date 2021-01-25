@@ -28,4 +28,76 @@ class ReadExcel():
 
         return newList
 
+    def getExcelData1118(self):
+        wb = xlrd.open_workbook(config.TEST_CASE_PATH)
+        # wb = xlrd.open_workbook(self)
+        # sheet = wb.sheet_by_index(0)
+        sheet = wb.sheet_by_name("1118")
+        nrows, cols = sheet.nrows, sheet.ncols
+        # print('行：', nrows)
+        # print('列：',cols )
+        title = sheet.row_values(0)
+        newList = []
+
+        for i in range(1, nrows):
+            # print(sheet.row_values(i))
+            newList.append(dict(zip(title, sheet.row_values(i))))
+        # print(newList[0]['request'])
+
+        return newList
+
+    def getExcelData1026(self):
+        wb = xlrd.open_workbook(config.TEST_CASE_PATH)
+        # wb = xlrd.open_workbook(self)
+        # sheet = wb.sheet_by_index(0)
+        sheet = wb.sheet_by_name("1026")
+        nrows, cols = sheet.nrows, sheet.ncols
+        # print('行：', nrows)
+        # print('列：',cols )
+        title = sheet.row_values(0)
+        newList = []
+
+        for i in range(1, nrows):
+            # print(sheet.row_values(i))
+            newList.append(dict(zip(title, sheet.row_values(i))))
+        # print(newList[0]['request'])
+
+        return newList
+
+    def getExcelData1050(self):
+        wb = xlrd.open_workbook(config.TEST_CASE_PATH)
+        # wb = xlrd.open_workbook(self)
+        # sheet = wb.sheet_by_index(0)
+        sheet = wb.sheet_by_name("1050")
+        nrows, cols = sheet.nrows, sheet.ncols
+        # print('行：', nrows)
+        # print('列：',cols )
+        title = sheet.row_values(0)
+        newList = []
+
+        for i in range(1, nrows):
+            # print(sheet.row_values(i))
+            newList.append(dict(zip(title, sheet.row_values(i))))
+        # print(newList[0]['request'])
+
+        return newList
+
+    def getExcelData1051(self):
+        wb = xlrd.open_workbook(config.TEST_CASE_PATH)
+        # wb = xlrd.open_workbook(self)
+        # sheet = wb.sheet_by_index(0)
+        sheet = wb.sheet_by_name("1051")
+        nrows, cols = sheet.nrows, sheet.ncols
+        # print('行：', nrows)
+        # print('列：',cols )
+        title = sheet.row_values(0)
+        newList = []
+
+        for i in range(1, nrows):
+            # print(sheet.row_values(i))
+            newList.append(dict(zip(title, sheet.row_values(i))))
+        # print(newList[0]['request'])
+
+        return newList
+
 # ReadExcel.getExcelData(config.TEST_CASE_PATH)
