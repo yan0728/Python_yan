@@ -21,20 +21,20 @@ class SentRequest():
         for i in range(0, len(exceldata)):
             params = exceldata[i]
             if params['method'] == 'post':
-                r = requests.post(url=params['base_url']+params['api'],data=json.dumps(params['requestBody']),headers = eval(params['header']))
+                r = requests.post(url=params['base_url']+params['api'],data=params['requestBody'],headers = eval(params['header']))
                 print('接口:',params['base_url']+params['api'])
                 try:
-                    assert r.status_code == '200'
+                    assert r.status_code == 200
                     # return r.status_code
                     print(r.status_code)
                 except:
                     # return r.text
-                    print(params['api_name'],':',json.dumps(params['requestBody']),r.text)
+                    print(params['api_name'],':',params['requestBody'],r.text)
             else:
 
                 r = requests.get(url=params['base_url']+params['api'],data=params['requestBody'],headers = params['header'])
                 try:
-                    assert r.status_code == '200'
+                    assert r.status_code == 200
                     # return r.status_code
                     print( r.status_code)
                 except:
