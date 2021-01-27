@@ -14,11 +14,9 @@
 """
 
 import requests
-from 自动化测试脚本.接口自动化excel版.uti import ReadExcel
-from openpyxl import load_workbook
+from 自动化测试脚本.接口自动化excel版.uti import ReadExcel,WriteResult
 from 自动化测试脚本.接口自动化excel版.setting import config
-import time
-import json
+
 
 class Test_Request():
 
@@ -33,12 +31,12 @@ class Test_Request():
                 try:
                     assert r.status_code == 200
                     # return r.status_code
-                    Test_Request.writeResult(i+2,r.text,'PASS',config.report_time)
-                    print("接口:",params["api_name"],r.status_code)
+                    WriteResult.writeResult(i+2,r.text,'PASS',config.report_time)
+                    print("接口:",params["api_name"],"请求写入完成")
                 except:
                     # return r.text
-                    Test_Request.writeResult(i+2, r.text, 'FAILED',config.report_time)
-                    print("接口:", params["api_name"],r.status_code, "请求写入完成,接口请求失败")
+                    WriteResult.writeResult(i+2, r.text, 'FAILED',config.report_time)
+                    print("接口:", params["api_name"],r.text, "请求写入完成,接口请求失败")
             else:
 
                 r = requests.get(url=params['base_url']+params['api'],data=params['requestBody'],headers = params['header'])
@@ -48,13 +46,3 @@ class Test_Request():
                     print( r.status_code)
                 except:
                     print(r.text)
-
-    def writeResult(row,req,result,time):
-        wb = load_workbook(config.TEST_CASE_PATH)
-        sheet = wb['Sheet1']
-        sheet.cell(row, 7).value = req
-        sheet.cell(row, 9).value = result
-        sheet.cell(row, 10).value = time
-        wb.save(config.TEST_CASE_PATH)
-
-# Test_Request.test_case(1)

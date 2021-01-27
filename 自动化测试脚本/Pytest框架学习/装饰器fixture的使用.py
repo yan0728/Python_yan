@@ -21,7 +21,7 @@ autouse：是否自动运行,默认为False不运行，设置为True自动运行
 # !encoding=utf-8
 import pytest
 
-# 不带参数时默认scope="function"
+# 不带参数时默认scope="function",也就是只在test开头函数前后执行
 @pytest.fixture()
 def login():
     print("输入账号，密码先登录")
