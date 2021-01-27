@@ -99,5 +99,3 @@ class ReadExcel():
         # print(newList[0]['request'])
 
         return newList
-
-# ReadExcel.getExcelData(config.TEST_CASE_PATH)

@@ -9,9 +9,9 @@
 from openpyxl import load_workbook
 from 自动化测试脚本.接口自动化excel版.setting import config
 
-def writeResult(row, req, result, time):
+def writeResult(api_name,row, req, result, time):
     wb = load_workbook(config.TEST_CASE_PATH)
-    sheet = wb['Sheet1']
+    sheet = wb[api_name]
     sheet.cell(row, 7).value = req
     sheet.cell(row, 9).value = result
     sheet.cell(row, 10).value = time

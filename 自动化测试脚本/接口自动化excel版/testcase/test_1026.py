@@ -31,11 +31,11 @@ class Test_Request():
                 try:
                     assert r.status_code == 200
                     # return r.status_code
-                    WriteResult.writeResult(i+2,r.text,'PASS',config.report_time)
+                    WriteResult.writeResult(params['api_name'],i+2,r.text,'PASS',config.report_time)
                     print("接口:",params["api_name"],"请求写入完成")
                 except:
                     # return r.text
-                    WriteResult.writeResult(i+2, r.text, 'FAILED',config.report_time)
+                    WriteResult.writeResult(params['api_name'],i+2, r.text, 'FAILED',config.report_time)
                     print("接口:", params["api_name"],r.text, "请求写入完成,接口请求失败")
             else:
 

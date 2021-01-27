@@ -38,4 +38,13 @@ class Test_Request():
                     print( r.status_code)
                 except:
                     print(r.text)
-# Test_Request.test_case(1)
+
+'''
+： 一个excel表格文件包含一个工作簿（workbook），一个wb可以包含多个工作表（worksheets）
+
+用户正在查看的表定义为激活的工作表（active sheet）。每个工作表都有行和列。行以数字1开始，列以字母A开始，
+
+一个工作表由单元格（cell）组成，cell只存储两种数据类型，数字和字符串（除了纯数字，其它均为字符串类型）
+
+2： 在excel中设计测试用例的时候，当代码里的值为None的时候，对应cell中不需要输入任何值，空读取出来就是None
+'''
