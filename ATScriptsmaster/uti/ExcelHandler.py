@@ -12,7 +12,7 @@ from ATScriptsmaster.settings import conf
 
 class ExcelHandler(object):
 
-    # @property
+    @property
     def get_excel_data(self):
         # 获取到book对象
         book = xlrd.open_workbook(conf.TEST_CASE_PATH)
@@ -31,6 +31,4 @@ class ExcelHandler(object):
         for i in range(1, rows):
             # print(sheet.row_values(i))
             l.append(dict(zip(title, sheet.row_values(i))))
-        print(l)
-        # return l
-ExcelHandler.get_excel_data(1)
+        return l

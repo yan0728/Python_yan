@@ -7,14 +7,14 @@
 """
 
 import xlrd
+import xlwt
 from 自动化测试脚本.接口自动化excel版.setting import config
 
 class ReadExcel():
     # @property
     def getExcelData(self):
-        wb = xlrd.open_workbook(config.TEST_CASE_PATH)
-        # wb = xlrd.open_workbook(self)
-        sheet = wb.sheet_by_index(0) # sheet = wb.sheet_by_name("Sheet1")
+        wb = xlrd.open_workbook(config.TEST_CASE_PATH) #获取文件
+        sheet = wb.sheet_by_index(0) # sheet = wb.sheet_by_name("Sheet1") 获取sheet
         nrows , cols= sheet.nrows , sheet.ncols
         # print('行：', nrows)
         # print('列：',cols )

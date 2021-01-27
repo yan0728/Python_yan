@@ -30,4 +30,3 @@ import pytest
 import time
 now = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
 pytest.main(["--html=..\\report\\{}_report.html".format(now)])
-

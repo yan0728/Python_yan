@@ -18,6 +18,6 @@ file_path = '测试数据.xlsx'
 TEST_CASE_PATH = os.path.join(BASE_PATH,'data',file_path)
 
 # 测试报告储存路径
-report_time = time.strftime('%Y-%m-%d %H:%M:%S')
+report_time = time.strftime('%Y-%m-%d_%H:%M:%S')
 TEST_REPORT = os.path.join(BASE_PATH,'report',report_time+'report.html')
 
