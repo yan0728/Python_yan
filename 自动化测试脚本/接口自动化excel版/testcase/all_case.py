@@ -18,6 +18,7 @@ class Test_Request():
             params = exceldata[i]
             if params['method'] == 'post':
                 # str.encode('utf-8') 转化成utf-8
+                # eval方法:自动去掉字符串两侧的引号，将字符串转为python语句，即字符串转命令，然后执行转化后的语句
                 r = requests.post(url=params['base_url']+params['api'],data= params['requestBody'].encode('utf-8'),headers = eval(params['header']))
                 # print('接口:',params['base_url']+params['api'])
                 try:

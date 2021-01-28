@@ -7,3 +7,6 @@
 """
 # jenkins 构建
 # https://blog.csdn.net/qq_39214101/article/details/108864554
+
+# Pytest API
+# https://docs.pytest.org/en/stable/reference.html#reference
