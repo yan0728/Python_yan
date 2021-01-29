@@ -42,8 +42,6 @@ class ReadExcel():
         for i in range(1, nrows):
             # print(sheet.row_values(i))
             newList.append(dict(zip(title, sheet.row_values(i))))
-        # print(newList[0]['request'])
-
         return newList
 
     def getExcelData1026(self):
