@@ -20,7 +20,7 @@ from 自动化测试脚本.接口自动化excel版.setting import config
 class Test_Request():
 
     def test_1050(self):
-        exceldata = ReadExcel.ReadExcel.getExcelData1050(1)
+        exceldata = ReadExcel.ReadExcel.getExcelData1050()
         for i in range(0, len(exceldata)):
             params = exceldata[i]
             if params['method'] == 'post':

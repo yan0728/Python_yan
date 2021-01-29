@@ -11,8 +11,8 @@ import xlwt
 from 自动化测试脚本.接口自动化excel版.setting import config
 
 class ReadExcel():
-    # @property
-    def getExcelData(self):
+    @staticmethod
+    def getExcelData():
         wb = xlrd.open_workbook(config.TEST_CASE_PATH) #获取文件
         sheet = wb.sheet_by_index(0) # sheet = wb.sheet_by_name("Sheet1") 获取sheet
         nrows , cols= sheet.nrows , sheet.ncols
@@ -20,15 +20,14 @@ class ReadExcel():
         # print('列：',cols )
         title = sheet.row_values(0)
         newList = []
-
         for i in range(1,nrows):
             # print(sheet.row_values(i))
             newList.append(dict(zip(title,sheet.row_values(i))))
         # print(newList[0]['request'])
-
         return newList
 
-    def getExcelData1118(self):
+    @staticmethod
+    def getExcelData1118():
         wb = xlrd.open_workbook(config.TEST_CASE_PATH)
         # wb = xlrd.open_workbook(self)
         # sheet = wb.sheet_by_index(0)
@@ -38,13 +37,13 @@ class ReadExcel():
         # print('列：',cols )
         title = sheet.row_values(0)
         newList = []
-
         for i in range(1, nrows):
             # print(sheet.row_values(i))
             newList.append(dict(zip(title, sheet.row_values(i))))
         return newList
 
-    def getExcelData1026(self):
+    @staticmethod
+    def getExcelData1026():
         wb = xlrd.open_workbook(config.TEST_CASE_PATH)
         # wb = xlrd.open_workbook(self)
         # sheet = wb.sheet_by_index(0)
@@ -54,15 +53,14 @@ class ReadExcel():
         # print('列：',cols )
         title = sheet.row_values(0)
         newList = []
-
         for i in range(1, nrows):
             # print(sheet.row_values(i))
             newList.append(dict(zip(title, sheet.row_values(i))))
         # print(newList[0]['request'])
-
         return newList
 
-    def getExcelData1050(self):
+    @staticmethod
+    def getExcelData1050():
         wb = xlrd.open_workbook(config.TEST_CASE_PATH)
         # wb = xlrd.open_workbook(self)
         # sheet = wb.sheet_by_index(0)
@@ -72,15 +70,14 @@ class ReadExcel():
         # print('列：',cols )
         title = sheet.row_values(0)
         newList = []
-
         for i in range(1, nrows):
             # print(sheet.row_values(i))
             newList.append(dict(zip(title, sheet.row_values(i))))
         # print(newList[0]['request'])
-
         return newList
 
-    def getExcelData1051(self):
+    @staticmethod
+    def getExcelData1051():
         wb = xlrd.open_workbook(config.TEST_CASE_PATH)
         # wb = xlrd.open_workbook(self)
         # sheet = wb.sheet_by_index(0)
