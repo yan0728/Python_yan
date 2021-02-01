@@ -11,7 +11,7 @@ import xlwt
 from 自动化测试脚本.接口自动化excel版.setting import config
 
 class ReadExcel():
-    @staticmethod
+    @staticmethod  #静态方法 通过类直接调用，不需要创建对象，不会隐式传递self
     def getExcelData():
         wb = xlrd.open_workbook(config.TEST_CASE_PATH) #获取文件
         sheet = wb.sheet_by_index(0) # sheet = wb.sheet_by_name("Sheet1") 获取sheet
