@@ -24,7 +24,7 @@ class Test_Request():
                 try:
                     assert r.status_code == 200
                     # return r.status_code
-                    WriteResult.writeResult(i+2,r.text,'PASS',config.report_time)
+                    WriteResult.writeResult('all',i+2,r.text,'PASS',config.report_time)
                     print("接口:",params["api_name"],"请求写入完成")
                 except:
                     # return r.text
@@ -39,6 +39,7 @@ class Test_Request():
                     print( r.status_code)
                 except:
                     print(r.text)
+Test_Request.test_case(1)
 
 '''
 ： 一个excel表格文件包含一个工作簿（workbook），一个wb可以包含多个工作表（worksheets）

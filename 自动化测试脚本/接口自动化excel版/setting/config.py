@@ -18,4 +18,4 @@ TEST_CASE_PATH = os.path.join(BAST_PATH,'data','测试数据.xlsx')
 
 
 report_time = time.strftime("%Y-%m-%d %H-%M-%S")
-print(report_time)
+# print(report_time)
