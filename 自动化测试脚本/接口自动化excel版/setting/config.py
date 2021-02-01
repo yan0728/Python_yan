@@ -15,7 +15,6 @@ print(BAST_PATH)
 # 根目录地址
 
 TEST_CASE_PATH = os.path.join(BAST_PATH,'data','测试数据.xlsx')
-
-
+TEST_LOG = os.path.join(BAST_PATH,'log',time.strftime('%Y-%m-%d')+'.log')
 report_time = time.strftime("%Y-%m-%d %H-%M-%S")
 # print(report_time)

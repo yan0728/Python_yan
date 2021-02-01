@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Test Report</title>
+    <link href="assets/style.css" rel="stylesheet" type="text/css"/></head>
+  <body onLoad="init()">
+    <script>/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+
+function toArray(iter) {
+    if (iter === null) {
+        return null;
+    }
+    return Array.prototype.slice.call(iter);
+}
+
+function find(selector, elem) { // eslint-disable-line no-redeclare
+    if (!elem) {
+        elem = document;
+    }
+    return elem.querySelector(selector);
+}
+
+function findAll(selector, elem) {
+    if (!elem) {
+        elem = document;
+    }
+    return toArray(elem.querySelectorAll(selector));
+}
+
+function sortColumn(elem) {
+    toggleSortStates(elem);
+    const colIndex = toArray(elem.parentNode.childNodes).indexOf(elem);
+    let key;
+    if (elem.classList.contains('result')) {
+        key = keyResult;
+    } else if (elem.classList.contains('links')) {
+        key = keyLink;
+    } else {
+        key = keyAlpha;
+    }
+    sortTable(elem, key(colIndex));
+}
+
+function showAllExtras() { // eslint-disable-line no-unused-vars
+    findAll('.col-result').forEach(showExtras);
+}
+
+function hideAllExtras() { // eslint-disable-line no-unused-vars
+    findAll('.col-result').forEach(hideExtras);
+}
+
+function showExtras(colresultElem) {
+    const extras = colresultElem.parentNode.nextElementSibling;
+    const expandcollapse = colresultElem.firstElementChild;
+    extras.classList.remove('collapsed');
+    expandcollapse.classList.remove('expander');
+    expandcollapse.classList.add('collapser');
+}
+
+function hideExtras(colresultElem) {
+    const extras = colresultElem.parentNode.nextElementSibling;
+    const expandcollapse = colresultElem.firstElementChild;
+    extras.classList.add('collapsed');
+    expandcollapse.classList.remove('collapser');
+    expandcollapse.classList.add('expander');
+}
+
+function showFilters() {
+    const filterItems = document.getElementsByClassName('filter');
+    for (let i = 0; i < filterItems.length; i++)
+        filterItems[i].hidden = false;
+}
+
+function addCollapse() {
+    // Add links for show/hide all
+    const resulttable = find('table#results-table');
+    const showhideall = document.createElement('p');
+    showhideall.innerHTML = '<a href="javascript:showAllExtras()">Show all details</a> / ' +
+                            '<a href="javascript:hideAllExtras()">Hide all details</a>';
+    resulttable.parentElement.insertBefore(showhideall, resulttable);
+
+    // Add show/hide link to each result
+    findAll('.col-result').forEach(function(elem) {
+        const collapsed = getQueryParameter('collapsed') || 'Passed';
+        const extras = elem.parentNode.nextElementSibling;
+        const expandcollapse = document.createElement('span');
+        if (extras.classList.contains('collapsed')) {
+            expandcollapse.classList.add('expander');
+        } else if (collapsed.includes(elem.innerHTML)) {
+            extras.classList.add('collapsed');
+            expandcollapse.classList.add('expander');
+        } else {
+            expandcollapse.classList.add('collapser');
+        }
+        elem.appendChild(expandcollapse);
+
+        elem.addEventListener('click', function(event) {
+            if (event.currentTarget.parentNode.nextElementSibling.classList.contains('collapsed')) {
+                showExtras(event.currentTarget);
+            } else {
+                hideExtras(event.currentTarget);
+            }
+        });
+    });
+}
+
+function getQueryParameter(name) {
+    const match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
+
+function init () { // eslint-disable-line no-unused-vars
+    resetSortHeaders();
+
+    addCollapse();
+
+    showFilters();
+
+    sortColumn(find('.initial-sort'));
+
+    findAll('.sortable').forEach(function(elem) {
+        elem.addEventListener('click',
+            function() {
+                sortColumn(elem);
+            }, false);
+    });
+}
+
+function sortTable(clicked, keyFunc) {
+    const rows = findAll('.results-table-row');
+    const reversed = !clicked.classList.contains('asc');
+    const sortedRows = sort(rows, keyFunc, reversed);
+    /* Whole table is removed here because browsers acts much slower
+     * when appending existing elements.
+     */
+    const thead = document.getElementById('results-table-head');
+    document.getElementById('results-table').remove();
+    const parent = document.createElement('table');
+    parent.id = 'results-table';
+    parent.appendChild(thead);
+    sortedRows.forEach(function(elem) {
+        parent.appendChild(elem);
+    });
+    document.getElementsByTagName('BODY')[0].appendChild(parent);
+}
+
+function sort(items, keyFunc, reversed) {
+    const sortArray = items.map(function(item, i) {
+        return [keyFunc(item), i];
+    });
+
+    sortArray.sort(function(a, b) {
+        const keyA = a[0];
+        const keyB = b[0];
+
+        if (keyA == keyB) return 0;
+
+        if (reversed) {
+            return keyA < keyB ? 1 : -1;
+        } else {
+            return keyA > keyB ? 1 : -1;
+        }
+    });
+
+    return sortArray.map(function(item) {
+        const index = item[1];
+        return items[index];
+    });
+}
+
+function keyAlpha(colIndex) {
+    return function(elem) {
+        return elem.childNodes[1].childNodes[colIndex].firstChild.data.toLowerCase();
+    };
+}
+
+function keyLink(colIndex) {
+    return function(elem) {
+        const dataCell = elem.childNodes[1].childNodes[colIndex].firstChild;
+        return dataCell == null ? '' : dataCell.innerText.toLowerCase();
+    };
+}
+
+function keyResult(colIndex) {
+    return function(elem) {
+        const strings = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed',
+            'Skipped', 'Passed'];
+        return strings.indexOf(elem.childNodes[1].childNodes[colIndex].firstChild.data);
+    };
+}
+
+function resetSortHeaders() {
+    findAll('.sort-icon').forEach(function(elem) {
+        elem.parentNode.removeChild(elem);
+    });
+    findAll('.sortable').forEach(function(elem) {
+        const icon = document.createElement('div');
+        icon.className = 'sort-icon';
+        icon.textContent = 'vvv';
+        elem.insertBefore(icon, elem.firstChild);
+        elem.classList.remove('desc', 'active');
+        elem.classList.add('asc', 'inactive');
+    });
+}
+
+function toggleSortStates(elem) {
+    //if active, toggle between asc and desc
+    if (elem.classList.contains('active')) {
+        elem.classList.toggle('asc');
+        elem.classList.toggle('desc');
+    }
+
+    //if inactive, reset all other functions and add ascending active
+    if (elem.classList.contains('inactive')) {
+        resetSortHeaders();
+        elem.classList.remove('inactive');
+        elem.classList.add('active');
+    }
+}
+
+function isAllRowsHidden(value) {
+    return value.hidden == false;
+}
+
+function filterTable(elem) { // eslint-disable-line no-unused-vars
+    const outcomeAtt = 'data-test-result';
+    const outcome = elem.getAttribute(outcomeAtt);
+    const classOutcome = outcome + ' results-table-row';
+    const outcomeRows = document.getElementsByClassName(classOutcome);
+
+    for(let i = 0; i < outcomeRows.length; i++){
+        outcomeRows[i].hidden = !elem.checked;
+    }
+
+    const rows = findAll('.results-table-row').filter(isAllRowsHidden);
+    const allRowsHidden = rows.length == 0 ? true : false;
+    const notFoundMessage = document.getElementById('not-found-message');
+    notFoundMessage.hidden = !allRowsHidden;
+}
+</script>
+    <h1>2021-02-01_11-23-00_report.html</h1>
+    <p>Report generated on 01-Feb-2021 at 11:23:12 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <h2>Environment</h2>
+    <table id="environment">
+      <tr>
+        <td>JAVA_HOME</td>
+        <td>C:\Program Files\Java\jdk1.8.0_121</td></tr>
+      <tr>
+        <td>Packages</td>
+        <td>{"pluggy": "0.13.1", "py": "1.10.0", "pytest": "6.2.1"}</td></tr>
+      <tr>
+        <td>Platform</td>
+        <td>Windows-7-6.1.7601-SP1</td></tr>
+      <tr>
+        <td>Plugins</td>
+        <td>{"Faker": "5.3.0", "allure-pytest": "2.8.31", "celery": "4.3.0", "html": "3.1.1", "metadata": "1.11.0"}</td></tr>
+      <tr>
+        <td>Python</td>
+        <td>3.7.2</td></tr></table>
+    <h2>Summary</h2>
+    <p>4 tests ran in 10.72 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">4 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <h2>Results</h2>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable result initial-sort" col="result">Result</th>
+          <th class="sortable" col="name">Test</th>
+          <th class="sortable" col="duration">Duration</th>
+          <th class="sortable links" col="links">Links</th></tr>
+        <tr hidden="true" id="not-found-message">
+          <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test_1026.py::Test_Request::test_1026</td>
+          <td class="col-duration">6.95</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">self = &lt;test_1026.Test_Request object at 0x0000000005715E10&gt;<br/><br/>    def test_1026(self):<br/>        exceldata = ReadExcel.ReadExcel.getExcelData1026()<br/>        for i in range(0, len(exceldata)):<br/>            params = exceldata[i]<br/>            if params[&#x27;method&#x27;] == &#x27;post&#x27;:<br/>                # str.encode(&#x27;utf-8&#x27;) 转化成utf-8<br/>                r = requests.post(url=params[&#x27;base_url&#x27;]+params[&#x27;api&#x27;],data= params[&#x27;requestBody&#x27;].encode(&#x27;utf-8&#x27;),headers = eval(params[&#x27;header&#x27;]))<br/>                # print(&#x27;接口:&#x27;,params[&#x27;base_url&#x27;]+params[&#x27;api&#x27;])<br/>                try:<br/>                    assert r.status_code == 200<br/>                    # return r.status_code<br/>&gt;                   WriteResult.writeResult(params[&#x27;api_name&#x27;],i+2,r.text,&#x27;PASS&#x27;,config.report_time)<br/><br/>test_1026.py:34: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>api_name = 1026.0, row = 2<br/>req = &#x27;{\n  &quot;responseBody&quot; : {\n    &quot;retTime&quot; : &quot;2021-02-01 11:23:19&quot;,\n    &quot;retCode&quot; : &quot;200&quot;,\n    &quot;retMsg&quot; : &quot;绑卡信息查询成功！&quot;,\...6133X&quot;\n    } ],\n    &quot;loanTransNo&quot; : &quot;2062202102011123169566150&quot;\n  },\n  &quot;retCode&quot; : &quot;200&quot;,\n  &quot;errorDesc&quot; : null\n}&#x27;<br/>result = &#x27;PASS&#x27;, time = &#x27;2021-02-01 11-23-01&#x27;<br/><br/>    def writeResult(api_name,row, req, result, time):<br/>        wb = load_workbook(config.TEST_CASE_PATH)<br/>&gt;       sheet = wb[api_name]<br/><br/>..\uti\WriteResult.py:14: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;openpyxl.workbook.workbook.Workbook object at 0x000000000575E588&gt;<br/>key = 1026.0<br/><br/>    def __getitem__(self, key):<br/>        &quot;&quot;&quot;Returns a worksheet by its name.<br/>    <br/>        :param name: the name of the worksheet to look for<br/>        :type name: string<br/>    <br/>        &quot;&quot;&quot;<br/>        for sheet in self.worksheets + self.chartsheets:<br/>            if sheet.title == key:<br/>                return sheet<br/>&gt;       raise KeyError(&quot;Worksheet {0} does not exist.&quot;.format(key))<br/><span class="error">E       KeyError: &#x27;Worksheet 1026.0 does not exist.&#x27;</span><br/><br/>D:\python37\lib\site-packages\openpyxl\workbook\workbook.py:290: KeyError<br/><br/>During handling of the above exception, another exception occurred:<br/><br/>self = &lt;test_1026.Test_Request object at 0x0000000005715E10&gt;<br/><br/>    def test_1026(self):<br/>        exceldata = ReadExcel.ReadExcel.getExcelData1026()<br/>        for i in range(0, len(exceldata)):<br/>            params = exceldata[i]<br/>            if params[&#x27;method&#x27;] == &#x27;post&#x27;:<br/>                # str.encode(&#x27;utf-8&#x27;) 转化成utf-8<br/>                r = requests.post(url=params[&#x27;base_url&#x27;]+params[&#x27;api&#x27;],data= params[&#x27;requestBody&#x27;].encode(&#x27;utf-8&#x27;),headers = eval(params[&#x27;header&#x27;]))<br/>                # print(&#x27;接口:&#x27;,params[&#x27;base_url&#x27;]+params[&#x27;api&#x27;])<br/>                try:<br/>                    assert r.status_code == 200<br/>                    # return r.status_code<br/>                    WriteResult.writeResult(params[&#x27;api_name&#x27;],i+2,r.text,&#x27;PASS&#x27;,config.report_time)<br/>                    print(&quot;接口:&quot;,params[&quot;api_name&quot;],&quot;请求写入完成&quot;)<br/>                except:<br/>                    # return r.text<br/>&gt;                   WriteResult.writeResult(params[&#x27;api_name&#x27;],i+2, r.text, &#x27;FAILED&#x27;,config.report_time)<br/><br/>test_1026.py:38: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/>..\uti\WriteResult.py:14: in writeResult<br/>    sheet = wb[api_name]<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;openpyxl.workbook.workbook.Workbook object at 0x0000000005862E48&gt;<br/>key = 1026.0<br/><br/>    def __getitem__(self, key):<br/>        &quot;&quot;&quot;Returns a worksheet by its name.<br/>    <br/>        :param name: the name of the worksheet to look for<br/>        :type name: string<br/>    <br/>        &quot;&quot;&quot;<br/>        for sheet in self.worksheets + self.chartsheets:<br/>            if sheet.title == key:<br/>                return sheet<br/>&gt;       raise KeyError(&quot;Worksheet {0} does not exist.&quot;.format(key))<br/><span class="error">E       KeyError: &#x27;Worksheet 1026.0 does not exist.&#x27;</span><br/><br/>D:\python37\lib\site-packages\openpyxl\workbook\workbook.py:290: KeyError<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test_1050.py::Test_Request::test_1050</td>
+          <td class="col-duration">1.89</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">self = &lt;test_1050.Test_Request object at 0x000000000594E0F0&gt;<br/><br/>    def test_1050(self):<br/>        exceldata = ReadExcel.ReadExcel.getExcelData1050()<br/>        for i in range(0, len(exceldata)):<br/>            params = exceldata[i]<br/>            if params[&#x27;method&#x27;] == &#x27;post&#x27;:<br/>                # str.encode(&#x27;utf-8&#x27;) 转化成utf-8<br/>                r = requests.post(url=params[&#x27;base_url&#x27;]+params[&#x27;api&#x27;],data= params[&#x27;requestBody&#x27;].encode(&#x27;utf-8&#x27;),headers = eval(params[&#x27;header&#x27;]))<br/>                # print(&#x27;接口:&#x27;,params[&#x27;base_url&#x27;]+params[&#x27;api&#x27;])<br/>                try:<br/>                    assert r.status_code == 200<br/>                    # return r.status_code<br/>&gt;                   WriteResult.writeResult(params[&#x27;api_name&#x27;],i+2,r.text,&#x27;PASS&#x27;,config.report_time)<br/><br/>test_1050.py:33: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>api_name = 1050.0, row = 2<br/>req = &#x27;{\n  &quot;responseBody&quot; : {\n    &quot;retTime&quot; : &quot;2021-02-01 11:23:21&quot;,\n    &quot;retCode&quot; : &quot;200&quot;,\n    &quot;retMsg&quot; : &quot;查找成功&quot;,\n    ... &quot;contractSource&quot; : &quot;0&quot;\n    } ],\n    &quot;realFundAmt&quot; : 43013.47\n  },\n  &quot;retCode&quot; : &quot;200&quot;,\n  &quot;errorDesc&quot; : &quot;查找成功&quot;\n}&#x27;<br/>result = &#x27;PASS&#x27;, time = &#x27;2021-02-01 11-23-01&#x27;<br/><br/>    def writeResult(api_name,row, req, result, time):<br/>        wb = load_workbook(config.TEST_CASE_PATH)<br/>&gt;       sheet = wb[api_name]<br/><br/>..\uti\WriteResult.py:14: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;openpyxl.workbook.workbook.Workbook object at 0x0000000005910320&gt;<br/>key = 1050.0<br/><br/>    def __getitem__(self, key):<br/>        &quot;&quot;&quot;Returns a worksheet by its name.<br/>    <br/>        :param name: the name of the worksheet to look for<br/>        :type name: string<br/>    <br/>        &quot;&quot;&quot;<br/>        for sheet in self.worksheets + self.chartsheets:<br/>            if sheet.title == key:<br/>                return sheet<br/>&gt;       raise KeyError(&quot;Worksheet {0} does not exist.&quot;.format(key))<br/><span class="error">E       KeyError: &#x27;Worksheet 1050.0 does not exist.&#x27;</span><br/><br/>D:\python37\lib\site-packages\openpyxl\workbook\workbook.py:290: KeyError<br/><br/>During handling of the above exception, another exception occurred:<br/><br/>self = &lt;test_1050.Test_Request object at 0x000000000594E0F0&gt;<br/><br/>    def test_1050(self):<br/>        exceldata = ReadExcel.ReadExcel.getExcelData1050()<br/>        for i in range(0, len(exceldata)):<br/>            params = exceldata[i]<br/>            if params[&#x27;method&#x27;] == &#x27;post&#x27;:<br/>                # str.encode(&#x27;utf-8&#x27;) 转化成utf-8<br/>                r = requests.post(url=params[&#x27;base_url&#x27;]+params[&#x27;api&#x27;],data= params[&#x27;requestBody&#x27;].encode(&#x27;utf-8&#x27;),headers = eval(params[&#x27;header&#x27;]))<br/>                # print(&#x27;接口:&#x27;,params[&#x27;base_url&#x27;]+params[&#x27;api&#x27;])<br/>                try:<br/>                    assert r.status_code == 200<br/>                    # return r.status_code<br/>                    WriteResult.writeResult(params[&#x27;api_name&#x27;],i+2,r.text,&#x27;PASS&#x27;,config.report_time)<br/>                    print(&quot;接口:&quot;,params[&quot;api_name&quot;],&quot;请求写入完成&quot;)<br/>                except:<br/>                    # return r.text<br/>&gt;                   WriteResult.writeResult(params[&#x27;api_name&#x27;],i+2, r.text, &#x27;FAILED&#x27;,config.report_time)<br/><br/>test_1050.py:37: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/>..\uti\WriteResult.py:14: in writeResult<br/>    sheet = wb[api_name]<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;openpyxl.workbook.workbook.Workbook object at 0x000000000599CC50&gt;<br/>key = 1050.0<br/><br/>    def __getitem__(self, key):<br/>        &quot;&quot;&quot;Returns a worksheet by its name.<br/>    <br/>        :param name: the name of the worksheet to look for<br/>        :type name: string<br/>    <br/>        &quot;&quot;&quot;<br/>        for sheet in self.worksheets + self.chartsheets:<br/>            if sheet.title == key:<br/>                return sheet<br/>&gt;       raise KeyError(&quot;Worksheet {0} does not exist.&quot;.format(key))<br/><span class="error">E       KeyError: &#x27;Worksheet 1050.0 does not exist.&#x27;</span><br/><br/>D:\python37\lib\site-packages\openpyxl\workbook\workbook.py:290: KeyError<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test_1051.py::Test_Request::test_1051</td>
+          <td class="col-duration">0.26</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">self = &lt;test_1051.Test_Request object at 0x0000000005970908&gt;<br/><br/>    def test_1051(self):<br/>        exceldata = ReadExcel.ReadExcel.getExcelData1051()<br/>        for i in range(0, len(exceldata)):<br/>            params = exceldata[i]<br/>            if params[&#x27;method&#x27;] == &#x27;post&#x27;:<br/>                # str.encode(&#x27;utf-8&#x27;) 转化成utf-8<br/>                r = requests.post(url=params[&#x27;base_url&#x27;]+params[&#x27;api&#x27;],data= params[&#x27;requestBody&#x27;].encode(&#x27;utf-8&#x27;),headers = eval(params[&#x27;header&#x27;]))<br/>                # print(&#x27;接口:&#x27;,params[&#x27;base_url&#x27;]+params[&#x27;api&#x27;])<br/>                try:<br/>                    assert r.status_code == 200<br/>                    # return r.status_code<br/>&gt;                   WriteResult.writeResult(params[&#x27;api_name&#x27;],i+2,r.text,&#x27;PASS&#x27;,config.report_time)<br/><br/>test_1051.py:34: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>api_name = 1051.0, row = 2<br/>req = &#x27;{\n  &quot;responseBody&quot; : {\n    &quot;retTime&quot; : null,\n    &quot;retCode&quot; : &quot;200&quot;,\n    &quot;retMsg&quot; : &quot;查询成功！&quot;,\n    &quot;loanTransNo&quot; : ... : null,\n    &quot;totalRealAmt&quot; : null,\n    &quot;leftMustAmt&quot; : null\n  },\n  &quot;retCode&quot; : &quot;200&quot;,\n  &quot;errorDesc&quot; : &quot;查询成功！&quot;\n}&#x27;<br/>result = &#x27;PASS&#x27;, time = &#x27;2021-02-01 11-23-01&#x27;<br/><br/>    def writeResult(api_name,row, req, result, time):<br/>        wb = load_workbook(config.TEST_CASE_PATH)<br/>&gt;       sheet = wb[api_name]<br/><br/>..\uti\WriteResult.py:14: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;openpyxl.workbook.workbook.Workbook object at 0x00000000059BC6D8&gt;<br/>key = 1051.0<br/><br/>    def __getitem__(self, key):<br/>        &quot;&quot;&quot;Returns a worksheet by its name.<br/>    <br/>        :param name: the name of the worksheet to look for<br/>        :type name: string<br/>    <br/>        &quot;&quot;&quot;<br/>        for sheet in self.worksheets + self.chartsheets:<br/>            if sheet.title == key:<br/>                return sheet<br/>&gt;       raise KeyError(&quot;Worksheet {0} does not exist.&quot;.format(key))<br/><span class="error">E       KeyError: &#x27;Worksheet 1051.0 does not exist.&#x27;</span><br/><br/>D:\python37\lib\site-packages\openpyxl\workbook\workbook.py:290: KeyError<br/><br/>During handling of the above exception, another exception occurred:<br/><br/>self = &lt;test_1051.Test_Request object at 0x0000000005970908&gt;<br/><br/>    def test_1051(self):<br/>        exceldata = ReadExcel.ReadExcel.getExcelData1051()<br/>        for i in range(0, len(exceldata)):<br/>            params = exceldata[i]<br/>            if params[&#x27;method&#x27;] == &#x27;post&#x27;:<br/>                # str.encode(&#x27;utf-8&#x27;) 转化成utf-8<br/>                r = requests.post(url=params[&#x27;base_url&#x27;]+params[&#x27;api&#x27;],data= params[&#x27;requestBody&#x27;].encode(&#x27;utf-8&#x27;),headers = eval(params[&#x27;header&#x27;]))<br/>                # print(&#x27;接口:&#x27;,params[&#x27;base_url&#x27;]+params[&#x27;api&#x27;])<br/>                try:<br/>                    assert r.status_code == 200<br/>                    # return r.status_code<br/>                    WriteResult.writeResult(params[&#x27;api_name&#x27;],i+2,r.text,&#x27;PASS&#x27;,config.report_time)<br/>                    print(&quot;接口:&quot;,params[&quot;api_name&quot;],&quot;请求写入完成&quot;)<br/>                except:<br/>                    # return r.text<br/>&gt;                   WriteResult.writeResult(params[&#x27;api_name&#x27;],i+2, r.text, &#x27;FAILED&#x27;,config.report_time)<br/><br/>test_1051.py:38: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/>..\uti\WriteResult.py:14: in writeResult<br/>    sheet = wb[api_name]<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;openpyxl.workbook.workbook.Workbook object at 0x00000000059BC780&gt;<br/>key = 1051.0<br/><br/>    def __getitem__(self, key):<br/>        &quot;&quot;&quot;Returns a worksheet by its name.<br/>    <br/>        :param name: the name of the worksheet to look for<br/>        :type name: string<br/>    <br/>        &quot;&quot;&quot;<br/>        for sheet in self.worksheets + self.chartsheets:<br/>            if sheet.title == key:<br/>                return sheet<br/>&gt;       raise KeyError(&quot;Worksheet {0} does not exist.&quot;.format(key))<br/><span class="error">E       KeyError: &#x27;Worksheet 1051.0 does not exist.&#x27;</span><br/><br/>D:\python37\lib\site-packages\openpyxl\workbook\workbook.py:290: KeyError<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test_1118.py::Test_Request::test_1118</td>
+          <td class="col-duration">0.73</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">self = &lt;test_1118.Test_Request object at 0x000000000595A208&gt;<br/><br/>    def test_1118(self):<br/>        exceldata = ReadExcel.ReadExcel.getExcelData1118()<br/>        for i in range(0, len(exceldata)):<br/>            params = exceldata[i]<br/>            if params[&#x27;method&#x27;] == &#x27;post&#x27;:<br/>                # str.encode(&#x27;utf-8&#x27;) 转化成utf-8<br/>                r = requests.post(url=params[&#x27;base_url&#x27;]+params[&#x27;api&#x27;],data= params[&#x27;requestBody&#x27;].encode(&#x27;utf-8&#x27;),headers = eval(params[&#x27;header&#x27;]))<br/>                # print(&#x27;接口:&#x27;,params[&#x27;base_url&#x27;]+params[&#x27;api&#x27;])<br/>                try:<br/>                    assert r.status_code == 200<br/>                    # return r.status_code<br/>&gt;                   WriteResult.writeResult(params[&#x27;api_name&#x27;],i+2,r.text,&#x27;PASS&#x27;,config.report_time)<br/><br/>test_1118.py:34: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>api_name = 1118.0, row = 2<br/>req = &#x27;{\n  &quot;responseBody&quot; : {\n    &quot;retTime&quot; : &quot;2021-02-01 11:23:22&quot;,\n    &quot;retCode&quot; : &quot;200&quot;,\n    &quot;retMsg&quot; : &quot;操作成功！&quot;,\n   ...&quot;1118&quot;,\n    &quot;busiCode&quot; : &quot;CSB18&quot;,\n    &quot;consultId&quot; : &quot;252321&quot;\n  },\n  &quot;retCode&quot; : &quot;200&quot;,\n  &quot;errorDesc&quot; : &quot;操作成功！&quot;\n}&#x27;<br/>result = &#x27;PASS&#x27;, time = &#x27;2021-02-01 11-23-01&#x27;<br/><br/>    def writeResult(api_name,row, req, result, time):<br/>        wb = load_workbook(config.TEST_CASE_PATH)<br/>&gt;       sheet = wb[api_name]<br/><br/>..\uti\WriteResult.py:14: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;openpyxl.workbook.workbook.Workbook object at 0x00000000059BC8D0&gt;<br/>key = 1118.0<br/><br/>    def __getitem__(self, key):<br/>        &quot;&quot;&quot;Returns a worksheet by its name.<br/>    <br/>        :param name: the name of the worksheet to look for<br/>        :type name: string<br/>    <br/>        &quot;&quot;&quot;<br/>        for sheet in self.worksheets + self.chartsheets:<br/>            if sheet.title == key:<br/>                return sheet<br/>&gt;       raise KeyError(&quot;Worksheet {0} does not exist.&quot;.format(key))<br/><span class="error">E       KeyError: &#x27;Worksheet 1118.0 does not exist.&#x27;</span><br/><br/>D:\python37\lib\site-packages\openpyxl\workbook\workbook.py:290: KeyError<br/><br/>During handling of the above exception, another exception occurred:<br/><br/>self = &lt;test_1118.Test_Request object at 0x000000000595A208&gt;<br/><br/>    def test_1118(self):<br/>        exceldata = ReadExcel.ReadExcel.getExcelData1118()<br/>        for i in range(0, len(exceldata)):<br/>            params = exceldata[i]<br/>            if params[&#x27;method&#x27;] == &#x27;post&#x27;:<br/>                # str.encode(&#x27;utf-8&#x27;) 转化成utf-8<br/>                r = requests.post(url=params[&#x27;base_url&#x27;]+params[&#x27;api&#x27;],data= params[&#x27;requestBody&#x27;].encode(&#x27;utf-8&#x27;),headers = eval(params[&#x27;header&#x27;]))<br/>                # print(&#x27;接口:&#x27;,params[&#x27;base_url&#x27;]+params[&#x27;api&#x27;])<br/>                try:<br/>                    assert r.status_code == 200<br/>                    # return r.status_code<br/>                    WriteResult.writeResult(params[&#x27;api_name&#x27;],i+2,r.text,&#x27;PASS&#x27;,config.report_time)<br/>                    print(&quot;接口:&quot;,params[&quot;api_name&quot;],&quot;请求写入完成&quot;)<br/>                except:<br/>                    # return r.text<br/>&gt;                   WriteResult.writeResult(params[&#x27;api_name&#x27;],i+2, r.text, &#x27;FAILED&#x27;,config.report_time)<br/><br/>test_1118.py:38: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/>..\uti\WriteResult.py:14: in writeResult<br/>    sheet = wb[api_name]<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;openpyxl.workbook.workbook.Workbook object at 0x000000000595F828&gt;<br/>key = 1118.0<br/><br/>    def __getitem__(self, key):<br/>        &quot;&quot;&quot;Returns a worksheet by its name.<br/>    <br/>        :param name: the name of the worksheet to look for<br/>        :type name: string<br/>    <br/>        &quot;&quot;&quot;<br/>        for sheet in self.worksheets + self.chartsheets:<br/>            if sheet.title == key:<br/>                return sheet<br/>&gt;       raise KeyError(&quot;Worksheet {0} does not exist.&quot;.format(key))<br/><span class="error">E       KeyError: &#x27;Worksheet 1118.0 does not exist.&#x27;</span><br/><br/>D:\python37\lib\site-packages\openpyxl\workbook\workbook.py:290: KeyError<br/></div></td></tr></tbody></table></body></html>
