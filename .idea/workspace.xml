@@ -4,20 +4,96 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="151b82ad-b21c-4c04-a995-67942b84fe94" name="Default Changelist" comment="优化excel自动化测试案例">
+    <list default="true" id="2e38a32e-0e4b-4479-9edc-84ef01aca780" name="Default Changelist" comment="2021-2-1 公司更新">
+      <change afterPath="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/setting/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/PythonYan.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonYan.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_22_19_31__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_22_19_31__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/data/测试数据.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/report/assets/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/setting/config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/uti/ReadExcel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python 100/16.py" beforeDir="false" afterPath="$PROJECT_DIR$/python 100/16.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/testcase/test_1026.py" beforeDir="false" afterPath="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/testcase/test_1026.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/uti/ReadExcel.py" beforeDir="false" afterPath="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/uti/ReadExcel.py" afterDir="false" />
     </list>
+    <ignored path="D:\python37\PythonYan\.idea\shelf/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/uti/ReadExcel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+              <folding>
+                <element signature="e#104#115#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/uti/WriteResult.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="e#106#140#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/自动化测试脚本/python接口测试/config/config.ini">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/自动化测试脚本/python接口测试/config/ReadConfig.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/testcase/run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="388">
+              <caret line="32" column="62" lean-forward="true" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
+              <folding>
+                <element signature="e#721#734#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/testcase/test_1026.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/setting/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+              <folding>
+                <element signature="e#100#109#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -33,6 +109,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="PUSH_TAGS">
       <GitPushTagMode />
@@ -54,14 +131,16 @@
         <option value="$PROJECT_DIR$/自动化测试脚本/Pytest框架学习/将多个测试分到一个类中.py" />
         <option value="$PROJECT_DIR$/自动化测试脚本/笔记.py" />
         <option value="$PROJECT_DIR$/基础知识补充/迭代器.py" />
-        <option value="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/testcase/test_1026.py" />
         <option value="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/testcase/test_1050.py" />
         <option value="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/testcase/test_1051.py" />
         <option value="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/testcase/test_1118.py" />
         <option value="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/testcase/all_case.py" />
-        <option value="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/uti/ReadExcel.py" />
         <option value="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/testcase/run.py" />
         <option value="$PROJECT_DIR$/../Lib/site-packages/_pytest/config/__init__.py" />
+        <option value="$PROJECT_DIR$/python 100/16.py" />
+        <option value="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/setting/config.py" />
+        <option value="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/testcase/test_1026.py" />
+        <option value="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/uti/ReadExcel.py" />
       </list>
     </option>
   </component>
@@ -81,7 +160,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -98,19 +176,40 @@
               <item name="PythonYan" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="D:\python37\PythonYan" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="自动化测试脚本" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="UI自动化selenium" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="python接口测试" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="PythonYan" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="D:\python37\PythonYan" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="自动化测试脚本" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="UI自动化selenium" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="贷款项目" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="python接口测试" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test_case" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="PythonYan" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\python37\PythonYan" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="自动化测试脚本" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="接口自动化excel版" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="PythonYan" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\python37\PythonYan" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="自动化测试脚本" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="接口自动化excel版" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="testcase" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="PythonYan" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\python37\PythonYan" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="自动化测试脚本" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="接口自动化excel版" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="uti" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -123,7 +222,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/自动化测试脚本/Pytest框架学习/test_将多个测试分到一个类中.py" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -136,8 +235,20 @@
       <recent name="D:\python37\PythonYan\自动化测试脚本\接口自动化excel版\uti" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager" selected="Python.run">
-    <configuration name="笔记" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="16" type="PythonConfigurationType" factoryName="Python">
       <module name="PythonYan" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -145,11 +256,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/自动化测试脚本" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python 100" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/自动化测试脚本/笔记.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python 100/16.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -221,6 +332,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="config" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonYan" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/setting" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/setting/config.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonYan" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -242,19 +374,18 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for 将多个测试分到一个类中.TestClass.test_two" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_1026.Test_Request.test_1026" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PythonYan" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/自动化测试脚本/Pytest框架学习" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/testcase" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;将多个测试分到一个类中.TestClass.test_two&quot;" />
+      <option name="_new_target" value="&quot;test_1026.Test_Request.test_1026&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -268,29 +399,46 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/自动化测试脚本/Pytest框架学习/将多个测试分到一个类中.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in test_1026.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="PythonYan" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/testcase" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/testcase/test_1026.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.ReadExcel" />
-      <item itemvalue="Python.笔记" />
-      <item itemvalue="Python.run" />
-      <item itemvalue="Python tests.pytest for 将多个测试分到一个类中.TestClass.test_two" />
+      <item itemvalue="Python.16" />
+      <item itemvalue="Python.config" />
       <item itemvalue="Python tests.pytest in 将多个测试分到一个类中.py" />
+      <item itemvalue="Python.run" />
+      <item itemvalue="Python tests.pytest for test_1026.Test_Request.test_1026" />
+      <item itemvalue="Python tests.pytest in test_1026.py" />
+      <item itemvalue="Python.ReadExcel" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.run" />
-        <item itemvalue="Python.笔记" />
         <item itemvalue="Python.ReadExcel" />
-        <item itemvalue="Python tests.pytest for 将多个测试分到一个类中.TestClass.test_two" />
+        <item itemvalue="Python tests.pytest for test_1026.Test_Request.test_1026" />
+        <item itemvalue="Python tests.pytest in test_1026.py" />
+        <item itemvalue="Python.config" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
   </component>
@@ -414,19 +562,24 @@
       <option name="project" value="LOCAL" />
       <updated>1611891116511</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="2021-1-29 公司更新">
+      <created>1611908418204</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1611908418204</updated>
+    </task>
+    <task id="LOCAL-00018" summary="2021-2-1 公司更新">
+      <created>1612147070595</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1612147070595</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_Desktop - 2021.01.28 at 16h 49m 21s.xml">
-      <configuration name="pytest in Desktop" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_将多个测试分到一个类中_py - 2021.01.28 at 16h 50m 13s.xml">
-      <configuration name="pytest in 将多个测试分到一个类中.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_将多个测试分到一个类中_py - 2021.01.28 at 16h 50m 51s.xml">
-      <configuration name="pytest in test_将多个测试分到一个类中.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_in_test_将多个测试分到一个类中_py - 2021.01.28 at 16h 51m 05s.xml">
       <configuration name="pytest in test_将多个测试分到一个类中.py" configurationId="tests" />
     </history-entry>
@@ -448,22 +601,31 @@
     <history-entry file="pytest_for_将多个测试分到一个类中_TestClass_test_two - 2021.01.28 at 16h 56m 32s.xml">
       <configuration name="pytest for 将多个测试分到一个类中.TestClass.test_two" configurationId="tests" />
     </history-entry>
+    <history-entry file="pytest_for_test_1026_Test_Request_test_1026 - 2021.02.01 at 11h 25m 34s.xml">
+      <configuration name="pytest for test_1026.Test_Request.test_1026" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_1026_py - 2021.02.01 at 11h 26m 15s.xml">
+      <configuration name="pytest in test_1026.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_1026_Test_Request_test_1026 - 2021.02.01 at 11h 27m 03s.xml">
+      <configuration name="pytest for test_1026.Test_Request.test_1026" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20362474" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20575693" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3281412" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3894081" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3894081" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.38317758" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49946696" weight="0.32936078" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49946696" weight="0.32917964" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32719395" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.39761648" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32936078" />
@@ -474,28 +636,6 @@
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="right" id="R Packages" order="4" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19722815" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3281412" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3900325" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.38317758" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32719395" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.39761648" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32936078" />
-      <window_info anchor="bottom" id="Messages" order="11" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="R Graphics" order="3" />
-      <window_info anchor="right" id="R Packages" order="4" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -512,7 +652,22 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -531,7 +686,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="添加家里数据库操作" />
@@ -551,7 +705,8 @@
     <MESSAGE value="删除无用report" />
     <MESSAGE value="2021-1-28 公司更新" />
     <MESSAGE value="2021-1-29 公司更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021-1-29 公司更新" />
+    <MESSAGE value="2021-2-1 公司更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021-2-1 公司更新" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -578,13 +733,6 @@
     <entry file="file://$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/test_case/Test_1026.py" />
     <entry file="file://$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/report/2021-01-24_21-13-00report.html" />
     <entry file="file://$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/report/2021-01-27_17-52-00_report.html" />
-    <entry file="file://$PROJECT_DIR$/自动化测试脚本/python接口测试/config/ReadConfig.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/自动化测试脚本/Pytest框架学习/装饰器parametrize.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="625">
@@ -623,13 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/datetime.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="246" column="56" lean-forward="true" selection-start-line="246" selection-start-column="56" selection-end-line="246" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/异常处理/异常处理.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -645,20 +786,7 @@
     <entry file="file://$PROJECT_DIR$/基础知识补充/列表生成式.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/基础知识补充/迭代器.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="15" selection-start-line="15" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/自动化测试脚本/python接口测试/test_case/test_1050.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/基础知识补充/迭代器.py" />
     <entry file="file://$PROJECT_DIR$/面向对象/什么是面向对象.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -700,33 +828,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/uti/WriteResult.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-          <folding>
-            <element signature="e#106#140#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/testcase/test_1026.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
-          <folding>
-            <element signature="e#203#218#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/uti/ReadExcel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Lib/site-packages/pytest/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -741,17 +842,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/report/2021-01-29_11-28-24_report.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/report/2021-01-29_11-23-41_report.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/testcase/run.py">
+    <entry file="file://$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/report/2021-01-29_11-28-24_report.html" />
+    <entry file="file://$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/report/2021-01-29_11-23-41_report.html" />
+    <entry file="file://$PROJECT_DIR$/自动化测试脚本/创建身份证号.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
+        <state relative-caret-position="-1275" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/testcase/all_case.py">
@@ -764,15 +859,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/自动化测试脚本/创建身份证号.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1275" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/自动化测试脚本/笔记.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/自动化测试脚本/python接口测试/config/config.ini">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/自动化测试脚本/python接口测试/config/ReadConfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/自动化测试脚本/随机生成四要素.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="712">
+          <caret line="42" column="37" lean-forward="true" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/-51962858/sys.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="675" selection-start-line="675" selection-end-line="675" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python 100/16.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+          <folding>
+            <element signature="e#213#228#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/datetime.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="242" column="13" selection-start-line="242" selection-start-column="13" selection-end-line="242" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Lib/datetime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="1626" column="13" lean-forward="true" selection-start-line="1626" selection-start-column="13" selection-end-line="1626" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/自动化测试脚本/python接口测试/test_data/testdata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/uti/WriteResult.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#106#140#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/uti/ReadExcel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+          <folding>
+            <element signature="e#104#115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/自动化测试脚本/python接口测试/test_case/test_1050.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/testcase/test_1026.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/setting/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding>
+            <element signature="e#100#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/testcase/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="32" column="62" lean-forward="true" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
+          <folding>
+            <element signature="e#721#734#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

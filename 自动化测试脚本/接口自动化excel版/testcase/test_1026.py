@@ -16,6 +16,7 @@
 import requests
 from 自动化测试脚本.接口自动化excel版.uti import ReadExcel,WriteResult
 from 自动化测试脚本.接口自动化excel版.setting import config
+import json
 
 
 class Test_Request():
@@ -26,7 +27,7 @@ class Test_Request():
             params = exceldata[i]
             if params['method'] == 'post':
                 # str.encode('utf-8') 转化成utf-8
-                r = requests.post(url=params['base_url']+params['api'],data= params['requestBody'].encode('utf-8'),headers = eval(params['header']))
+                r = requests.post(url=params['base_url']+params['api'],data= json.dumps(params['requestBody']).encode('utf-8'),headers = eval(params['header']))
                 # print('接口:',params['base_url']+params['api'])
                 try:
                     assert r.status_code == 200
@@ -46,3 +47,4 @@ class Test_Request():
                     print( r.status_code)
                 except:
                     print(r.text)
+

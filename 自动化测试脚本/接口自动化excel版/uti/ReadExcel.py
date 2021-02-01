@@ -7,7 +7,6 @@
 """
 
 import xlrd
-import xlwt
 from 自动化测试脚本.接口自动化excel版.setting import config
 
 class ReadExcel():
@@ -41,6 +40,9 @@ class ReadExcel():
             # print(sheet.row_values(i))
             newList.append(dict(zip(title, sheet.row_values(i))))
         return newList
+
+        # return newList
+
 
     @staticmethod
     def getExcelData1026():
@@ -94,3 +96,4 @@ class ReadExcel():
         # print(newList[0]['request'])
 
         return newList
+ReadExcel.getExcelData1118()
