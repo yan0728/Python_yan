@@ -5,17 +5,19 @@
 @file: testdata.py
 @time:2021/1/15 0015
 """
-header = {'Content-Type': 'application/json;charset=UTF-8','User-Agent': 'Apache-HttpClient/4.5.5 (Java/1.8.0_121)'}
+
+from ..tools import uti
+from ..test_case import test_case
 
 
 api1118 = '/loan-api-link/api/appbiz/LoanEasyRest/1118/v1'
 data1118 = {
     "sysSource": "4",
-    "frontTransNo": "20210107221401599",
-    "frontTransTime": "2019-07-18 15:15:20",
+    "frontTransNo": str(uti.frontTransNo),
+    "frontTransTime": uti.ti,
     "interfaceNo": "1118",
     "busiCode": "CSB18",
-    "telephone": "13916263326",
+    "telephone": uti.phone,
     "appAmount": "30000",
     "appPeriod": "24",
     "custmerManger": "11037385",
@@ -23,5 +25,81 @@ data1118 = {
     "telemarketing": "0"
 }
 
-api1050 = '/loan-api-link/api/appbiz/LoanEasyRest/1050/v1'
-data1050 = {"curPage":"1","interfaceNo":"1050","frontTransNo":"20210105143601399","sysSource":"4","busiCode":"CSB50","cardId":"65210119860216133X","pageSize":"20","telephone":"15809959223","totalRows":"0","custName":"买买提江·肉孜","frontTransTime":"2021-01-05 14:36:01"}
+
+api1037 = '/loan-api-link/api/appbiz/LoanEasyRest/1037/v1'
+data1037 = {
+    "position": "301002007",
+    "cardId": uti.idCare,
+    "birthday": "1990-07-28",
+    "sex": "M",
+    "cardUrlB": "group1/M00/0A/02/rBJkp13zNp2APEikAADZJJumDD4067.jpg",
+    "interfaceNo": "1037",
+    "consultId": test_case.test_1118(),
+    "cardUrlA": "group1/M00/0A/02/rBJkp13zNp2ATXBGAADfWiHhKAY873.jpg",
+    "frontTransNo": str(uti.frontTransNo),
+    "custmerManger": "11037385",
+    "cardEndT": "2021-12-21",
+    "busiCode": "CSB37",
+    "nation": "汉",
+    "areaName": "北京市大兴区采育镇沙窝营村金光街东六条9号",
+    "telemarketing": "0",
+    "cardStartT": "2011-12-21",
+    "sysSource": "1",
+    "custName": uti.name,
+    "telephone": uti.phone,
+    "frontTransTime": uti.ti
+}
+
+api1084 = '/loan-api-link/api/appbiz/LoanEasyRest/1084/v1'
+data1084 = {
+	"cardId": uti.idCare,
+	"interfaceNo": "1084",
+	"consultId": test_case.test_1118(),
+	"frontTransNo": uti.frontTransNo,
+	"opType": "02",
+	"custName": uti.name,
+	"sysSource": "1",
+	"busiCode": "CSB84",
+	"telephone": uti.phone,
+	"frontTransTime": uti.ti
+}
+
+api1038 = '/loan-api-link/api/appbiz/LoanEasyRest/1038/v1'
+data1038 = {
+    "consultId":test_case.test_1118(),
+    "interfaceNo":"1038",
+    "frontTransNo":uti.frontTransNo,
+    "sysSource":"1",
+    "busiCode":"CSB38",
+    "cardId":uti.idCare,
+    "telephone":uti.phone,
+    "urlImg":"group1/M00/06/06/rBJkp11l89OAHNdyAABuiCLq2Z4435.jpg",
+    "custName":uti.name,
+    "frontTransTime":uti.ti
+}
+
+api1049 = '/loan-api-link/api/appbiz/LoanEasyRest/1049/v1'
+data1049 = {
+	"cardId": uti.idCare ,
+	"position": "301002007",
+	"interfaceNo": "1049",
+	"consultId": test_case.test_1118(),
+	"frontTransNo": uti.frontTransNo,
+	"custmerManger": "11037385",
+	"busiCode": "CSB49",
+	"lbTIntoInfoCustomer": [{
+		"currentAddr": uti.address,
+		"currentAreacode": "110101",
+		"hDegree": "1",
+		"homeType": "1",
+		"loanPrePurpose": "101",
+		"loanPurpose": "11",
+		"email":uti.email
+	}],
+	"sysSource": "1",
+	"custName": uti.name,
+	"telephone": uti.phone,
+	"intoDetailType": "lbTIntoInfoCustomer",
+	"frontTransTime": uti.ti
+}
+

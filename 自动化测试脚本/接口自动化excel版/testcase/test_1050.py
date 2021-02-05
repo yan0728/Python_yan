@@ -27,21 +27,13 @@ class Test_Request():
                 # str.encode('utf-8') 转化成utf-8
                 r = requests.post(url=params['base_url']+params['api'],data= params['requestBody'].encode('utf-8'),headers = eval(params['header']))
                 # print('接口:',params['base_url']+params['api'])
-                try:
-                    assert r.status_code == 200
-                    # return r.status_code
-                    WriteResult.writeResult(params['api_name'],i+2,r.text,'PASS',config.report_time)
-                    print("接口:",params["api_name"],"请求写入完成")
-                except:
-                    # return r.text
-                    WriteResult.writeResult(params['api_name'],i+2, r.text, 'FAILED',config.report_time)
-                    print("接口:", params["api_name"],r.text, "请求写入完成,接口请求失败")
+                assert r.status_code == 200
+                # return r.status_code
+                WriteResult.writeResult(params['api_name'],i+2,r.text,'PASS',config.report_time)
+                print("接口:",params["api_name"],"请求写入完成")
             else:
-
                 r = requests.get(url=params['base_url']+params['api'],data=params['requestBody'],headers = params['header'])
-                try:
-                    assert r.status_code == 200
-                    # return r.status_code
-                    print( r.status_code)
-                except:
-                    print(r.text)
+                assert r.status_code == 200
+                # return r.status_code
+                print( r.status_code)
+

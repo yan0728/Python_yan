@@ -24,10 +24,13 @@ main()括号内可传入执行参数和插件参数，通过[]进行分割，[]�
 -s: 显示程序中的print/logging输出
 --resultlog=./log.txt 生成log
 --junitxml=./log.xml 生成xml报告
+运行测试报告
+D:\python37\PythonYan\自动化测试脚本\python接口测试>allure serve allure
 '''
 
 import pytest
 import time
+from 自动化测试脚本.python接口测试.config import ReadConfig
 now = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
-pytest.main(["--html=..\\report\\{}_report.html".format(now)])
+pytest.main(["--html=..\\report\\{}_report.html".format(now),"--alluredir={}\\allure\\ ".format(ReadConfig.BASE_DIR)])
 
