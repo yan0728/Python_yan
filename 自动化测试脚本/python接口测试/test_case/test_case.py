@@ -19,7 +19,7 @@ def test_1118():
     print("请求数据:", data)
     print("-" * 30,"美丽的分界线","-" * 30)
     print("返回数据", r.text)
-    assert r.status_code == 300
+    assert r.status_code == 200
     consultId =  (r.json()["responseBody"]["consultId"]) #r.json后变成字典
     return consultId
 
@@ -31,7 +31,7 @@ def test_1037():
     print("请求数据:",data)
     print("-" * 30, "美丽的分界线", "-" * 30)
     print("返回数据", r.text)
-    assert r.status_code == 301
+    assert r.status_code == 201
 
 def test_1084():
     url = ReadConfig.base_url + testdata.api1084
@@ -41,7 +41,7 @@ def test_1084():
     print("请求数据:",data)
     print("-" * 30, "美丽的分界线", "-" * 30)
     print("返回数据", r.text)
-    assert r.status_code == 301
+    assert r.status_code == 201
 
 
 def test_1038():
@@ -52,7 +52,7 @@ def test_1038():
     print("请求数据:",data)
     print("-" * 30, "美丽的分界线", "-" * 30)
     print("返回数据",r.text)
-    assert r.status_code == 301
+    assert r.status_code == 201
 
 
 def test_1049():
@@ -63,7 +63,7 @@ def test_1049():
     print("请求数据:",data)
     print("-" * 30, "美丽的分界线", "-" * 30)
     print ("返回数据",r.text)
-    assert r.status_code == 301
+    assert r.status_code == 201
 
 
 
