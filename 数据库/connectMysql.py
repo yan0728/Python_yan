@@ -39,6 +39,7 @@ def connect_mysql_home():
         return db
 
 def selectMoble():
+    list = []
     db = connect_mysql()
     # 创建游标
     cur = db.cursor()
@@ -57,9 +58,25 @@ def selectMoble():
         colour = row[8]
         user = row[9]
         borrow_date = row[10]
-
-        print(id,'|',MobileOS,'|',changshang,'|',type,'|',xuliehao,'|',fenbianlv,'|',size,'|',Osversion,'|',colour,'|',user,'|',borrow_date)
-# selectMoble()
+        list.append(
+            {
+                'id':id,
+                'MobileOS':MobileOS,
+                'changshang':changshang,
+                'type':type,
+                'xuliehao':xuliehao,
+                'fenbianlv':fenbianlv,
+                'size':size,
+                'Osversion':Osversion,
+                'colour':colour,
+                'user':user,
+                'borrow_date':borrow_date
+            }
+        )
+        # print(id,'|',MobileOS,'|',changshang,'|',type,'|',xuliehao,'|',fenbianlv,'|',size,'|',Osversion,'|',colour,'|',user,'|',borrow_date)
+    # print(list[1]['user'])
+    return list
+selectMoble()
 
 def select_cw():
     print('===宠物列表内宠物如下===')
