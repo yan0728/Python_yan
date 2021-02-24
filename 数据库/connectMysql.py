@@ -46,36 +46,37 @@ def selectMoble():
     selectMoble = 'SELECT * FROM test.test_mobile'
     cur.execute(selectMoble) #执行脚本
     results = cur.fetchall() #查询时获取结果集中的所有行，一行构成一个元组，然后再将这些元组返回（即嵌套元组）
-    for row in results:
-        id = row[0]
-        MobileOS = row[1]
-        changshang = row[2]
-        type = row[3]
-        xuliehao = row[4]
-        fenbianlv =row[5]
-        size = row[6]
-        Osversion = row[7]
-        colour = row[8]
-        user = row[9]
-        borrow_date = row[10]
-        list.append(
-            {
-                'id':id,
-                'MobileOS':MobileOS,
-                'changshang':changshang,
-                'type':type,
-                'xuliehao':xuliehao,
-                'fenbianlv':fenbianlv,
-                'size':size,
-                'Osversion':Osversion,
-                'colour':colour,
-                'user':user,
-                'borrow_date':borrow_date
-            }
-        )
-        # print(id,'|',MobileOS,'|',changshang,'|',type,'|',xuliehao,'|',fenbianlv,'|',size,'|',Osversion,'|',colour,'|',user,'|',borrow_date)
-    # print(list[1]['user'])
-    return list
+    # for row in results:
+    #     id = row[0]
+    #     MobileOS = row[1]
+    #     changshang = row[2]
+    #     type = row[3]
+    #     xuliehao = row[4]
+    #     fenbianlv =row[5]
+    #     size = row[6]
+    #     Osversion = row[7]
+    #     colour = row[8]
+    #     user = row[9]
+    #     borrow_date = row[10]
+    #     list.append(
+    #         {
+    #             'id':id,
+    #             'MobileOS':MobileOS,
+    #             'changshang':changshang,
+    #             'type':type,
+    #             'xuliehao':xuliehao,
+    #             'fenbianlv':fenbianlv,
+    #             'size':size,
+    #             'Osversion':Osversion,
+    #             'colour':colour,
+    #             'user':user,
+    #             'borrow_date':borrow_date
+    #         }
+    #     )
+    #     # print(id,'|',MobileOS,'|',changshang,'|',type,'|',xuliehao,'|',fenbianlv,'|',size,'|',Osversion,'|',colour,'|',user,'|',borrow_date)
+    # # print(list[1]['user'])
+    # return list
+    print(results[1][1])
 selectMoble()
 
 def select_cw():
