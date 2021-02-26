@@ -43,7 +43,6 @@ class ReadExcel():
 
         # return newList
 
-
     @staticmethod
     def getExcelData1026():
         wb = xlrd.open_workbook(config.TEST_CASE_PATH)
@@ -96,4 +95,4 @@ class ReadExcel():
         # print(newList[0]['request'])
 
         return newList
-ReadExcel.getExcelData1118()
+# ReadExcel.getExcelData1118()

@@ -16,7 +16,7 @@ soup = BeautifulSoup(html_page.text,'html.parser')
 
 #通过class="BDE_Image"获取所有的img 标签
 class_image = soup.findAll(attrs={"class":"BDE_Image"})
-print(class_image)
+# print(class_image)
 
 #判断目录是否存在
 if not os.path.exists(path):
