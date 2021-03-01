@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e38a32e-0e4b-4479-9edc-84ef01aca780" name="Default Changelist" comment="2021-2-24 公司更新">
-      <change afterPath="$PROJECT_DIR$/Python装饰器/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python 100/111.py" afterDir="false" />
+    <list default="true" id="2e38a32e-0e4b-4479-9edc-84ef01aca780" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/爬虫/爬虫demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫/爬虫demo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/爬虫/练习.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫/练习.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/uti/ReadExcel.py" beforeDir="false" afterPath="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/uti/ReadExcel.py" afterDir="false" />
     </list>
     <ignored path="D:\python37\PythonYan\.idea\shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,34 +20,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/爬虫/练习.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+            <state relative-caret-position="348">
+              <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
               <folding>
                 <element signature="e#37#52#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/other/今天吃什么.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python 100/21.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python 100/111.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="15" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -130,8 +103,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-2193" />
-    <option name="y" value="256" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1092" />
   </component>
@@ -355,11 +328,11 @@
     </configuration>
     <list>
       <item itemvalue="Python.1111" />
-      <item itemvalue="Python.connectMysql" />
-      <item itemvalue="Python.test (1)" />
-      <item itemvalue="Python.爬虫demo" />
-      <item itemvalue="Python.练习" />
       <item itemvalue="Python.111" />
+      <item itemvalue="Python.练习" />
+      <item itemvalue="Python.connectMysql" />
+      <item itemvalue="Python.爬虫demo" />
+      <item itemvalue="Python.test (1)" />
     </list>
     <recent_temporary>
       <list>
@@ -558,7 +531,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614152163609</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="2021-2-26 公司更新">
+      <created>1614329120570</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1614329120570</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -594,15 +574,15 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22921109" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23187633" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3281412" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31671858" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33044422" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.38317758" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -690,7 +670,8 @@
     <MESSAGE value="2021-2-1 公司更新" />
     <MESSAGE value="2021-2-5 公司更新" />
     <MESSAGE value="2021-2-24 公司更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021-2-24 公司更新" />
+    <MESSAGE value="2021-2-26 公司更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021-2-26 公司更新" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1029,23 +1010,6 @@
     <entry file="file://$PROJECT_DIR$/元组/元组及其操作.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/other/今天吃什么.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python 100/21.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python 100/111.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/-51962858/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-165">
@@ -1053,10 +1017,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/python 100/21.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/今天吃什么.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python 100/111.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/爬虫/练习.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        <state relative-caret-position="348">
+          <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
           <folding>
             <element signature="e#37#52#0" expanded="true" />
           </folding>
