@@ -43,7 +43,7 @@ def selectMoble():
     db = connect_mysql()
     # 创建游标
     cur = db.cursor()
-    selectMoble = 'SELECT * FROM test.test_mobile'
+    selectMoble = 'SELECT * FROM test.phone'
     cur.execute(selectMoble) #执行脚本
     results = cur.fetchall() #查询时获取结果集中的所有行，一行构成一个元组，然后再将这些元组返回（即嵌套元组）
     # for row in results:
@@ -76,7 +76,8 @@ def selectMoble():
     #     # print(id,'|',MobileOS,'|',changshang,'|',type,'|',xuliehao,'|',fenbianlv,'|',size,'|',Osversion,'|',colour,'|',user,'|',borrow_date)
     # # print(list[1]['user'])
     # return list
-    print(results[1][1])
+    # print(results[1][1])
+    print(results)
 selectMoble()
 
 def select_cw():

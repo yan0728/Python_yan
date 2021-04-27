@@ -1,17 +1,19 @@
 # -*- coding:utf-8 -*-
 from selenium import webdriver
-from selenium.webdriver.support.ui import Select, WebDriverWait
-from selenium.webdriver.common.action_chains import ActionChains
+# from selenium.webdriver.support.ui import Select, WebDriverWait
+# from selenium.webdriver.common.action_chains import ActionChains
 import time
-import random
-import random as r
-import cx_Oracle
-import os
-from com.TestData import get_idcard,get_phone,get_name,get_number
+# import random
+# import random as r
+# # import cx_Oracle
+# import os
+from TestData import get_idcard,get_phone,get_name,get_number
 name = ('时供应商客服二 ','时供应商客服一','时项目公司客服一','时项目公司客服二 ')
 username = 'admin'
 password = '123456'
-auto = webdriver.Chrome()
+# auto = webdriver.Chrome()
+driverfile_path = r'D:\Program Files\Python38\msedgedriver.exe'
+auto = webdriver.Edge()
 auto.get("https://test-asos.lianjieabs.com/task/index")
 time.sleep(3)
 auto.maximize_window()

@@ -5,12 +5,13 @@ from selenium.webdriver.common.action_chains import ActionChains
 import time
 import random
 import random as r
-import cx_Oracle
+# import cx_Oracle
 import os
-from com.TestData import get_idcard,get_phone,get_name,get_number
+from TestData import get_idcard,get_phone,get_name,get_number
 username = ('18500000004','18500000004')
 password = '123456'
-auto = webdriver.Chrome()
+driverfile_path = r'D:\Program Files\Python38\msedgedriver.exe'
+auto = webdriver.Edge()
 auto.get("http://test-asms.lianjieabs.com/")
 time.sleep(3)
 auto.maximize_window()
