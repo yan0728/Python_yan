@@ -1,13 +1,18 @@
 from faker import Faker
-import time
+import requests
+import json
 import random
+import time
+import datetime
 
-fileNo = 'FL' + str(random.randint(10000,99999))
+now_str = datetime.datetime.now().strftime('%Y%m%d%H%M%S')
+
+time1 = datetime.date.today().strftime('%Y%m%d')
+
 faker = Faker(locale='zh_CN')
 
+addr =  "yidong/"+ "20210512"+"/180000/"+"FL16551_20210512_64846"+".rar"
 
-
-time = time.strftime("%Y%m%d%H%M%S", time.localtime())
-No = 'NO' + time
+No = 'NO' + now_str
 address1 = faker.name()
-print(time,No,fileNo)
+print(now_str,No,time1,addr)
