@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e38a32e-0e4b-4479-9edc-84ef01aca780" name="Default Changelist" comment="2021-4-27 公司更新">
-      <change afterPath="$PROJECT_DIR$/zn/中国移动/AESjiami.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zn/中国移动/baolipojiemima.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zn/中国移动/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zn/中国移动/移动_再保理合同推送.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/自动化测试脚本/Pytest框架学习/demo.py" afterDir="false" />
+    <list default="true" id="2e38a32e-0e4b-4479-9edc-84ef01aca780" name="Default Changelist" comment="2021-5-06 公司更新">
+      <change afterPath="$PROJECT_DIR$/zn/中国移动/中移动造推送附件数据.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zn/baolipojiemima.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zn/移动.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zhongnuo/ApproveUser.py" beforeDir="false" afterPath="$PROJECT_DIR$/zn/zhongnuo/ApproveUser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zhongnuo/TestData.py" beforeDir="false" afterPath="$PROJECT_DIR$/zn/zhongnuo/TestData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zhongnuo/VerifyUser.py" beforeDir="false" afterPath="$PROJECT_DIR$/zn/zhongnuo/VerifyUser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zn/中国移动/AESjiami.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zn/中国移动/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/zn/中国移动/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zn/中国移动/移动_再保理合同推送.py" beforeDir="false" afterPath="$PROJECT_DIR$/zn/中国移动/移动_再保理合同推送.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/自动化测试脚本/UI自动化selenium/中诺/1.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,15 +169,15 @@
       <recent name="D:\python37\PythonYan\自动化测试脚本\接口自动化excel版\uti" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\pythonProject\Python_yan\zn\中国移动" />
       <recent name="D:\pythonProject\Python_yan\zn" />
+      <recent name="D:\pythonProject\Python_yan\zn\中国移动" />
       <recent name="D:\python37\PythonYan\文件的操作\文本" />
       <recent name="D:\python37\PythonYan\文件的操作\Excel" />
       <recent name="D:\python37\PythonYan\基础知识补充" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.run">
-    <configuration name="AESjiami" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.中移动造推送附件数据 (1)">
+    <configuration name="中移动造推送附件数据 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonYan" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -188,7 +189,49 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zn/中国移动/AESjiami.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zn/中国移动/中移动造推送附件数据.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="中移动造推送附件数据" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonYan" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zn/中国移动" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="D:\pythonProject\Python_yan\zn\中国移动\中移动造推送附件数据.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="中移动造推送附件数据" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonYan" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zn/中国移动" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="D:\pythonProject\Python_yan\zn\中国移动\中移动造推送附件数据.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -210,27 +253,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zn/中国移动/移动_再保理合同推送.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="移动_资产推送" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PythonYan" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zn/中国移动" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zn/中国移动/移动_资产推送.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -339,29 +361,13 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in demo.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="PythonYan" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="D:\python37\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/自动化测试脚本/Pytest框架学习" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/自动化测试脚本/Pytest框架学习/demo.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.run" />
-        <item itemvalue="Python tests.pytest in demo.py" />
-        <item itemvalue="Python.AESjiami" />
-        <item itemvalue="Python.移动_再保理合同推送 (1)" />
+        <item itemvalue="Python.中移动造推送附件数据 (1)" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.中移动造推送附件数据" />
+        <item itemvalue="Python.移动_再保理合同推送 (1)" />
+        <item itemvalue="Python.中移动造推送附件数据" />
       </list>
     </recent_temporary>
   </component>
@@ -594,7 +600,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619520595526</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="2021-5-06 公司更新">
+      <created>1620269622152</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1620269622152</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -714,7 +727,8 @@
     <MESSAGE value="2021-2-26 公司更新" />
     <MESSAGE value="2021-3-1 公司更新" />
     <MESSAGE value="2021-4-27 公司更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021-4-27 公司更新" />
+    <MESSAGE value="2021-5-06 公司更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021-5-06 公司更新" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">
