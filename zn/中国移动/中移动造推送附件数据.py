@@ -30,6 +30,7 @@ def creatData():
     }
 
     r = requests.post(url=url,data=json.dumps(data) ,headers=header)
+    print("文件名:" + data['fileRepairFO']['filename']) #打印上传文件名称
     print("<<<<<<<请求信息>>>>>>>")
     print(json.dumps(r.json(),sort_keys=True, indent=2,ensure_ascii = False))
     return r.json()

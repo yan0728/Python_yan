@@ -56,7 +56,7 @@ def AddMD5():
       print('MD5加密后为大写 ：' + str_md5.upper())
       return str_md5.upper()
 
-def qq():
+def requestData():
       header = {'Content-Type':'application/json;charset=UTF-8',
                 'User-Agent': 'Apache-HttpClient/4.5.5 (Java/1.8.0_121)','Connection':'keep-alive'}
       url = 'https://test-api-yidong.lianjieabs.com/external/resources'
@@ -75,4 +75,4 @@ def qq():
       # 打印的返回值是json格式
       print(json.dumps(r.json(),sort_keys=True, indent=2,ensure_ascii = False))
 
-qq()
+requestData()
