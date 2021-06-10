@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e38a32e-0e4b-4479-9edc-84ef01aca780" name="Default Changelist" comment="2021-5-11 公司更新">
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PythonYan.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonYan.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask/demo.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zn/中国移动/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/zn/中国移动/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zn/中国移动/中移动造推送附件数据.py" beforeDir="false" afterPath="$PROJECT_DIR$/zn/中国移动/中移动造推送附件数据.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zn/中国移动/移动_再保理合同推送.py" beforeDir="false" afterPath="$PROJECT_DIR$/zn/中国移动/移动_再保理合同推送.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/自动化测试脚本/创建身份证号.py" beforeDir="false" afterPath="$PROJECT_DIR$/自动化测试脚本/创建身份证号.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/自动化测试脚本/随机生成四要素.py" beforeDir="false" afterPath="$PROJECT_DIR$/自动化测试脚本/随机生成四要素.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +158,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/自动化测试脚本/python接口测试/test_case/run.py" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -172,29 +176,8 @@
       <recent name="D:\python37\PythonYan\基础知识补充" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.中移动造推送附件数据 (1)">
-    <configuration name="中移动造推送附件数据 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PythonYan" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zn/中国移动" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zn/中国移动/中移动造推送附件数据.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="中移动造推送附件数据" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.移动_再保理合同推送">
+    <configuration name="中移动造推送附件数据" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonYan" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -207,29 +190,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\pythonProject\Python_yan\zn\中国移动\中移动造推送附件数据.py" />
-      <option name="SCRIPT_NAME" value="D:\pythonProject\Python_yan\zn\中国移动\中移动造推送附件数据.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="移动_再保理合同推送 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PythonYan" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zn/中国移动" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zn/中国移动/移动_再保理合同推送.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zn/中国移动/中移动造推送附件数据.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -269,53 +230,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zn" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\pythonProject\Python_yan\zn\中国移动\移动_再保理合同推送.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="移动_资产推送" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PythonYan" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zn/中国移动" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zn/中国移动/移动_资产推送.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PythonYan" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/testcase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/testcase/run.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zn/中国移动/移动_再保理合同推送.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -354,6 +273,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
@@ -361,12 +281,15 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.中移动造推送附件数据" />
+      <item itemvalue="Python.移动_再保理合同推送" />
+      <item itemvalue="Python.test" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.中移动造推送附件数据 (1)" />
+        <item itemvalue="Python.移动_再保理合同推送" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.中移动造推送附件数据" />
-        <item itemvalue="Python.移动_再保理合同推送 (1)" />
         <item itemvalue="Python.中移动造推送附件数据" />
       </list>
     </recent_temporary>
@@ -382,6 +305,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595600801711</updated>
+      <workItem from="1620893249996" duration="85000" />
+      <workItem from="1620893382439" duration="38000" />
+      <workItem from="1620893448417" duration="18000" />
     </task>
     <task id="LOCAL-00001" summary="添加家里数据库操作">
       <created>1595606023706</created>
@@ -621,14 +547,6 @@
       <option name="project" value="LOCAL" />
       <updated>1620724171581</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
-    <task id="LOCAL-00033" summary="2021-5-11 公司更新">
-      <created>1620721166925</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1620721166925</updated>
-    </task>
     <option name="localTasksCounter" value="34" />
     <servers />
   </component>
@@ -688,6 +606,9 @@
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="right" id="R Packages" order="4" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
