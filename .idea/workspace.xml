@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e38a32e-0e4b-4479-9edc-84ef01aca780" name="Default Changelist" comment="2021-5-11 公司更新">
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PythonYan.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonYan.iml" afterDir="false" />
+    <list default="true" id="2e38a32e-0e4b-4479-9edc-84ef01aca780" name="Default Changelist" comment="2021-6-10 公司更新">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zn/中国移动/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/zn/中国移动/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zn/中国移动/中移动造推送附件数据.py" beforeDir="false" afterPath="$PROJECT_DIR$/zn/中国移动/中移动造推送附件数据.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/今天吃什么.py" beforeDir="false" afterPath="$PROJECT_DIR$/other/今天吃什么.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/数据类型转换.py" beforeDir="false" afterPath="$PROJECT_DIR$/other/数据类型转换.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python 100/3.py" beforeDir="false" afterPath="$PROJECT_DIR$/python 100/3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zn/createZdData.py" beforeDir="false" afterPath="$PROJECT_DIR$/zn/createZdData.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zn/中国移动/移动_再保理合同推送.py" beforeDir="false" afterPath="$PROJECT_DIR$/zn/中国移动/移动_再保理合同推送.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/自动化测试脚本/创建身份证号.py" beforeDir="false" afterPath="$PROJECT_DIR$/自动化测试脚本/创建身份证号.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/自动化测试脚本/随机生成四要素.py" beforeDir="false" afterPath="$PROJECT_DIR$/自动化测试脚本/随机生成四要素.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +175,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.移动_再保理合同推送">
-    <configuration name="中移动造推送附件数据" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="今天吃什么" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonYan" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -185,12 +183,95 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zn/中国移动" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/other" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zn/中国移动/中移动造推送附件数据.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/other/今天吃什么.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="13" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonYan" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python 100" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python 100/13.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="8" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonYan" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python 100" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python 100/8.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="数据类型转换" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonYan" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/other" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/other/数据类型转换.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="数据类型转换" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonYan" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/other" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/other/数据类型转换.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -282,15 +363,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.中移动造推送附件数据" />
+      <item itemvalue="Python.13" />
+      <item itemvalue="Python.8" />
+      <item itemvalue="Python.今天吃什么" />
       <item itemvalue="Python.移动_再保理合同推送" />
       <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.移动_再保理合同推送" />
+        <item itemvalue="Python.今天吃什么" />
+        <item itemvalue="Python.13" />
+        <item itemvalue="Python.8" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.中移动造推送附件数据" />
       </list>
     </recent_temporary>
   </component>
@@ -540,14 +625,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620721166925</updated>
     </task>
-    <task id="LOCAL-00034" summary="2021-5-11 公司更新">
-      <created>1620724171581</created>
+    <task id="LOCAL-00034" summary="2021-6-10 公司更新">
+      <created>1623327735454</created>
       <option name="number" value="00034" />
       <option name="presentableId" value="LOCAL-00034" />
       <option name="project" value="LOCAL" />
-      <updated>1620724171581</updated>
+      <updated>1623327735454</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00035" summary="2021-6-10 公司更新">
+      <created>1623327746743</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1623327746743</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -647,7 +739,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加家里数据库操作" />
     <MESSAGE value="连接家里数据库" />
     <MESSAGE value="添加修改excel文件" />
     <MESSAGE value="优化代码" />
@@ -672,7 +763,8 @@
     <MESSAGE value="2021-4-27 公司更新" />
     <MESSAGE value="2021-5-06 公司更新" />
     <MESSAGE value="2021-5-11 公司更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021-5-11 公司更新" />
+    <MESSAGE value="2021-6-10 公司更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021-6-10 公司更新" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">
