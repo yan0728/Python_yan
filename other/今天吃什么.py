@@ -19,12 +19,16 @@ import random
 # print(s)
 #
 #  # random.sample(sequence,k) 从指令序列中随机获取指定长度的片段。sample函数不会修改原有的序列。
-# l = [1, 2, 3, 4, 5, 6, 7, 8]
-# print(random.sample(l, 3))
+l = [1, 2, 3, 4, 5, 6, 7, 8]
 
-a = ['5楼','羊汤','刀削面','庆丰','外卖']
+print(random.sample(l, 3))
+
+# for i in range(0,10):
+#     a = ['5楼','羊汤','刀削面','庆丰','外卖','川东情','KFC','二居']
+#
+#     food = random.choice(a)
+#     print(food)
+
+
 # i = random.randint(0,4)
 # print(a[i])
-
-food = random.choice(a)
-print(food)
