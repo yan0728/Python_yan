@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e38a32e-0e4b-4479-9edc-84ef01aca780" name="Default Changelist" comment="2021-9-26 公司更新">
-      <change afterPath="$PROJECT_DIR$/other/排序.py" afterDir="false" />
+    <list default="true" id="2e38a32e-0e4b-4479-9edc-84ef01aca780" name="Default Changelist" comment="ADD 添加排序代码">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zn/createZdData.py" beforeDir="false" afterPath="$PROJECT_DIR$/zn/createZdData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zn/createZdData500.py" beforeDir="false" afterPath="$PROJECT_DIR$/zn/createZdData500.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/排序.py" beforeDir="false" afterPath="$PROJECT_DIR$/other/排序.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -694,7 +692,21 @@
       <option name="project" value="LOCAL" />
       <updated>1632626888937</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="ADD 添加排序代码">
+      <created>1636082510488</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1636082510488</updated>
+    </task>
+    <task id="LOCAL-00039" summary="ADD 添加排序代码">
+      <created>1636082523695</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1636082523695</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -772,7 +784,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -794,7 +818,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="优化代码" />
     <MESSAGE value="添加批量更改教学学生的脚本" />
     <MESSAGE value="添加faker" />
     <MESSAGE value="2021-1-7 家" />
@@ -819,7 +842,8 @@
     <MESSAGE value="2021-6-10 公司更新" />
     <MESSAGE value="2021-7-23 公司更新" />
     <MESSAGE value="2021-9-26 公司更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021-9-26 公司更新" />
+    <MESSAGE value="ADD 添加排序代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD 添加排序代码" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">
