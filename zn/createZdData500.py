@@ -21,7 +21,7 @@ for i in range(3,503):
     sheet.cell(i,2).value = contractName
     sheet.cell(i,3).value =  contractNo #cell(行，列)
 
-    print(no,x)
+    print("第"+ str(no) +"行",x)
 
 workbook1.save(path)
 print('保存成功')

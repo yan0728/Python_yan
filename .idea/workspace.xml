@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e38a32e-0e4b-4479-9edc-84ef01aca780" name="Default Changelist" comment="2021-7-23 公司更新">
-      <change afterPath="$PROJECT_DIR$/zn/createZdData500.py" afterDir="false" />
+    <list default="true" id="2e38a32e-0e4b-4479-9edc-84ef01aca780" name="Default Changelist" comment="2021-9-26 公司更新">
+      <change afterPath="$PROJECT_DIR$/other/排序.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/other/今天吃什么.py" beforeDir="false" afterPath="$PROJECT_DIR$/other/今天吃什么.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zn/createZdData.py" beforeDir="false" afterPath="$PROJECT_DIR$/zn/createZdData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zn/createZdData500.py" beforeDir="false" afterPath="$PROJECT_DIR$/zn/createZdData500.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +173,7 @@
       <recent name="D:\python37\PythonYan\基础知识补充" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.createZdData500">
+  <component name="RunManager" selected="Python.排序">
     <configuration name="今天吃什么" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonYan" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -194,7 +195,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="13" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="排序" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonYan" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -202,32 +203,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python 100" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/other" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python 100/13.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="8" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PythonYan" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python 100" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python 100/8.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/other/排序.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -343,7 +323,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="移动_再保理合同推送" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="createZdData" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonYan" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -351,11 +331,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zn/中国移动" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zn" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zn/中国移动/移动_再保理合同推送.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zn/createZdData.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="createZdData500 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonYan" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zn/createZdData500.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -403,19 +404,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.13" />
-      <item itemvalue="Python.8" />
       <item itemvalue="Python.今天吃什么" />
-      <item itemvalue="Python.移动_再保理合同推送" />
       <item itemvalue="Python.createZdData500" />
+      <item itemvalue="Python.createZdData" />
+      <item itemvalue="Python.createZdData500 (1)" />
+      <item itemvalue="Python.排序" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.排序" />
+        <item itemvalue="Python.createZdData" />
+        <item itemvalue="Python.createZdData500 (1)" />
         <item itemvalue="Python.createZdData500" />
         <item itemvalue="Python.今天吃什么" />
-        <item itemvalue="Python.移动_再保理合同推送" />
-        <item itemvalue="Python.13" />
-        <item itemvalue="Python.8" />
       </list>
     </recent_temporary>
   </component>
@@ -686,7 +687,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627023075969</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="2021-9-26 公司更新">
+      <created>1632626888937</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1632626888937</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -786,7 +794,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加修改excel文件" />
     <MESSAGE value="优化代码" />
     <MESSAGE value="添加批量更改教学学生的脚本" />
     <MESSAGE value="添加faker" />
@@ -811,7 +818,8 @@
     <MESSAGE value="2021-5-11 公司更新" />
     <MESSAGE value="2021-6-10 公司更新" />
     <MESSAGE value="2021-7-23 公司更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021-7-23 公司更新" />
+    <MESSAGE value="2021-9-26 公司更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021-9-26 公司更新" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">
