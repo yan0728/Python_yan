@@ -1,4 +1,6 @@
 import random
+import datetime
+import time
 # print(random.random())  # 用于生成一个0到1之间的随机浮点数
 # print(random.uniform(1, 3))  # 用于生成一个指定范围内的随机浮点数
 # print(random.uniform(3, 1))  # 两个参数一个是上限，一个是下限。
@@ -19,9 +21,9 @@ import random
 # print(s)
 #
 #  # random.sample(sequence,k) 从指令序列中随机获取指定长度的片段。sample函数不会修改原有的序列。
-l = [1, 2, 3, 4, 5, 6, 7, 8]
-
-print(random.sample(l, 3))
+# l = [1, 2, 3, 4, 5, 6, 7, 8]
+#
+# print(random.sample(l, 3))
 
 # for i in range(0,10):
 #     a = ['5楼','羊汤','刀削面','庆丰','外卖','川东情','KFC','二居']
@@ -32,3 +34,12 @@ print(random.sample(l, 3))
 
 # i = random.randint(0,4)
 # print(a[i])
+
+
+# time = datetime.date.today().strftime('%Y-%m-%d')
+#
+# print(type(time))
+
+seqNo = time.time()
+
+print(seqNo)

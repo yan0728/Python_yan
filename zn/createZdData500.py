@@ -16,12 +16,14 @@ no = 0
 for i in range(3,503):
     no = no+1
     x = random.randint(10000,99999)
+    invoice = random.randint(10000000, 99999999)
     contractName = 'contractName-' + 'xl'+ str(x)
     contractNo = 'contractNo-' + 'xl' + str(x)
     sheet.cell(i,2).value = contractName
     sheet.cell(i,3).value =  contractNo #cell(行，列)
+    sheet.cell(i, 7).value = invoice
 
-    print("第"+ str(no) +"行",x)
+    print("第"+ str(no) +"行",x,invoice)
 
 workbook1.save(path)
 print('保存成功')

@@ -1,7 +1,8 @@
 
 # 占位符 字符串类型%s
 name = 'yanxulei'
-print('my name is %s'%(name))
+aaa= 'my name is %s'
+print(aaa%(name))
 
 # 占位符 整形%d
 age = 18

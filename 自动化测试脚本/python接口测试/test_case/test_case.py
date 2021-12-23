@@ -20,7 +20,7 @@ def test_1118():
     print("-" * 30,"美丽的分界线","-" * 30)
     print("返回数据", r.text)
     assert r.status_code == 200
-    consultId =  (r.json()["responseBody"]["consultId"]) #r.json后变成字典
+    consultId = (r.json()["responseBody"]["consultId"]) #r.json后变成字典
     return consultId
 
 def test_1037():
