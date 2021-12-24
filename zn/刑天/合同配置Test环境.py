@@ -17,7 +17,7 @@ WHERE productNo =
   WHERE shortName = '全流程-1220-1')
 '''
 # 签署任务的uuid
-missionuuid = '5af98968-0acd-4b11-99af-c8428a586ca5'
+missionuuid = 'adde476e-e6b8-40e2-bb3b-77990cb3002b'
 getdata2 = None
 getdata3 = None
 getdata4 = None
@@ -35,7 +35,7 @@ getdata15 = None
 
 def logIn():
     url = 'https://test-api-xingtian.lianjieabs.com/entry/login'
-    parameter = {"account":"13810957727","pwd":"3E10ADC3949BA59ABBE56E057F20F883E"}
+    parameter = {"account":"13810957727","pwd":"E10ADC3949BA59ABBE56E057F20F883E"}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header_base)
     if r.json()["code"] == 'SUCCESS':
         ksid = r.json()["data"]["ksid"]
@@ -598,10 +598,10 @@ def checkPassMission():
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 
 
-#上传1-《保理业务合同》适用于原始债权人和原始权益人签署
+# 上传1-《保理业务合同》适用于原始债权人和原始权益人签署
 uploadContractFile1()
 time.sleep(1)
-#配置2-《应收账款转让登记协议》适用于原始债权人和原始权益人签署
+# 配置2-《应收账款转让登记协议》适用于原始债权人和原始权益人签署
 getData2()
 setContract2()
 uploadContractFile2()
@@ -655,8 +655,8 @@ time.sleep(1)
 # getData13()
 # setContract13()
 # uploadContractFile13()
-#
-# # 配置14-《付款确认文件》适用于共同债务人向原始权益人出具
+
+# 配置14-《付款确认文件》适用于共同债务人向原始权益人出具
 # getData14()
 # setContract14()
 # uploadContractFile14()
@@ -669,7 +669,7 @@ uploadContractFile15()
 # 验证
 # checkMission()
 #
-#提交
+# 提交
 # checkPassMission()
 
 
