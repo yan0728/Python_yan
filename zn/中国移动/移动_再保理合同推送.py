@@ -63,7 +63,8 @@ def pinChuan():
       return chuan
 
 def AddMD5():
-      str = pinChuan()
+      # str = pinChuan()
+      str = '500595'
       # 创建md5对象
       m = hashlib.md5()
 
@@ -82,7 +83,8 @@ def AddMD5():
       # 另一种写法：b‘’前缀代表的就是bytes
       # str_md5 = hashlib.md5(b str).hexdigest()
       print('MD5加密后为大写 ：' + str_md5.upper())
-      return str_md5.upper()
+      # return str_md5.upper()
+AddMD5()
 
 def requestData():
       header = {'Content-Type':'application/json;charset=UTF-8',
@@ -108,4 +110,4 @@ def requestData():
       print("<<<<<<<推送返回信息>>>>>>>")
       print(json.dumps(r.json(),sort_keys=True, indent=2,ensure_ascii = False))
       print(url)
-requestData()
+# requestData()
