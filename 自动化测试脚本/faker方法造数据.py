@@ -1,4 +1,4 @@
-from faker import Faker
+from Faker实战教程 import Faker
 # 初始化需要指定国家，生成的数据是根据中国进行生成
 f=Faker(locale='zh-CN')
 

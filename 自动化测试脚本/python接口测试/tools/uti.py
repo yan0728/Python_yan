@@ -8,7 +8,7 @@
 
 import random
 import time
-from faker import Faker
+from Faker实战教程 import Faker
 f=Faker(locale='zh-CN')
 
 frontTransNo = "2021"+str(random.randint(1000000,9999999))

@@ -2,7 +2,7 @@
 """
 @author:闫学雷
 @project:PythonYan
-@file: test.py
+@file: Faker实战教程.py
 @time:2021/2/25 0025
 """
 import random

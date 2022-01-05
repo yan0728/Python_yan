@@ -14,10 +14,18 @@ WHERE productNo =
     NO 
   FROM
     `test-finance`.`CoreProduct` 
-  WHERE shortName = '全流程-1220-1')
+  WHERE shortName = '全流程-1220-1');
 '''
 # 签署任务的uuid
-missionuuid = 'adde476e-e6b8-40e2-bb3b-77990cb3002b'
+missionuuid = 'a142464b-a1a8-4641-98c1-16ac41a2c71b'
+
+# 测试切环境
+testurl = 'https://test-api-xingtian.lianjieabs.com'
+# 预发
+# testurl = 'https://release-api-xingtian.lianjieabs.com'
+# 生产 （生产环境需要修改登录密码）
+# testurl = 'https://api-xingtian.lianjieabs.com'
+
 getdata2 = None
 getdata3 = None
 getdata4 = None
@@ -34,8 +42,10 @@ getdata15 = None
 
 
 def logIn():
-    url = 'https://test-api-xingtian.lianjieabs.com/entry/login'
+    url = testurl + '/entry/login'
     parameter = {"account":"13810957727","pwd":"E10ADC3949BA59ABBE56E057F20F883E"}
+    # 生产
+    # parameter = {"account":"13810957727","pwd":"3D4E3C868E23EEA5B8E3938D9AB64561"}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header_base)
     if r.json()["code"] == 'SUCCESS':
         ksid = r.json()["data"]["ksid"]
@@ -49,7 +59,7 @@ header = {'Content-Type': 'application/json;multipart/form-parameter;charset=UTF
 
 # 查询合同模板
 def getContractMode():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/entity/template/'+ missionuuid
+    url = testurl + '/xingtian/contract/entity/template/'+ missionuuid
     r = requests.get(url=url,data=None, headers=header)
     if r.json()["code"] == 'SUCCESS':
         getuuid = r.json()["data"][0]["uuid"]
@@ -58,7 +68,7 @@ def getContractMode():
         print("获取合同模板失败，失败原因：")
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 def uploadContractFile1():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/command/upload'
+    url = testurl + '/xingtian/contract/command/upload'
     parameter = {"uuid":"{}".format(getContractMode()),"fileOssPath":"TestContract/1-《保理业务合同》适用于原始债权人和原始权益人签署.docx"}
 
     r = requests.post(url=url, data=json.dumps(parameter), headers=header)
@@ -71,7 +81,7 @@ def uploadContractFile1():
 #添加第2个合同
 def getData2():
     global getdata2
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/entity/template'
+    url = testurl + '/xingtian/contract/entity/template'
     parameter = {"xtSignRoles":[],"missionUuid":"{}".format(missionuuid),"protocolType":"Sign","contractType":None,"contractName":"《应收账款转让登记协议》适用于原始债权人和原始权益人签署","no":"02"}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header)
     if r.json()["code"] == "SUCCESS":
@@ -82,7 +92,7 @@ def getData2():
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 # 配置第2个合同
 def setContract2():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/entity/template/{}'.format(getdata2)
+    url = testurl + '/xingtian/contract/entity/template/{}'.format(getdata2)
     parameter = {
         "xtSignRoles": [{"roleId": "Creditor", "roleType": "signer"}, {"roleId": "Original", "roleType": "signer"}],
         "missionUuid": "{}".format(missionuuid), "uuid": "{}".format(getdata2), "contractType": "business",
@@ -96,7 +106,7 @@ def setContract2():
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 # 上传合同文件
 def uploadContractFile2():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/command/upload'
+    url = testurl + '/xingtian/contract/command/upload'
     parameter = {"uuid":"{}".format(getdata2),
                  "fileOssPath":"TestContract/2-《应收账款转让登记协议》适用于原始债权人和原始权益人签署.docx"}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header)
@@ -110,7 +120,7 @@ def uploadContractFile2():
 # 添加合同3
 def getData3():
     global getdata3
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/entity/template'
+    url = testurl + '/xingtian/contract/entity/template'
     parameter = {"xtSignRoles":[],"missionUuid":"{}".format(missionuuid),"protocolType":"Sign","contractType":None,"contractName":"《应收账款转让通知书》适用于原始债权人向直接债务人出具","no":"03"}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header)
     if r.json()["code"] == "SUCCESS":
@@ -120,7 +130,7 @@ def getData3():
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 # 配置第3个合同
 def setContract3():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/entity/template/{}'.format(getdata3)
+    url = testurl + '/xingtian/contract/entity/template/{}'.format(getdata3)
     parameter = {
         "xtSignRoles":[{"roleId":"Creditor","roleType":"notifier"},{"roleId":"DirectObligor","roleType":"receiver"}],
         "missionUuid":"{}".format(missionuuid),"uuid":"{}".format(getdata3),
@@ -134,7 +144,7 @@ def setContract3():
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 # 上传合同文件
 def uploadContractFile3():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/command/upload'
+    url = testurl + '/xingtian/contract/command/upload'
     parameter = {"uuid":"{}".format(getdata3),
                  "fileOssPath":"TestContract/3-《应收账款转让通知书》适用于原始债权人向直接债务人出具.docx"}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header)
@@ -148,7 +158,7 @@ def uploadContractFile3():
 # 添加合同4
 def getData4():
     global getdata4
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/entity/template'
+    url = testurl + '/xingtian/contract/entity/template'
     parameter = {"xtSignRoles":[],"missionUuid":"{}".format(missionuuid),"protocolType":"Sign","contractType":None,"contractName":"《应收账款转让通知书回执》适用于直接债务人向原始债权人出具","no":"04"}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header)
     if r.json()["code"] == "SUCCESS":
@@ -158,7 +168,7 @@ def getData4():
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 # 配置第4个合同
 def setContract4():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/entity/template/{}'.format(getdata4)
+    url = testurl + '/xingtian/contract/entity/template/{}'.format(getdata4)
     parameter = {"xtSignRoles": [{"roleId": "DirectObligor", "roleType": "notifier"},
                      {"roleId": "Creditor", "roleType": "receiver"}],
      "missionUuid": "{}".format(missionuuid), "uuid": "{}".format(getdata4),
@@ -172,7 +182,7 @@ def setContract4():
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 # 上传合同文件
 def uploadContractFile4():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/command/upload'
+    url = testurl + '/xingtian/contract/command/upload'
     parameter = {"uuid":"{}".format(getdata4),
                  "fileOssPath":"TestContract/4-《应收账款转让通知书回执》适用于直接债务人向原始债权人出具.docx"}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header)
@@ -186,7 +196,7 @@ def uploadContractFile4():
 # 添加合同5
 def getData5():
     global getdata5
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/entity/template'
+    url = testurl + '/xingtian/contract/entity/template'
     parameter = {"xtSignRoles":[],"missionUuid":"{}".format(missionuuid),"protocolType":"Sign","contractType":None,"contractName":"《付款确认文件》适用于直接债务人向原始债权人出具","no":"05"}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header)
     if r.json()["code"] == "SUCCESS":
@@ -196,7 +206,7 @@ def getData5():
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 # 配置第5个合同
 def setContract5():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/entity/template/{}'.format(getdata5)
+    url = testurl + '/xingtian/contract/entity/template/{}'.format(getdata5)
     parameter ={"xtSignRoles": [{"roleId": "DirectObligor", "roleType": "notifier"},
                      {"roleId": "Creditor", "roleType": "receiver"}],
      "missionUuid": "{}".format(missionuuid), "uuid": "{}".format(getdata5),
@@ -210,7 +220,7 @@ def setContract5():
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 # 上传合同文件
 def uploadContractFile5():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/command/upload'
+    url = testurl + '/xingtian/contract/command/upload'
     parameter = {"uuid":"{}".format(getdata5),
                  "fileOssPath":"TestContract/5-《付款确认文件》适用于直接债务人向原始债权人出具.docx"}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header)
@@ -224,7 +234,7 @@ def uploadContractFile5():
 # 添加合同6
 def getData6():
     global getdata6
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/entity/template'
+    url = testurl + '/xingtian/contract/entity/template'
     parameter = {"xtSignRoles":[],"missionUuid":"{}".format(missionuuid),"protocolType":"Sign","contractType":None,"contractName":"《应收账款转让通知书》适用于原始债权人向共同债务人出具","no":"06"}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header)
     if r.json()["code"] == "SUCCESS":
@@ -234,7 +244,7 @@ def getData6():
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 # 配置第6个合同
 def setContract6():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/entity/template/{}'.format(getdata6)
+    url = testurl + '/xingtian/contract/entity/template/{}'.format(getdata6)
     parameter ={"xtSignRoles": [{"roleId": "Creditor", "roleType": "notifier"},
                      {"roleId": "JointObligor", "roleType": "receiver"}],
      "missionUuid": "{}".format(missionuuid), "uuid": "{}".format(getdata6),
@@ -248,7 +258,7 @@ def setContract6():
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 # 上传合同文件
 def uploadContractFile6():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/command/upload'
+    url = testurl + '/xingtian/contract/command/upload'
     parameter = {"uuid":"{}".format(getdata6),
                  "fileOssPath":"TestContract/6-《应收账款转让通知书》适用于原始债权人向共同债务人出具.docx"}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header)
@@ -262,7 +272,7 @@ def uploadContractFile6():
 # 添加合同7
 def getData7():
     global getdata7
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/entity/template'
+    url = testurl + '/xingtian/contract/entity/template'
     parameter = {"xtSignRoles":[],"missionUuid":"{}".format(missionuuid),"protocolType":"Sign","contractType":None,"contractName":"《应收账款转让通知书回执》适用于共同债务人向原始债权人出具","no":"07"}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header)
     if r.json()["code"] == "SUCCESS":
@@ -272,7 +282,7 @@ def getData7():
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 # 配置第7个合同
 def setContract7():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/entity/template/{}'.format(getdata7)
+    url = testurl + '/xingtian/contract/entity/template/{}'.format(getdata7)
 
     parameter ={"xtSignRoles": [{"roleId": "JointObligor", "roleType": "notifier"},
                      {"roleId": "Creditor", "roleType": "receiver"}],
@@ -287,7 +297,7 @@ def setContract7():
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 # 上传合同文件
 def uploadContractFile7():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/command/upload'
+    url = testurl + '/xingtian/contract/command/upload'
     parameter = {"uuid":"{}".format(getdata7),
                  "fileOssPath":"TestContract/7-《应收账款转让通知书回执》适用于共同债务人向原始债权人出具.docx"}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header)
@@ -301,7 +311,7 @@ def uploadContractFile7():
 # 添加合同8
 def getData8():
     global getdata8
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/entity/template'
+    url = testurl + '/xingtian/contract/entity/template'
     parameter = {"xtSignRoles":[],"missionUuid":"{}".format(missionuuid),"protocolType":"Sign","contractType":None,
                  "contractName":"《付款确认文件》适用于共同债务人向原始债权人出具","no":"08"}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header)
@@ -312,7 +322,7 @@ def getData8():
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 # 配置第8个合同
 def setContract8():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/entity/template/{}'.format(getdata8)
+    url = testurl + '/xingtian/contract/entity/template/{}'.format(getdata8)
 
     parameter ={"xtSignRoles": [{"roleId": "JointObligor", "roleType": "notifier"},
                      {"roleId": "Creditor", "roleType": "receiver"}],
@@ -327,7 +337,7 @@ def setContract8():
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 # 上传合同文件
 def uploadContractFile8():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/command/upload'
+    url = testurl + '/xingtian/contract/command/upload'
     parameter = {"uuid":"{}".format(getdata8),
                  "fileOssPath":"TestContract/8-《付款确认文件》适用于共同债务人向原始债权人出具.docx"}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header)
@@ -341,7 +351,7 @@ def uploadContractFile8():
 # 添加合同9
 def getData9():
     global getdata9
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/entity/template'
+    url = testurl + '/xingtian/contract/entity/template'
     parameter = {"xtSignRoles":[],"missionUuid":"{}".format(missionuuid),"protocolType":"Sign","contractType":None,
                  "contractName":"《应收账款转让通知书》适用于原始权益人向直接债务人出具","no":"09"}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header)
@@ -352,7 +362,7 @@ def getData9():
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 # 配置第9个合同
 def setContract9():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/entity/template/{}'.format(getdata9)
+    url = testurl + '/xingtian/contract/entity/template/{}'.format(getdata9)
 
     parameter ={"xtSignRoles": [{"roleId": "Original", "roleType": "notifier"},
                      {"roleId": "DirectObligor", "roleType": "receiver"}],
@@ -367,7 +377,7 @@ def setContract9():
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 # 上传合同文件
 def uploadContractFile9():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/command/upload'
+    url = testurl + '/xingtian/contract/command/upload'
     parameter = {"uuid":"{}".format(getdata9),
                  "fileOssPath":"TestContract/9-《应收账款转让通知书》适用于原始权益人向直接债务人出具.docx"}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header)
@@ -381,7 +391,7 @@ def uploadContractFile9():
 # 添加合同11
 def getData11():
     global getdata11
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/entity/template'
+    url = testurl + '/xingtian/contract/entity/template'
     parameter = {"xtSignRoles":[],"missionUuid":"{}".format(missionuuid),"protocolType":"Sign","contractType":None,
                  "contractName":"《付款确认文件》适用于直接债务人向原始权益人出具","no":"11"}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header)
@@ -392,7 +402,7 @@ def getData11():
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 # 配置第11个合同
 def setContract11():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/entity/template/{}'.format(getdata11)
+    url = testurl + '/xingtian/contract/entity/template/{}'.format(getdata11)
 
     parameter ={"xtSignRoles": [{"roleId": "DirectObligor", "roleType": "notifier"},
                      {"roleId": "Original", "roleType": "receiver"}],
@@ -407,7 +417,7 @@ def setContract11():
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 # 上传合同文件
 def uploadContractFile11():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/command/upload'
+    url = testurl + '/xingtian/contract/command/upload'
     parameter = {"uuid":"{}".format(getdata11),
                  "fileOssPath":"TestContract/11-《付款确认文件》适用于直接债务人向原始权益人出具.docx"}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header)
@@ -421,7 +431,7 @@ def uploadContractFile11():
 # 添加合同12
 def getData12():
     global getdata12
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/entity/template'
+    url = testurl + '/xingtian/contract/entity/template'
     parameter = {"xtSignRoles":[],"missionUuid":"{}".format(missionuuid),"protocolType":"Sign","contractType":None,
                  "contractName":"《应收账款转让通知书》适用于原始权益人向共同债务人出具","no":"12"}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header)
@@ -432,7 +442,7 @@ def getData12():
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 # 配置第12个合同
 def setContract12():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/entity/template/{}'.format(getdata12)
+    url = testurl + '/xingtian/contract/entity/template/{}'.format(getdata12)
 
     parameter = {"xtSignRoles": [{"roleId": "Original", "roleType": "notifier"},
                      {"roleId": "JointObligor", "roleType": "receiver"}],
@@ -447,7 +457,7 @@ def setContract12():
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 # 上传合同文件
 def uploadContractFile12():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/command/upload'
+    url = testurl + '/xingtian/contract/command/upload'
     parameter = {"uuid":"{}".format(getdata12),
                  "fileOssPath":"TestContract/12-《应收账款转让通知书》适用于原始权益人向共同债务人出具.docx"}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header)
@@ -461,7 +471,7 @@ def uploadContractFile12():
 # 添加合同13
 def getData13():
     global getdata13
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/entity/template'
+    url = testurl + '/xingtian/contract/entity/template'
     parameter = {"xtSignRoles":[],"missionUuid":"{}".format(missionuuid),"protocolType":"Sign","contractType":None,
                  "contractName":"《应收账款转让通知书回执》适用于共同债务人向原始权益人出具","no":"13"}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header)
@@ -472,7 +482,7 @@ def getData13():
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 # 配置第13个合同
 def setContract13():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/entity/template/{}'.format(getdata13)
+    url = testurl + '/xingtian/contract/entity/template/{}'.format(getdata13)
 
     parameter ={"xtSignRoles": [{"roleId": "JointObligor", "roleType": "notifier"},
                      {"roleId": "Original", "roleType": "receiver"}],
@@ -486,7 +496,7 @@ def setContract13():
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 # 上传合同文件
 def uploadContractFile13():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/command/upload'
+    url = testurl + '/xingtian/contract/command/upload'
     parameter = {"uuid":"{}".format(getdata13),
                  "fileOssPath":"TestContract/13-《应收账款转让通知书回执》适用于共同债务人向原始权益人出具.docx"}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header)
@@ -500,7 +510,7 @@ def uploadContractFile13():
 # 添加合同14
 def getData14():
     global getdata14
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/entity/template'
+    url = testurl + '/xingtian/contract/entity/template'
     parameter = {"xtSignRoles":[],"missionUuid":"{}".format(missionuuid),"protocolType":"Sign","contractType":None,
                  "contractName":"《付款确认文件》适用于共同债务人向原始权益人出具","no":"14"}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header)
@@ -511,7 +521,7 @@ def getData14():
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 # 配置第14个合同
 def setContract14():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/entity/template/{}'.format(getdata14)
+    url = testurl + '/xingtian/contract/entity/template/{}'.format(getdata14)
 
     parameter ={"xtSignRoles": [{"roleId": "JointObligor", "roleType": "notifier"},
                      {"roleId": "Original", "roleType": "receiver"}],
@@ -526,7 +536,7 @@ def setContract14():
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 # 上传合同文件
 def uploadContractFile14():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/command/upload'
+    url = testurl + '/xingtian/contract/command/upload'
     parameter = {"uuid":"{}".format(getdata14),
                  "fileOssPath":"TestContract/14-《付款确认文件》适用于共同债务人向原始权益人出具.docx"}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header)
@@ -540,7 +550,7 @@ def uploadContractFile14():
 # 添加合同15
 def getData15():
     global getdata15
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/entity/template'
+    url = testurl + '/xingtian/contract/entity/template'
     parameter = {"xtSignRoles":[],"missionUuid":"{}".format(missionuuid),"protocolType":"Cancel","contractType":None,
                  "contractName":"《解除合同协议》适用于原始债权人和原始权益人签署","no":"15"}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header)
@@ -551,7 +561,7 @@ def getData15():
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 # 配置第15个合同
 def setContract15():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/entity/template/{}'.format(getdata15)
+    url = testurl + '/xingtian/contract/entity/template/{}'.format(getdata15)
 
     parameter ={"xtSignRoles": [{"roleId": "Creditor", "roleType": "notifier"}, {"roleId": "Original", "roleType": "receiver"}],
      "missionUuid": "{}".format(missionuuid), "uuid": "{}".format(getdata15),
@@ -565,7 +575,7 @@ def setContract15():
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 # 上传合同文件
 def uploadContractFile15():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/command/upload'
+    url = testurl + '/xingtian/contract/command/upload'
     parameter = {"uuid":"{}".format(getdata15),
                  "fileOssPath":"TestContract/15-《解除合同协议》适用于原始债权人和原始权益人签署.docx"}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header)
@@ -577,22 +587,22 @@ def uploadContractFile15():
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 
 def checkMission():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/command/check/mission'
+    url = testurl + '/xingtian/contract/command/check/mission'
     parameter = {"signMissionUuid":"{}".format(missionuuid)}
     r = requests.post(url=url, data=json.dumps(parameter), headers=header)
     if r.json()["code"] == "SUCCESS":
         print("验证成功,请进入页面继续完成后续操作")
-        print("https://test-api-xingtian.lianjieabs.com/entry/login")
+        print("testurl/entry/login")
     else:
         print("提交失败")
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
 
 def checkPassMission():
-    url = 'https://test-api-xingtian.lianjieabs.com/xingtian/contract/preview/command/check-pass/mission/{}'.format(missionuuid)
+    url = testurl + '/xingtian/contract/preview/command/check-pass/mission/{}'.format(missionuuid)
     r = requests.get(url=url, data=None, headers=header)
     if r.json()["code"] == "SUCCESS":
         print("提交中，请进入页面继续完成后续操作")
-        print("https://test-api-xingtian.lianjieabs.com/entry/login")
+        print("testurl/entry/login")
     else:
         print("提交失败")
         print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))

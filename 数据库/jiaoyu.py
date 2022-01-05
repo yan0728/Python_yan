@@ -2,7 +2,7 @@
 """
 @author:闫学雷
 @project:PythonYan
-@file: test.py
+@file: Faker实战教程.py
 @time:2020/7/17 0017
 """
 import  pymysql
