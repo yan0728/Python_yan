@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e38a32e-0e4b-4479-9edc-84ef01aca780" name="Default Changelist" comment="提交2222">
-      <change afterPath="$PROJECT_DIR$/Faker实战教程.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="2e38a32e-0e4b-4479-9edc-84ef01aca780" name="Default Changelist" comment="添加Faker">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python装饰器/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python装饰器/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zn/刑天/2222.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zn/刑天/合同配置Test环境.py" beforeDir="false" afterPath="$PROJECT_DIR$/zn/刑天/合同配置Test环境.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zn/刑天/合同配置生产.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据库/jiaoyu.py" beforeDir="false" afterPath="$PROJECT_DIR$/数据库/jiaoyu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/自动化测试脚本/faker方法造数据.py" beforeDir="false" afterPath="$PROJECT_DIR$/自动化测试脚本/faker方法造数据.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/自动化测试脚本/python接口测试/tools/uti.py" beforeDir="false" afterPath="$PROJECT_DIR$/自动化测试脚本/python接口测试/tools/uti.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/testcase/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/自动化测试脚本/接口自动化excel版/testcase/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faker实战教程.py" beforeDir="false" afterPath="$PROJECT_DIR$/Faker实战教程.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -978,7 +968,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640337638026</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="添加Faker">
+      <created>1641375628377</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1641375628377</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1090,7 +1087,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2021-1-7 家" />
     <MESSAGE value="2021-1-21 公司" />
     <MESSAGE value="123" />
     <MESSAGE value="fix bug" />
@@ -1115,7 +1111,8 @@
     <MESSAGE value="ADD 添加排序代码" />
     <MESSAGE value="公司更新" />
     <MESSAGE value="提交2222" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交2222" />
+    <MESSAGE value="添加Faker" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加Faker" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">

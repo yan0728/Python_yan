@@ -73,7 +73,7 @@ print('**'*10 + '06 随机地址信息数据' +'**'*10)
 print('完整地址：', fake.address()) #上海市慧县沈河魏路j座 436993
 print('街道+地址：', fake.street_address()) #关岭街O座
 print('街道名：', fake.street_name()) #李路
-# print('城市名：', fake.city_name()) #澳门
+print('城市名：', fake.city_name()) #澳门
 print('城市：', fake.city()) #林市
 print('区：',fake.district()) #华龙
 print('省份名：', fake.province()) #山西省
@@ -101,8 +101,8 @@ print('随机用户名:',fake.user_name())
 
 # 09 随机用户代理信息
 print('**'*10 + '09 随机用户代理信' +'**'*10)
-print('随机安卓代理信息：',fake.ios_platform_token())
-print('随机ios代理信息：',fake.android_platform_token())
+print('随机ios代理信息：',fake.ios_platform_token())
+print('随机安卓代理信息：',fake.android_platform_token())
 print('随机chrome代理信息：',fake.chrome())
 print('随机firefox代理信息：',fake.chrome())
 print('随机ie代理信息：',fake.internet_explorer())
