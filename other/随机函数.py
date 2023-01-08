@@ -25,13 +25,6 @@ import time
 #
 # print(random.sample(l, 3))
 
-# for i in range(0,10):
-#     a = ['5楼','羊汤','刀削面','庆丰','外卖','川东情','KFC','二居']
-#
-#     food = random.choice(a)
-#     print(food)
-
-
 # i = random.randint(0,4)
 # print(a[i])
 

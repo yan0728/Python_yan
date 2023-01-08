@@ -17,12 +17,12 @@ WHERE productNo =
   WHERE shortName = '全流程-1220-1');
 '''
 # 签署任务的uuid
-missionuuid = 'a142464b-a1a8-4641-98c1-16ac41a2c71b'
+missionuuid = '1efb5d92-8b38-424e-902c-cb16e4d14786'
 
 # 测试切环境
-testurl = 'https://test-api-xingtian.lianjieabs.com'
+# testurl = 'https://test-api-xingtian.lianjieabs.com'
 # 预发
-# testurl = 'https://release-api-xingtian.lianjieabs.com'
+testurl = 'https://release-api-xingtian.lianjieabs.com'
 # 生产 （生产环境需要修改登录密码）
 # testurl = 'https://api-xingtian.lianjieabs.com'
 
