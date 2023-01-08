@@ -11,10 +11,24 @@ securitykey = "H4xJmjwsU0ZcEEBuCvxodMMBENyovncH9spdO8VOffxPDpzK5Sigod0g6pLe6nUW"
 requestytpe = "POST"
 requestid = "0d74164194d899502c02c8b94c8405f1"
 
-contenttype = "application/json;charset=UTF-8"
-requestpath = "/file/info/core/voucher-open/certificate/86b168d3-44e1-4661-854b-2acca75eed9c/1672822967682/开具凭证.jpg"
-content = ""
-file = "1"
+# 3.4 文件信息
+# contenttype = "application/json;charset=UTF-8"
+# requestpath = "/file/info/core/voucher-open/certificate/86b168d3-44e1-4661-854b-2acca75eed9c/1672822967682/开具凭证.jpg"
+# content = ""
+# file = "1"
+
+# 3.1 上传临时文件
+file = "1.pdf"
+content = MultipartEncoder(
+    fields={
+        "file": (file, open(file, "rb"))
+    },
+    boundary="0d74164194d899502c02c8b94c8405f1")
+
+contenttype = "multipart/form-data;boundary=0d74164194d899502c02c8b94c8405f1"
+
+requestpath = "/file/temporary"
+
 class CreatData:
 
     def __init__(self,applicationId,applicationKey,securitykey,requestytpe,requestid,contenttype,requestpath,content):
@@ -49,7 +63,7 @@ class GetSignaHeader:
         cd = CreatData(applicationId,applicationKey,securitykey,requestytpe,requestid,contenttype,requestpath,content)
 
         SPLIT="::"
-        if file == "Y":
+        if file != 1:
             str = (applicationId + SPLIT + applicationKey + SPLIT + requestid
                    + SPLIT + ""
                    + SPLIT + cd.timeStamp()
@@ -57,10 +71,6 @@ class GetSignaHeader:
                    + SPLIT + requestpath
                    + SPLIT + contenttype
                    + SPLIT + securitykey)
-            hl = hashlib.md5()
-            hl.update(str.encode(encoding="utf-8"))
-            print("signaTure:" + hl.hexdigest())
-            return hl.hexdigest()
         else:
             str = (applicationId + SPLIT + applicationKey + SPLIT + requestid
                    + SPLIT + cd.contentMD5()
@@ -69,10 +79,10 @@ class GetSignaHeader:
                    + SPLIT + requestpath
                    + SPLIT + contenttype
                    + SPLIT + securitykey)
-            hl = hashlib.md5()
-            hl.update(str.encode(encoding="utf-8"))
-            print("signaTure:" + hl.hexdigest())
-            return hl.hexdigest()
+        hl = hashlib.md5()
+        hl.update(str.encode(encoding="utf-8"))
+        print("signaTure:" + hl.hexdigest())
+        return hl.hexdigest()
 
     def createHeader(self):
         cd = CreatData(applicationId,applicationKey,securitykey,requestytpe,requestid,contenttype,requestpath,content)
