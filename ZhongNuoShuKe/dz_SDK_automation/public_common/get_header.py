@@ -10,6 +10,11 @@
 import random
 import hashlib
 import time
+from dz_SDK_automation.setting import config
+from dz_SDK_automation.public_common import read_excel_data
+import json
+import requests
+
 
 
 ascii_number_chars = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r",
@@ -21,11 +26,11 @@ application_id = "qingdao-yeda"
 application_key = "AhgfP0GF2KpD9J4bV3TExRORpwVeKnuY"
 security_key = "H4xJmjwsU0ZcEEBuCvxodMMBENyovncH9spdO8VOffxPDpzK5Sigod0g6pLe6nUW"
 request_id = '0d74164194d899502c02c8b94c8405f1'
-# timeStamp = 1
-method = "post"
-content_type = "application/json;charset=UTF-8"
-request_path = "/sms/validate/beforehand"
-body = '{"phone":"02810957721","sequence":"92652883","code":"167916"}'
+
+# 变量
+re = read_excel_data.ReadExcel().getExcelData("小额打款")
+
+
 
 class Header:
 
@@ -42,6 +47,8 @@ class Header:
         # print("timeStamp:" + str(timeStamp))
         return str(timeStamp)
 
+
+
     def contentMD5(self):
         contentMD5 = hashlib.md5(self.body.encode(encoding="utf-8"))
         return contentMD5.hexdigest()  # 返回摘要，作为十六进制数据字符串值
@@ -56,8 +63,6 @@ class Header:
     # 创建验签
     def creatSigna(self):
         SPLIT = "::"
-        global request_id
-        request_id = self.getrequestId()
         # 非上传文件
         if self.content_type == "application/json;charset=UTF-8":
             str = (application_id
@@ -69,6 +74,7 @@ class Header:
                    + SPLIT + self.request_path
                    + SPLIT + self.content_type
                    + SPLIT + security_key)
+
         else:
             str = (application_id
                    + SPLIT + application_key
@@ -79,53 +85,65 @@ class Header:
                    + SPLIT + self.request_path
                    + SPLIT + self.content_type
                    + SPLIT + security_key)
-
         hl = hashlib.md5()
         hl.update(str.encode(encoding="utf-8"))
         sign = hl.hexdigest()
-        print('X-Zn-Open-Signature:', sign)
-        # print(str)
         return sign
 
     def creatHeader(self):
-
+        global request_id
+        request_id = self.getrequestId()
         if self.content_type == "application/json;charset=UTF-8":
             header = {
-                "X-Zn-Open-App-Id":application_id,
-                "X-Zn-Open-App-Key":application_key,
-                "X-Zn-Content-MD5":self.contentMD5(),
-                "Content-Type":content_type,
-                "X-Zn-Open-Request-Id":request_id,
-                "X-Zn-Open-Timestamp":self.timeStamp(),
+                "X-Zn-Open-App-Id": application_id,
+                "X-Zn-Open-App-Key": application_key,
+                "X-Zn-Content-MD5": self.contentMD5(),
+                "Content-Type": get_content_type,
+                "X-Zn-Open-Request-Id": request_id,
+                "X-Zn-Open-Timestamp": self.timeStamp(),
                 "X-Zn-Open-Signature": h.creatSigna()
             }
-
         else:
             header = {
                 "X-Zn-Open-App-Id": application_id,
                 "X-Zn-Open-App-Key": application_key,
                 "X-Zn-Content-MD5": "",
-                "Content-Type": content_type,
+                "Content-Type": get_content_type,
                 "X-Zn-Open-Request-Id": request_id,
                 "X-Zn-Open-Timestamp": self.timeStamp(),
                 "X-Zn-Open-Signature": h.creatSigna()
             }
-        print()
-        print("<<<<<<<<<<header>>>>>>>>>>")
-        print(header)
-        print('X-Zn-Open-App-Id:', header['X-Zn-Open-App-Id'])
-        print('X-Zn-Open-App-Key:', header['X-Zn-Open-App-Key'])
-        print('X-Zn-Content-MD5:', header['X-Zn-Content-MD5'])
-        print('Content-Type:', header['Content-Type'])
-        print('X-Zn-Open-Request-Id:', header['X-Zn-Open-Request-Id'])
-        print('X-Zn-Open-Timestamp:', header['X-Zn-Open-Timestamp'])
-        print('X-Zn-Open-Signature:', header['X-Zn-Open-Signature'])
+        # print(header)
+        return header
 
-    # def witerHeaderToExcel():
-    #     pass
 
-h = Header(method, content_type, request_path, body)
+# 获取excel行数
+get_nrows = re[1]
+# print(re[0][0])
+# 遍历获取每行入参数据
+for i in  range(get_nrows-1):
+    get_cast_name = re[0][i]["case_name"]
+    get_method = re[0][i]["method"]
+    get_content_type = re[0][i]["content_type"]
+    get_request_path = re[0][i]["request_path"]
+    get_body = re[0][i]["body"]
 
-h.creatHeader()
+    # 实例化header
+    h = Header(get_method, get_content_type, get_request_path, get_body)
+
+    url = config.BAST_URL + get_request_path
+    rheader = h.creatHeader()
+    r = requests.post(url=url, data=get_body.encode(), headers=rheader)
+    print("<<<<<<<<<<<<" + get_cast_name + ">>>>>>>>>>>")
+    # 返回值格式化
+    print(json.dumps(r.json(), sort_keys=True, indent=2, ensure_ascii=False))
+    # print(r.text)
+
+
+# method = "POST"
+# content_type = "application/json;charset=UTF-8"
+# request_path = "/bank/auth/request"
+# body = '{"corporationIdentity": {"businessCode": "91440300MA5F7UJL2H","corporationName":"泓润供应链管理（深圳）有限公司","ownerName": "陈锦青"},"bankAccount": {"bankAccount": "6214830112267878","bankBranch": "招商银行朝阳支行","bankBranchNo": "123456786543"},"notifyUrl": "/xxx/xxx/xxx"}'
+
 
 

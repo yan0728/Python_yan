@@ -172,11 +172,11 @@ g.createHeader()
 url = "http://123.57.27.89" + requestpath
 print("请求地址："+url)
 print("body：" + str(content))
-# r = requests.post(url=url,data=content.encode(),headers=GetSignaHeader.createHeader(1))
+r = requests.post(url=url,data=content.encode(),headers=GetSignaHeader.createHeader(1))
 
 # print(json.dumps(content,ensure_ascii=False))
 print()
 print("<<<<<<<<<<响应数据>>>>>>>>>>")
 # 返回值格式化
-# print(json.dumps(r.json(),sort_keys=True, indent=2,ensure_ascii = False))
+print(json.dumps(r.json(),sort_keys=True, indent=2,ensure_ascii = False))
 # print(r.text)
