@@ -6,25 +6,39 @@ import time
 from requests_toolbelt.multipart.encoder import MultipartEncoder
 
 # 3.4 文件信息
-# contenttype = "application/json;charset=UTF-8"
 # requestpath = "/file/info/core/voucher-open/certificate/86b168d3-44e1-4661-854b-2acca75eed9c/1672822967682/开具凭证.jpg"
 # content = ""
-# file = 1
 
 # 3.1 上传临时文件
-file = "1.pdf"
-content = MultipartEncoder(
-    fields={
-        "file": (file, open(file, "rb"))
-    },
-    boundary="0d74164194d899502c02c8b94c8405f1")
+# file = "1.pdf"
+# content = MultipartEncoder(
+#     fields={
+#         "file": (file, open(file, "rb"))
+#     },
+#     boundary="0d74164194d899502c02c8b94c8405f1")
+#
+# contenttype = "multipart/form-data;boundary=0d74164194d899502c02c8b94c8405f1"
+# requestpath = "/file/temporary"
 
-contenttype = "multipart/form-data;boundary=0d74164194d899502c02c8b94c8405f1"
+# 4.1发起小额打款认证请求
+requestpath = "/bank/auth/request"
+content = {
+	"corporationIdentity": {
+		"businessCode": "91440300MA5F7UJL2H",
+		"corporationName": "泓润供应链管理（深圳）有限公司",
+		"ownerName": "陈锦青"
+	},
+	"bankAccount": {
+		"bankAccount": "6214830112267878",
+		"bankBranch": "招商银行",
+		"bankBranchNo": "12346789012"
+	},
+	"notifyUrl": ""
+}
 
 
-requestpath = "/file/temporary"
-
-
+contenttype = "application/json;charset=UTF-8"
+file =1
 SPLIT="::"
 applicationId = "qingdao-yeda"
 applicationKey = "AhgfP0GF2KpD9J4bV3TExRORpwVeKnuY"
@@ -100,7 +114,7 @@ def reqApi():
 
     url = "http://123.57.27.89" + requestpath
     print("请求地址："+url)
-    r = requests.post(url=url,data=content,headers=header)
+    r = requests.post(url=url,data=json.dumps(content) ,headers=header)
 
     # 返回值格式化
     print(json.dumps(r.json(),sort_keys=True, indent=2,ensure_ascii = False))
